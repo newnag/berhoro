@@ -1,0 +1,59 @@
+@import 'variable';
+
+// -------------------------------- Zone Tag All ----------------------------------- //
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: $background_main;
+}
+
+li{
+    list-style: none;
+}
+a{
+    color: $main_color;
+    text-decoration: none;
+}
+// -------------------------------- End Zone Tag All ------------------------------ //
+
+// --------------------------------- Head ---------------------------------------- //
+nav{
+    height: 100%;
+    
+    .topnav{
+        background: #fff;
+
+        @media screen and (min-width:1025px) {
+            display: flex;
+            padding: 1% 5%;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .logo-nav{
+            @media screen and (min-width:1025px) {
+                width: 50%;
+            }
+            
+
+            figure{
+
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .nav-menu{
+            @media screen and (min-width:1025px) {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
