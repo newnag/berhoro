@@ -1,7 +1,19 @@
 $('.slider').owlCarousel({
     loop:true,
-    nav:true,
     item:1,
     responsiveClass:true,
-    autoWidth:true
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true,
+        }
+    }
 })

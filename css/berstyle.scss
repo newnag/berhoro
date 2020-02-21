@@ -9,6 +9,7 @@
 
 body{
     background: $background_main;
+    font-family: 'Sarabun' ;
 }
 
 li{
@@ -18,11 +19,19 @@ a{
     color: $main_color;
     text-decoration: none;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 // -------------------------------- End Zone Tag All ------------------------------ //
 
 // --------------------------------- Head ---------------------------------------- //
 nav{
     height: 100%;
+    z-index: 2;
+    position: sticky;
     
     .topnav{
         background: #fff;
@@ -31,6 +40,7 @@ nav{
             display: flex;
             padding: 1% 5%;
             border-radius: 0 0 20px 20px;
+            box-shadow: 0px 0px 15px #0000009e;
         }
         
         .logo-nav{
@@ -54,6 +64,325 @@ nav{
                 align-items: center;
                 justify-content: space-between;
             }
+        }
+    }
+}
+
+.slider{
+    @media screen and (min-width:1025px) {
+        // position: absolute!important;
+        // top: 5%;
+    } 
+}
+
+.search-box{
+    background-image: url(/img/BG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width:1025px) {
+       width: 100%;
+       height: 100%;
+       padding: 2% 0;
+    } 
+
+    h2{
+        text-align: center;
+        color: #fff;
+        margin-bottom: 3%;
+    }
+
+    .box{
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+
+        .left-box{
+            width: 50%;
+            padding: 0 3%;
+            border-right: 1px solid #fff;
+
+            .fortune-num{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 5% 0;
+
+                input{
+                    width: 70%;
+                    height: 100%;
+                    @include input-round();
+                }
+                a{
+                    width: 20%;
+                    button{
+                        width: 100%;
+                        @include button-round();
+                    }
+                }
+                
+            }
+
+            .search-num{
+                margin: 5% 0;
+
+                label{
+                    color: $background_main;
+                    margin-right: 5%;
+                }
+
+                .search-box-num{
+                    width: 6%;
+                    padding: 1%;
+                    border-radius: 20%;
+                    border: unset;
+                    text-align: center;
+                }
+            }
+
+            .cate-num{
+                margin: 5% 0;
+
+                select{
+                    @include select-round();
+                    width: 100%;
+                } 
+            }
+
+            .sum-network{
+                display: flex;
+                justify-content: space-between;
+                margin: 5% 0;
+
+                .sum-num{
+                    width: 48%;
+
+                    select{
+                        @include select-round();
+                        width: 100%;
+                    }
+                }
+
+                .network{
+                    width: 48%;
+
+                    select{
+                        @include select-round();
+                        width: 100%;
+                    }
+                }
+            }
+
+            .search-some{
+                margin: 5% 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                label{
+                    color: $background_main;
+                    
+                }
+                input{
+                    @include input-round();
+                    width: 70%;
+                }
+            }
+
+            .range-price{
+                margin: 5% 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                label{
+                    color: $background_main;
+                }
+
+                .keed{
+                    border-top: 2px solid $background_main;
+                    width: 5%;
+                    margin: auto 0;
+                }
+
+                input{
+                    width: 25%;
+                    text-align: center;
+                    @include input-round;
+                }
+            }
+        }
+        .right-box{
+            width: 50%;
+            border-left: 1px solid #fff;
+            padding: 0 5%;
+
+            .favorite-num{
+                .favorite,.kirai{
+                    margin-bottom: 5%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    label{
+                        color: $background_main;
+                    }
+
+                    .button-num{
+                        width: 60%;
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        button{
+                            background: inherit;
+                            border: unset;
+                            border-radius: 20%;
+                            cursor: pointer;
+                            color: $background_main;
+                            padding: 3%;
+                            font-size: 1rem;
+    
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                        .active-button{
+                            background: $background_main;
+                            color: #733f05;
+                        }
+                    }
+                }
+            }
+
+            .improve-luck{
+                margin-bottom: 5%;
+
+                span{
+                    color: $background_main;
+                    font-size: 1.2rem;
+                }
+
+                .luck-box{
+                    display: grid;
+                    grid-template-columns: repeat(7,13%);
+                    grid-gap: 6px;
+
+                    .button1,.button2,.button3,.button4,.button5,.button6,.button7{
+                        display: flex;
+                        flex-direction: column;
+                        background: #fff;
+                        border-radius: 10%;
+                        padding: 0 10%;
+                        cursor: pointer;
+
+                        figure{
+                            text-align: center;
+
+                            img{
+                                width: 80%;
+                            }
+                        }
+
+                        label{
+                            text-align: center;
+                            color: $price_color;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .ber-goodluck{
+                position: relative;
+                height: 40%;
+
+                span{
+                    color: $background_main;
+                    font-size: 1.2rem;
+                }
+
+                .goodluck-box{
+                    display: grid;
+                    grid-template-columns: repeat(7,13%);
+                    grid-gap: 6px;
+                    grid-row-gap: 25px;
+                    
+
+                    .button1,.button2,.button3,.button4,.button5,.button6,.button7{
+                        display: flex;
+                        flex-direction: column;
+                        background: #fff;
+                        border-radius: 10%;
+                        padding: 0 10%;
+                        cursor: pointer;
+
+                        figure{
+                            text-align: center;
+
+                            img{
+                                width: 80%;
+                            }
+                        }
+
+                        label{
+                            text-align: center;
+                            color: $price_color;
+                            cursor: pointer;
+                        }
+                    }
+
+                    
+                }  
+                
+                .recomment-num{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 30%;
+                    text-align: center;
+
+                    span{
+                        font-size: 1rem;
+                    }
+
+                    .button{
+                        display: flex;
+                        flex-direction: column;
+                        background: #fff;
+                        border-radius: 10%;
+                        padding: 0 10%;
+                        cursor: pointer;
+                        width: 55%;
+                        margin: 0 auto;
+
+                        figure{
+                            text-align: center;
+
+                            img{
+                                width: 80%;
+                            }
+                        }
+
+                        label{
+                            text-align: center;
+                            color: $price_color;
+                            cursor: pointer;
+                        }
+                    } 
+                }
+            }
+        }  
+    }
+
+    .button-form{
+        text-align: center;
+        margin: 2% 0;
+
+        button{
+            @include button-round();
+            width: 5%;
+            margin: 0 2%;
         }
     }
 }
