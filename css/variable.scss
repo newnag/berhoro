@@ -2,6 +2,7 @@ $background_main : #f3f3f3;
 $main_color : #000;
 $sideMenu_color : #fffdea;
 $price_color : #daaa2c;
+$background_menu: #c19a4b;
 
 // Property ใช้บ่อย //
 @mixin input-round {
@@ -36,5 +37,60 @@ $price_color : #daaa2c;
 
     &:focus{
         outline: none;
+    }
+}
+
+@mixin head_menu_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    margin: 3% 0;
+
+    button{
+        padding: 15%;
+        border: unset;
+        background: linear-gradient(#c5a04f,#8e5415);
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1vw;
+    }
+}
+
+@mixin menu {
+    ul{
+        padding: 1% 3%;
+        background: linear-gradient(#c5a04f,#8e5415);
+        border-radius: 5px;
+
+        li{
+            margin: 5% 0;
+
+            a{
+                display: flex;
+                justify-content: space-between;
+                color: $sideMenu_color;
+                font-size: .8vw;
+
+                span:nth-child(1){
+                    width: 70%;
+                    height: 2.5rem;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                &:hover{
+                    background: #fff;
+                    color: #000;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 15px #0000009e;
+                    padding: 3%;
+                    transition: all .3s;
+                }
+            }
+        }
     }
 }

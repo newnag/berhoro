@@ -8,7 +8,7 @@
 }
 
 body{
-    background: $background_main;
+    background: #fff;
     font-family: 'Sarabun' ;
 }
 
@@ -19,19 +19,27 @@ a{
     color: $main_color;
     text-decoration: none;
 }
+h2{
+    font-size: 1.5vw;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
 }
 
 // -------------------------------- End Zone Tag All ------------------------------ //
 
 // --------------------------------- Head ---------------------------------------- //
 nav{
-    height: 100%;
+    height: 105px;
     z-index: 2;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     
     .topnav{
         background: #fff;
@@ -63,6 +71,10 @@ nav{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
+                a{
+                    font-size: 1vw;
+                }
             }
         }
     }
@@ -381,8 +393,94 @@ nav{
 
         button{
             @include button-round();
-            width: 5%;
+            width: 8%;
             margin: 0 2%;
         }
     }
+}
+
+.content{
+    display: grid;
+    
+    @media screen and (min-width:481px) and (max-width:768px) {
+        grid-template-columns: 25% 73%;
+        grid-gap: 2%;
+    }
+    @media screen and (min-width:1024px) {
+        grid-template-columns: 25% 73%;
+        grid-gap: 2%;
+    }
+
+    .side-menu{
+        .menu-box{
+            .head-text{
+                @include head_menu_text();
+            }
+    
+            .menu{
+                @include menu();
+                ul{
+                    li{
+                        a{
+                            &:hover:before{
+                                content: url(/img/icon/icon.png);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .payment-box{
+            .head-text{
+                @include head_menu_text();
+            }
+
+            figure{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .last-release{
+            .head-text{
+                @include head_menu_text();
+            }
+
+            .menu{
+                @include menu();
+            }
+        }
+        
+        .ems{
+            .head-text{
+                @include head_menu_text();
+            }
+
+            .ems-trackbox{
+                background: linear-gradient(#c5a04f,#8e5415);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 5px;
+                padding: 5%;
+
+                span{
+                    margin: 2% 0;
+                    color: $sideMenu_color;
+                }
+
+                button{
+                    padding: 5% 10%;
+                    border: unset;
+                    background: #fff;
+                    color: $price_color;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+    
 }

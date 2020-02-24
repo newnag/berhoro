@@ -7,6 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Sarabun:400,500,500i,600,700,800&display=swap&subset=thai" rel="stylesheet">
     <link rel="stylesheet" href="css/berstyle.min.css?v=<?=date('his'); ?>">
+    <link rel="stylesheet" href="css/main.min.css?v=<?=date('his'); ?>">
 
     <script src="https://kit.fontawesome.com/37e3c13129.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="plugin/owl.carousel.css">
@@ -42,7 +43,7 @@
                 <div class="left-box">
                     <form action="" class="fortune-box-num">
                         <div class="fortune-num">
-                            <input type="number" name="fortune-num">
+                            <input type="number" name="fortune-num" placeholder="ทำนายเบอร์">
                             <a href=""><button type="submit">ทำนาย</button></a>
                         </div>
                     </form>
@@ -205,6 +206,503 @@
             <div class="button-form">
                 <button>ค้นหา</button>
                 <button>เริ่มใหม่</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content">
+            <div class="side-menu">
+                <div class="menu-box">
+                    <div class="head-text">
+                        <h2>หมวดหมู่เบอร์</h2>
+                        <a href=""><button>ทั้งหมด</button></a>
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลแนะนำ</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์คู่รัก เบอร์ครอบครัว</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลค้าขาย เจ้าของกิจการ เซลล์ ร้านขายของออนไลน์</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์อำนาจวาสนา มังกร เสริมดวง เงินทอง โชคลาบ</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์โฟว เบอร์ฟอง เบอร์ห่าม เบอร์ xyxy</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลเสริมสวย สปา น้ำ-อาหาร เครื่องประดับ เครื่องสำอาง ของสวยงาม เสื้อผ้า หน้าผม</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="payment-box">
+                    <div class="head-text">
+                        <h2>ชำระผ่านบัตรเครดิต</h2>
+                    </div>
+
+                    <figure><a href=""><img src="img/Artboard–14.jpg" alt=""></a></figure>
+                </div>
+
+                <div class="last-release">
+                    <div class="head-text">
+                        <h2>จัดส่งสินค้าล่าสุด</h2>
+                        <a href=""><button>ทั้งหมด</button></a>
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>แอนนี่</span>
+                                    <span>EI630234805TH</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>น้องพลอย</span>
+                                    <span>EI630234805TH</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>น้องสา</span>
+                                    <span>EI630234805TH</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>น้ำฝน</span>
+                                    <span>EI630234805TH</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เจนนี่</span>
+                                    <span>EI630234805TH</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>หนูนา</span>
+                                    <span>EI630234805TH</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ems">
+                    <div class="head-text">
+                        <h2>ติดตามสถานะสินค้า</h2>
+                    </div>
+                    <div class="ems-trackbox">
+                        <span>EMS Tracking THAIPOST</span>
+                        <a href=""><button>Tracking Here</button></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="main-content">
+                <div class="head-text">
+                    <div class="left">
+                        <span>เบอร์ทั้งหมด</span>
+                        <span>30000 เบอร์</span>
+                    </div>
+                    <div class="right">
+                        <div class="network">
+                            <label>เครือข่าย</label>
+                            <select name="" id="">
+                                <option value="">ทั้งหมด</option>
+                            </select>
+                        </div>
+                        <div class="grade">
+                            <label>เกรด</label>
+                            <select name="" id="">
+                                <option value="">ทั้งหมด</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-content">
+                   
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-A+" src="img/grade/Artboard – 25.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-B+" src="img/grade/Artboard – 23.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-B" src="img/grade/Artboard – 22.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 12.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-C+" src="img/grade/Artboard – 21.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 12.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-C" src="img/grade/Artboard – 20.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-D" src="img/grade/Artboard – 19.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-F" src="img/grade/Artboard – 27.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 12.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 12.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
+                        <div class="number">
+                            <a href=""><span>099999999</span></a>
+                            <span class="sum-num">ผลรวม 48</span>
+                        </div>
+                        <div class="detail">
+                            <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                            <div class="price"><span>9000000.-</span></div>
+                            <div class="icon">
+                                <i id="shop" class="fas fa-shopping-basket"></i>
+                                <i id="line" class="fab fa-line"></i>
+                                <i id="tel" class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </section>

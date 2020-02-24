@@ -1,0 +1,122 @@
+@import 'variable';
+
+.main-content{
+    .head-text{
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 0;
+
+        .left{
+            display: flex;
+            justify-content: space-between;
+            width: 25%;
+
+            span{
+                font-size: 1.5rem;
+                font-weight: bolder;
+            }
+            span:nth-child(2){
+                color: #d00808;
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 30%;
+
+            .network,.grade{
+                margin-left: 3%;
+                width: 50%;
+
+                select{
+                    background: linear-gradient(#c5a04f,#8e5415);
+                    border: unset;
+                    border-radius: 5px;
+                    color: #fff;
+                    padding: 6%;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .grid-content{
+        display: grid;
+        margin: 3% 0;
+        grid-template-columns: repeat(1,100%);
+
+        @media screen and (min-width:481px) and (max-width:1023px) {
+            grid-template-columns: repeat(2,49%);
+            grid-gap: 2%;
+        }
+        @media screen and (min-width:1024px) {
+            grid-template-columns: repeat(3,32.66%);
+            grid-gap: 1%;
+            grid-row-gap: 10px;
+        }
+
+        .box{
+            display: grid;
+            grid-template-columns: 20% 50% 30%;
+            padding: 4% 0;
+            border-bottom: 1px solid gray;
+
+            .logo{
+                figure{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .number{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 10%;
+
+                span:nth-child(1){
+                    font-size: 1.8vw;
+                    font-weight: bolder;
+                }
+                .sum-num{
+                    color: gray;
+                    font-size: .8vw;
+                }
+            }
+
+            .detail{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .rank{
+                    figure{
+                        text-align: end;
+                    }
+                }
+
+                .price{
+                    color: $price_color;
+                    font-size: 1.2vw;
+                    text-align: end;
+                }
+
+                .icon{
+                    color: gray;
+                    font-size: 1.2vw;
+                    display: flex;
+                    justify-content: space-evenly;
+                    
+                    i{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
