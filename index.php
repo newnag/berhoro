@@ -417,8 +417,178 @@
                     </div>
                     <div class="ems-trackbox">
                         <span>EMS Tracking THAIPOST</span>
-                        <a href=""><button>Tracking Here</button></a>
+                        <button>Tracking Here</button>
                     </div>
+                </div>
+
+                <div class="article">
+                    <div class="head-text">
+                        <h2>บทความ</h2>
+                        <a href=""><button>ทั้งหมด</button></a>
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <figure><img src="img/view1.jpg" alt=""></figure>
+                                    <span>พลังมหานิยมเสน่ห์เหตุตา</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <figure><img src="img/view1.jpg" alt=""></figure>
+                                    <span>พลังมหานิยมเสน่ห์เหตุตา</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <figure><img src="img/view2.jpg" alt=""></figure>
+                                    <span>พลังมหานิยมเสน่ห์เหตุตา</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <figure><img src="img/view1.jpg" alt=""></figure>
+                                    <span>พลังมหานิยมเสน่ห์เหตุตา</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <figure><img src="img/view2.jpg" alt=""></figure>
+                                    <span>พลังมหานิยมเสน่ห์เหตุตา</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <figure><img src="img/view1.jpg" alt=""></figure>
+                                    <span>พลังมหานิยมเสน่ห์เหตุตา</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sum-nubmer">
+                    <div class="head-text">
+                        <h2>ผลรวมเบอร์</h2>
+                        <a href=""><button>ทั้งหมด</button></a>
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลแนะนำ</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์คู่รัก เบอร์ครอบครัว</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลค้าขาย เจ้าของกิจการ เซลล์ ร้านขายของออนไลน์</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์อำนาจวาสนา มังกร เสริมดวง เงินทอง โชคลาบ</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์โฟว เบอร์ฟอง เบอร์ห่าม เบอร์ xyxy</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลเสริมสวย สปา น้ำ-อาหาร เครื่องประดับ เครื่องสำอาง ของสวยงาม เสื้อผ้า หน้าผม</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="provicy">
+                    <a href=""><figure><img src="img/Artboard – 15.jpg" alt=""></figure></a>
+                    <a href=""><figure><img src="img/Artboard – 16.jpg" alt=""></figure></a>
+                    <a href=""><figure><img src="img/Artboard – 17.jpg" alt=""></figure></a>
+                    <a href=""><figure><img src="img/Artboard – 18.jpg" alt=""></figure></a>
                 </div>
                 
             </div>
@@ -701,14 +871,158 @@
                             </div>
                         </div>
                     </div>
+
+                    <?php for($i=1;$i<=84;$i++): ?>
+                        <div class="box">
+                            <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
+                            <div class="number">
+                                <a href=""><span>099999999</span></a>
+                                <span class="sum-num">ผลรวม 48</span>
+                            </div>
+                            <div class="detail">
+                                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                                <div class="price"><span>9000000.-</span></div>
+                                <div class="icon">
+                                    <i id="shop" class="fas fa-shopping-basket"></i>
+                                    <i id="line" class="fab fa-line"></i>
+                                    <i id="tel" class="fas fa-mobile-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endfor; ?>
                     
+                </div>
+
+                <div class="pagination">
+                    <a href="" class="current">First Page</a>
+                    <a href="" class="current"><</a>
+                    <a href="" class="current">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">6</a>
+                    <a href="">7</a>
+                    <a href="">8</a>
+                    <a href="">9</a>
+                    <a href="">10</a>
+                    <a href="">11</a>
+                    <a href="">12</a>
+                    <a href="">...</a>
+                    <a href="">40</a>
+                    <a href="">></a>
+                    <a href="">Last Page</a>
+                </div>
+            </div>   
+        </div>
+
+        <div class="review">
+            <div class="review-box container">
+                <div class="head-text">
+                    <h2>รีวิว</h2>
+                    <a href=""><button>ทั้งหมด</button></a>
+                </div>
+
+                <div class="slide-review owl-carousel">
+                    <figure>
+                        <img src="img/review1.jpg" alt="">
+                        <div class="hover-img">
+                            <i class="fas fa-eye"></i>
+                            <span>view</span>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/review2.jpg" alt="">
+                        <div class="hover-img">
+                            <i class="fas fa-eye"></i>
+                            <span>view</span>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/review3.jpg" alt="">
+                        <div class="hover-img">
+                            <i class="fas fa-eye"></i>
+                            <span>view</span>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/review4.jpg" alt="">
+                        <div class="hover-img">
+                            <i class="fas fa-eye"></i>
+                            <span>view</span>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/review5.jpg" alt="">
+                        <div class="hover-img">
+                            <i class="fas fa-eye"></i>
+                            <span>view</span>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/review6.jpg" alt="">
+                        <div class="hover-img">
+                            <i class="fas fa-eye"></i>
+                            <span>view</span>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/review7.jpg" alt="">
+                        <div class="hover-img">
+                            <i class="fas fa-eye"></i>
+                            <span>view</span>
+                        </div>
+                    </figure>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="container" style="margin-bottom: 2%">
+        <div class="logo">
+            <figure><img src="img/logo/logo.png" alt=""></figure>
+            <a href="">http://www.berhoro.com</a>
+        </div>
+
+        <div class="certificate">
+            <figure><img src="img/logo/Artboard – 28.jpg" alt=""></figure>
+            <figure><img src="img/logo/Artboard – 29.jpg" alt=""></figure>
+        </div>
+
+        <div class="contact">
+            <h3>ติดต่อเรา</h3>
+            <p class="address">
+                99/444 กาญจนาภิเษก แขวงคันนายาว เขตขันนายาว กรุงเทพมหานคร 10230
+            </p>
+            <p class="phone">Phone: 063289555</p>
+            <p class="line">Line ID: @berhoro</p>
+        </div>
+
+        <div class="service">
+            <h3>บริการ</h3>
+            <ul>
+                <li><a href="">ทำนายเบอร์</a></li>
+                <li><a href="">วิธีการสั่งซื้อเบอร์</a></li>
+                <li><a href="">แจ้งชำระเงิน</a></li>
+                <li><a href="">เช็คการจัดส่ง</a></li>
+                <li><a href="">บทความ</a></li>
+            </ul>
+        </div>
+
+        <div class="other-text">
+            <h3>Lorem Ipsum is simply dummy</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        </div>
+    </footer>
+
+    <div class="copy-right">
+        <p>&copy; copyright 2020 by <a href="https://www.wynnsoft-solution.com/">wynnsoft-solution.com</a></p>
+    </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="plugin/owl.carousel.js"></script>
     <script src="js/slider.js?v=<?=date('his'); ?>"></script>
+    <script src="js/app.js?v=<?=date('his'); ?>"></script>
 </body>
 </html>

@@ -467,8 +467,9 @@ nav{
                 padding: 5%;
 
                 span{
-                    margin: 2% 0;
+                    margin: 4% 0;
                     color: $sideMenu_color;
+                    font-size: 1.2vw;
                 }
 
                 button{
@@ -477,10 +478,253 @@ nav{
                     background: #fff;
                     color: $price_color;
                     border-radius: 30px;
+                    cursor: pointer;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .article{
+            .head-text{
+                @include head_menu_text();
+            }
+            .menu{
+                @include menu();
+                a{
+                    justify-content: unset!important;
+                    align-items: center;
+
+                    figure{
+                        @media screen and (min-width:481px) and (max-width:768px) {
+                            width: 20%;
+                            height: 2rem;
+                        }
+                        @media screen and (min-width:769px) and (max-width:1024px) {
+                            width: 10%;
+                            height: 2rem;
+                        }
+                        @media screen and (min-width:1025px) {
+                            width: 10%;
+                            height: 2rem;
+                        }
+    
+                        img{
+                            max-width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    span{
+                        margin-left: 5%;
+                    }
+                }
+            }
+        }
+
+        .sum-nubmer{
+            .head-text{
+                @include head_menu_text();
+            }
+
+            .menu{
+                @include menu();
+                ul{
+                    li{
+                        a{
+                            &:hover:before{
+                                content: url(/img/icon/icon.png);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .provicy{
+            figure{
+                margin: 5% 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }  
+}
+.review{
+    margin: 3% 0;
+    background: linear-gradient(#c5a04f,#8e5415);
+
+    .review-box{
+        .head-text{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding: 1% 0;
+
+            h2{
+                color: #fff;
+            }
+
+            a{
+                position: absolute;
+                right: 0;
+
+                button{
+                    padding: 10%;
+                    border-radius: 5px;
+                    border: unset;
+                    cursor: pointer;
+                    font-size: .8vw;
+                }
+            }
+        }
+
+        .slide-review{
+            padding: 5% 2%;
+
+            figure{
+                height: 300px;
+                position: relative;
+                cursor: pointer;
+                
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .hover-img{
+                    display: none;
+                    opacity: 0;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background: #00000073;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+
+                    i,span{
+                        color: #fff;
+                        font-size: 2vw;
+                    }
+                }
+
+                &:hover .hover-img{
+                    display: flex;
+                    opacity: 1;
+                    transition: all .5s;
+                }
+            }
+
+            .owl-stage-outer{
+                z-index: 1;
+            }
+
+            .owl-nav{
+                display: flex !important;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                left: 0;
+                justify-content: space-between;
+
+                button{
+                    &:focus{
+                        outline: none;
+                    }
+                    span{
+                        font-size: 2vw;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    display: grid;
+
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        grid-template-columns: 15% 20% 20% 25% 20%;
+        padding: 0 2%;
+    }
+    @media screen and (min-width:1024px) {
+        grid-template-columns: 15% 20% 20% 25% 20%;
+        padding: 0 2%;
+    }
+    
+    .logo{
+        figure{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    .certificate{ 
+        text-align: center;
+
+        figure{
+            margin: 2% 0;
+
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    .contact{
+        margin: 0 10%;
+        h3{
+            margin: 4% 0;
+        }
+        .address{
+            margin: 2% 0;
+        }
+    }
+
+    .service{
+        margin: 0 auto;
+
+        h3{
+            margin: 8% 0;
+        }
+        ul{
+            margin: 4% 0;
+            li{
+                a{
+
                 }
             }
         }
     }
 
-    
+    .other-text{
+        h3,p{
+            margin: 4% 0;
+        }
+        h3{
+            height: 24px;
+            overflow: hidden;
+        }
+    }
+}
+
+.copy-right{
+    background: linear-gradient(#c5a04f,#8e5415);
+
+    p{
+        color: #ffffff44;
+        text-align: center;
+        a{
+            color: inherit;
+        }
+    }
 }
