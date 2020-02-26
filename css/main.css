@@ -19,7 +19,7 @@
 }
 
 .main-content .head-text .left span {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: bolder;
 }
 
@@ -37,7 +37,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
+  width: 35%;
 }
 
 .main-content .head-text .right .network, .main-content .head-text .right .grade {

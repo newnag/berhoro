@@ -30,7 +30,7 @@ $('.slide-review').owlCarousel({
             nav:true,
         },
         600:{
-            items:5,
+            items:4,
             nav:true,
         },
         1000:{

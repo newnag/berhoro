@@ -34,15 +34,15 @@
                 <div class="search-num">
                     <label>ค้นหาเบอร์</label>
                     <input type="number" class="search-box-num" value="0">
-                    <input type="number" class="search-box-num"">
-                    <input type="number" class="search-box-num">
-                    <input type="number" class="search-box-num">
-                    <input type="number" class="search-box-num">
-                    <input type="number" class="search-box-num">
-                    <input type="number" class="search-box-num">
-                    <input type="number" class="search-box-num">
-                    <input type="number" class="search-box-num">
-                    <input type="number" class="search-box-num">
+                    <input type="tel" class="search-box-num" maxlength="1">
+                    <input type="tel" class="search-box-num" maxlength="1">
+                    <input type="tel" class="search-box-num" maxlength="1">
+                    <input type="tel" class="search-box-num" maxlength="1">
+                    <input type="tel" class="search-box-num" maxlength="1">
+                    <input type="tel" class="search-box-num" maxlength="1">
+                    <input type="tel" class="search-box-num" maxlength="1">
+                    <input type="tel" class="search-box-num" maxlength="1">
+                    <input type="tel" class="search-box-num" maxlength="1">
                 </div>
 
                 <div class="cate-num">
@@ -86,9 +86,9 @@
 
                 <div class="range-price">
                     <label>ช่วงราคา</label>
-                    <input type="number" class="low" placeholder="9,999,999">
+                    <input type="tel" class="low" placeholder="9,999,999" maxlength="7">
                     <div class="keed"></div>
-                    <input type="number" class="high" placeholder="9,999,999">
+                    <input type="tel" class="high" placeholder="9,999,999" maxlength="7">
                     <label>บาท</label>
                 </div>
             </div>
@@ -100,12 +100,12 @@
                         <div class="button-num">
                             <button>0</button>
                             <button>1</button>
-                            <button class="active-button">2</button>
+                            <button>2</button>
                             <button>3</button>
                             <button>4</button>
                             <button>5</button>
                             <button>6</button>
-                            <button class="active-button">7</button>
+                            <button>7</button>
                             <button>8</button>
                             <button>9</button>
                         </div> 
@@ -116,12 +116,12 @@
                         <div class="button-num">
                             <button>0</button>
                             <button>1</button>
-                            <button class="active-button">2</button>
+                            <button>2</button>
                             <button>3</button>
                             <button>4</button>
                             <button>5</button>
                             <button>6</button>
-                            <button class="active-button">7</button>
+                            <button>7</button>
                             <button>8</button>
                             <button>9</button>
                         </div> 

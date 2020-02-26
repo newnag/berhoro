@@ -12,7 +12,7 @@
             width: 25%;
 
             span{
-                font-size: 1.5rem;
+                font-size: 1.5vw;
                 font-weight: bolder;
             }
             span:nth-child(2){
@@ -23,7 +23,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            width: 30%;
+            width: 35%;
 
             .network,.grade{
                 margin-left: 3%;

@@ -95,6 +95,13 @@
                     </figure>
                 </div>
             </div>
+
+            <div class="show-review">
+                <div class="box-show">
+                    <figure><img src="" alt=""></figure>
+                    <div class="close-button"><i class="fas fa-times-circle"></i></div>
+                </div>
+            </div>
         </div>
     </section>
 

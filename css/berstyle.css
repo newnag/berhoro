@@ -192,6 +192,7 @@ nav .topnav .logo-nav figure img {
   height: 3rem;
   border-radius: 20px;
   width: 100%;
+  padding: 0 2%;
 }
 
 .search-box .box .left-box .cate-num select:focus {
@@ -216,6 +217,7 @@ nav .topnav .logo-nav figure img {
   height: 3rem;
   border-radius: 20px;
   width: 100%;
+  padding: 0 2%;
 }
 
 .search-box .box .left-box .sum-network .sum-num select:focus {
@@ -230,6 +232,7 @@ nav .topnav .logo-nav figure img {
   height: 3rem;
   border-radius: 20px;
   width: 100%;
+  padding: 0 2%;
 }
 
 .search-box .box .left-box .sum-network .network select:focus {
@@ -367,8 +370,8 @@ nav .topnav .logo-nav figure img {
 .search-box .box .right-box .improve-luck .luck-box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (13%)[7];
-      grid-template-columns: repeat(7, 13%);
+  -ms-grid-columns: (12.7%)[7];
+      grid-template-columns: repeat(7, 12.7%);
   grid-gap: 6px;
 }
 
@@ -400,6 +403,11 @@ nav .topnav .logo-nav figure img {
   cursor: pointer;
 }
 
+.search-box .box .right-box .improve-luck .luck-box .active {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 .search-box .box .right-box .ber-goodluck {
   position: relative;
   height: 40%;
@@ -411,26 +419,18 @@ nav .topnav .logo-nav figure img {
 }
 
 .search-box .box .right-box .ber-goodluck .goodluck-box {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (13%)[7];
-      grid-template-columns: repeat(7, 13%);
-  grid-gap: 6px;
-  grid-row-gap: 25px;
+  display: block;
+  float: left;
+  width: 100%;
 }
 
 .search-box .box .right-box .ber-goodluck .goodluck-box .button1, .search-box .box .right-box .ber-goodluck .goodluck-box .button2, .search-box .box .right-box .ber-goodluck .goodluck-box .button3, .search-box .box .right-box .ber-goodluck .goodluck-box .button4, .search-box .box .right-box .ber-goodluck .goodluck-box .button5, .search-box .box .right-box .ber-goodluck .goodluck-box .button6, .search-box .box .right-box .ber-goodluck .goodluck-box .button7 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  cursor: pointer;
+  display: inline-block;
   background: #fff;
   border-radius: 10%;
-  padding: 0 10%;
-  cursor: pointer;
+  width: 12.7%;
+  margin: 4% 1px;
 }
 
 .search-box .box .right-box .ber-goodluck .goodluck-box .button1 figure, .search-box .box .right-box .ber-goodluck .goodluck-box .button2 figure, .search-box .box .right-box .ber-goodluck .goodluck-box .button3 figure, .search-box .box .right-box .ber-goodluck .goodluck-box .button4 figure, .search-box .box .right-box .ber-goodluck .goodluck-box .button5 figure, .search-box .box .right-box .ber-goodluck .goodluck-box .button6 figure, .search-box .box .right-box .ber-goodluck .goodluck-box .button7 figure {
@@ -448,11 +448,9 @@ nav .topnav .logo-nav figure img {
 }
 
 .search-box .box .right-box .ber-goodluck .recomment-num {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 30%;
-  text-align: center;
+  display: inline-block;
+  width: 27%;
+  margin: 3% 0;
 }
 
 .search-box .box .right-box .ber-goodluck .recomment-num span {
@@ -1057,6 +1055,44 @@ nav .topnav .logo-nav figure img {
 .review .review-box .slide-review .owl-nav button span {
   font-size: 2vw;
   color: #fff;
+}
+
+.review .show-review {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: #0000009a;
+}
+
+.review .show-review .box-show {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  height: 100%;
+}
+
+.review .show-review .box-show figure {
+  height: 100%;
+  text-align: center;
+}
+
+.review .show-review .box-show figure img {
+  max-width: 100%;
+  height: 500px;
+}
+
+.review .show-review .box-show .close-button {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2vw;
 }
 
 footer {
