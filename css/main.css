@@ -1,3 +1,9 @@
+@media screen and (max-width: 767px) {
+  .main-content {
+    grid-area: content;
+  }
+}
+
 .main-content .head-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,12 +21,31 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 25%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 481px) {
+  .main-content .head-text .left {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    width: 25%;
+  }
 }
 
 .main-content .head-text .left span {
-  font-size: 1.5vw;
+  font-size: 1rem;
   font-weight: bolder;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content .head-text .left span {
+    font-size: 1.5rem;
+  }
 }
 
 .main-content .head-text .left span:nth-child(2) {
@@ -37,7 +62,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 35%;
+  width: 50%;
+}
+
+@media screen and (min-width: 481px) {
+  .main-content .head-text .right {
+    width: 35%;
+  }
 }
 
 .main-content .head-text .right .network, .main-content .head-text .right .grade {
@@ -66,7 +97,7 @@
       grid-template-columns: repeat(1, 100%);
 }
 
-@media screen and (min-width: 481px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .main-content .grid-content {
     -ms-grid-columns: (49%)[2];
         grid-template-columns: repeat(2, 49%);
@@ -112,13 +143,25 @@
 }
 
 .main-content .grid-content .box .number span:nth-child(1) {
-  font-size: 1.8vw;
+  font-size: 1.8rem;
   font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-content .grid-content .box .number span:nth-child(1) {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content .grid-content .box .number span:nth-child(1) {
+    font-size: 1.8vw;
+  }
 }
 
 .main-content .grid-content .box .number .sum-num {
   color: gray;
-  font-size: .8vw;
+  font-size: .8rem;
 }
 
 .main-content .grid-content .box .detail {
@@ -138,15 +181,19 @@
   text-align: end;
 }
 
+.main-content .grid-content .box .detail .rank figure img {
+  max-width: 100%;
+}
+
 .main-content .grid-content .box .detail .price {
   color: #daaa2c;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   text-align: end;
 }
 
 .main-content .grid-content .box .detail .icon {
   color: gray;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

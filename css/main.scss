@@ -1,6 +1,10 @@
 @import 'variable';
 
-.main-content{
+.main-content{ 
+    @media screen and (max-width:767px) {
+        grid-area: content;
+    }
+
     .head-text{
         display: flex;
         justify-content: space-between;
@@ -9,11 +13,20 @@
         .left{
             display: flex;
             justify-content: space-between;
-            width: 25%;
+            flex-direction: column;
+
+            @media screen and (min-width:481px) {
+                flex-direction: unset;
+                width: 25%;
+            }
 
             span{
-                font-size: 1.5vw;
+                font-size: 1rem;
                 font-weight: bolder;
+
+                @media screen and (min-width:1024px) {
+                    font-size: 1.5rem;
+                }
             }
             span:nth-child(2){
                 color: #d00808;
@@ -23,7 +36,11 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            width: 35%;
+            width: 50%;
+
+            @media screen and (min-width:481px) {
+                width: 35%;
+            }
 
             .network,.grade{
                 margin-left: 3%;
@@ -47,9 +64,9 @@
     .grid-content{
         display: grid;
         margin: 3% 0;
-        grid-template-columns: repeat(1,100%);
+        grid-template-columns: repeat(1,100%);  
 
-        @media screen and (min-width:481px) and (max-width:1023px) {
+        @media screen and (min-width:768px) and (max-width:1023px) {
             grid-template-columns: repeat(2,49%);
             grid-gap: 2%;
             grid-row-gap: 10px;
@@ -81,12 +98,19 @@
                 padding: 0 10%;
 
                 span:nth-child(1){
-                    font-size: 1.8vw;
+                    font-size: 1.8rem;
                     font-weight: bolder;
+
+                    @media screen and (min-width:768px) and (max-width:1023px) {
+                        font-size: 1.5rem;
+                    }
+                    @media screen and (min-width:1024px) {
+                        font-size: 1.8vw;
+                    }
                 }
                 .sum-num{
                     color: gray;
-                    font-size: .8vw;
+                    font-size: .8rem;
                 }
             }
 
@@ -98,18 +122,25 @@
                 .rank{
                     figure{
                         text-align: end;
+
+                        img{
+                            max-width: 100%;
+                        }
                     }
                 }
 
                 .price{
                     color: $price_color;
-                    font-size: 1.2vw;
+                    font-size: 1.2rem;
                     text-align: end;
+
+                   
+
                 }
 
                 .icon{
                     color: gray;
-                    font-size: 1.2vw;
+                    font-size: 1.2rem;
                     display: flex;
                     justify-content: space-evenly;
                     
