@@ -63,6 +63,8 @@ nav{
         }
 
         .nav-menu{
+            display: none;
+
             @media screen and (min-width:1025px) {
                 width: 50%;
                 display: flex;
@@ -78,38 +80,56 @@ nav{
 }
 
 .slider{
-    @media screen and (min-width:1025px) {
-        // position: absolute!important;
-        // top: 5%;
+    @media screen and (max-width:480px) {
+        padding-top: 75px;
     } 
 }
 
+
 .search-box{
-    background-image: url(/img/BG.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(#c5a04f,#8e5415);
+
+    @media screen and (min-width:868px){
+        background-image: url(/img/BG.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
     @media screen and (min-width:1025px) {
        width: 100%;
        height: 100%;
-       padding: 2% 0;
+       //padding: 2% 0;
+       border-radius: 25px;
     } 
 
     h2{
         text-align: center;
         color: #fff;
-        margin-bottom: 3%;
+        padding: 2% 0;
     }
 
     .box{
         display: flex;
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
+        flex-direction: column;
+
+        @media screen and (min-width:481px) {
+            width: 70%;
+            flex-direction: unset;
+        }
 
         .left-box{
-            width: 50%;
-            padding: 0 3%;
-            border-right: 1px solid #fff;
+            width: 100%;
+            padding: 3% 0;
+            border-bottom: 1px solid #fff;
+            
+
+            @media screen and (min-width:481px) {
+                width: 50%;
+                padding: 0 3%;
+                border-right: 1px solid #fff;
+            }
 
             .fortune-num{
                 width: 100%;
@@ -150,85 +170,107 @@ nav{
                 }
             }
 
-            .cate-num{
-                margin: 5% 0;
+            .open-more-filter{
+                color: #fff;
 
-                select{
-                    @include select-round();
-                    width: 100%;
-                    padding: 0 2%;
-                } 
+                @media screen and (min-width:769px) {
+                    display: none;
+                }
             }
 
-            .sum-network{
-                display: flex;
-                justify-content: space-between;
-                margin: 5% 0;
+            .more-filter{
+                @media screen and (max-width:768px) {
+                    display: none;
+                }
 
-                .sum-num{
-                    width: 48%;
-
+                .cate-num{
+                    margin: 5% 0;
+    
                     select{
                         @include select-round();
                         width: 100%;
                         padding: 0 2%;
+                    } 
+                }
+    
+                .sum-network{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 5% 0;
+    
+                    .sum-num{
+                        width: 48%;
+    
+                        select{
+                            @include select-round();
+                            width: 100%;
+                            padding: 0 2%;
+                        }
+                    }
+    
+                    .network{
+                        width: 48%;
+    
+                        select{
+                            @include select-round();
+                            width: 100%;
+                            padding: 0 2%;
+                        }
                     }
                 }
-
-                .network{
-                    width: 48%;
-
-                    select{
-                        @include select-round();
-                        width: 100%;
-                        padding: 0 2%;
+    
+                .search-some{
+                    margin: 5% 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+    
+                    label{
+                        color: $background_main;
+                        
+                    }
+                    input{
+                        @include input-round();
+                        width: 70%;
+                    }
+                }
+    
+                .range-price{
+                    margin: 5% 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    label{
+                        color: $background_main;
+                    }
+    
+                    .keed{
+                        border-top: 2px solid $background_main;
+                        width: 5%;
+                        margin: auto 0;
+                    }
+    
+                    input{
+                        width: 25%;
+                        text-align: center;
+                        @include input-round;
                     }
                 }
             }
 
-            .search-some{
-                margin: 5% 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                label{
-                    color: $background_main;
-                    
-                }
-                input{
-                    @include input-round();
-                    width: 70%;
-                }
-            }
-
-            .range-price{
-                margin: 5% 0;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                label{
-                    color: $background_main;
-                }
-
-                .keed{
-                    border-top: 2px solid $background_main;
-                    width: 5%;
-                    margin: auto 0;
-                }
-
-                input{
-                    width: 25%;
-                    text-align: center;
-                    @include input-round;
-                }
-            }
+            
         }
         .right-box{
-            width: 50%;
-            border-left: 1px solid #fff;
-            padding: 0 5%;
+            width: 100%;
+            padding: 3% 0;
+            border-bottom: 1px solid #fff;
+
+            @media screen and (min-width:481px) {
+                width: 50%;
+                padding: 0 3%;
+                border-right: 1px solid #fff;
+            }
 
             .favorite-num{
                 .favorite,.kirai{
@@ -318,27 +360,29 @@ nav{
                 }
 
                 .goodluck-box{
-                    // display: grid;
-                    // grid-template-columns: repeat(7,12.7%);
-                    // grid-gap: 6px;
-                    // grid-row-gap: 25px;
-                    display: block;
-                    float: left;
-                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(7,12.7%);
+                    grid-gap: 6px;
+                    grid-row-gap: 25px;
+
+                    // display: block;
+                    // float: left;
+                    // width: 100%;
                     
 
                     .button1,.button2,.button3,.button4,.button5,.button6,.button7{
-                        // display: flex;
-                        // flex-direction: column;
-                        // background: #fff;
-                        // border-radius: 10%;
-                        // padding: 0 10%;
-                        cursor: pointer;
-                        display: inline-block;
+                        display: flex;
+                        flex-direction: column;
                         background: #fff;
                         border-radius: 10%;
-                        width: 12.7%;
-                        margin: 4% 1px;
+                        padding: 0 10%;
+
+                        // cursor: pointer;
+                        // display: inline-block;
+                        // background: #fff;
+                        // border-radius: 10%;
+                        // width: 12.7%;
+                        // margin: 4% 1px;
 
                         figure{
                             text-align: center;
@@ -362,9 +406,10 @@ nav{
                     // bottom: 0;
                     // width: 30%;
                     // text-align: center;
-                    display: inline-block;
-                    width: 27%;
-                    margin: 3% 0;
+
+                    // display: inline-block;
+                    // width: 25%;
+                    // text-align: center;
 
                     span{
                         font-size: 1rem;
@@ -377,11 +422,13 @@ nav{
                         border-radius: 10%;
                         padding: 0 10%;
                         cursor: pointer;
-                        width: 55%;
+                        width: 100%;
                         margin: 0 auto;
 
                         figure{
                             text-align: center;
+                            max-width: 100%;
+                            height: 75%;
 
                             img{
                                 width: 80%;
@@ -401,12 +448,18 @@ nav{
 
     .button-form{
         text-align: center;
-        margin: 2% 0;
+        padding: 2% 0;
 
         button{
-            @include button-round();
-            width: 8%;
+            width: 20%;
             margin: 0 2%;
+
+            @media screen and (min-width:769px) {
+                width: 8%;
+            }
+
+            @include button-round();
+            
         }
     }
 }
@@ -766,7 +819,12 @@ footer{
     }
 
     .contact{
-        margin: 0 10%;
+        margin: 0 20%;
+
+        @media screen and (min-width:481px) {
+            margin: 0 10%;
+        }
+
         h3{
             margin: 4% 0;
         }
@@ -776,14 +834,14 @@ footer{
     }
 
     .service{
-        margin: 0 10%;
+        margin: 0 20%;
 
-        @media screen and (min-width:1024px) {
-            margin: 0 auto;
+        @media screen and (min-width:481px) {
+            margin: 0 10%;
         }
 
         h3{
-            margin: 8% 0;
+            margin: 3% 0;
         }
         ul{
             margin: 4% 0;
@@ -796,7 +854,9 @@ footer{
     }
 
     .other-text{
-        @media screen and (max-width:480px) {
+        margin: 0 20%;
+
+        @media screen and (min-width:481px) {
             margin: 0 10%;
         }
 

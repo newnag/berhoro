@@ -20,7 +20,19 @@ $('.favorite-num .kirai .button-num button').click(function(){
     $(this).toggleClass('active-button');
 });
 
-// เลือกเสริมดวง
+// ---------------------เลือกเสริมดวง---------------------- //
 $('.improve-luck .luck-box div').click(function(){
     $(this).toggleClass('active');
+});
+
+// -----------------กดสลับค้นหาอย่างละเอียด---------------- //
+$('.open-more-filter').click(function(){
+    if($('.more-filter').is(":visible")){
+        $('.more-filter').slideUp();
+        $(this).text("ค้นหาแบบละเอียด");
+    }
+    else{
+        $('.more-filter').slideDown();
+        $(this).text("ย่อลง");
+    }
 });
