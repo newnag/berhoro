@@ -45,6 +45,14 @@ $('.nav-menu .buttonX').click(function(){
     $(this).parent().slideUp();
 });
 
+// ----------------- ปุ่มหมวดหมู่เบอร์มือถือ ----------------- //
+$('.nav-menu .cate-mobile a').click(function(){
+    $('.cateMobile').css("left","0");
+});
+$('.nav-menu .cate-mobile .cateMobile .hide-button').click(function(){
+    $(this).parent().css("left","-100%");
+});
+
 // ------------------ เลื่อนช่องค้นหาเบอร์ ----------------- //
 $('.search-num input').keyup(function(e){
     if(e.keyCode == 8){
@@ -77,6 +85,7 @@ function getFav_hate(Class,num){
         data.removeClass('active-button');
     }
 }
+
 $('.favorite .button-num button').click(function(){
     let data1 = $(this).attr('data-favnum');
     getFav_hate("favorite",data1);
@@ -85,20 +94,3 @@ $('.kirai .button-num button').click(function(){
     let data1 = $(this).attr('data-favnum');
     getFav_hate("kirai",data1);
 });
-
-// $('.favorite .button-num button').click(function(){
-//     let data1 = $(this).attr('data-favnum');
-//     let data2 = $('.kirai .button-num button[data-favnum='+ data1 +']');
-
-//     if(data2.hasClass('active-button')){
-//         data2.removeClass('active-button');
-//     }
-// });
-// $('.kirai .button-num button').click(function(){
-//     let data1 = $(this).attr('data-favnum');
-//     let data2 = $('.favorite .button-num button[data-favnum='+ data1 +']');
-    
-//     if(data2.hasClass('active-button')){
-//         data2.removeClass('active-button');
-//     }
-// });

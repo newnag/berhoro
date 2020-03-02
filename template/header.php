@@ -4,6 +4,20 @@
             <div class="logo-nav"><figure><a href="/home"><img src="img/logo/logo.png" alt=""></a></figure></div>
 
             <ul class="nav-menu">
+                <li class="cate-mobile">
+                    <a href="#">เมนูหมวดหมู่เบอร์</a>
+                    <ul class="cateMobile">
+                        <?php for($i=1;$i<=10;$i++): ?>
+                            <li>
+                                <a href="">
+                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>200</span>
+                                </a>
+                            </li>
+                        <?php endfor; ?>
+                        <div class="hide-button"><i class="fas fa-angle-double-left"></i></div>
+                    </ul>
+                </li>
                 <li><a href="">ทำนายเบอร์</a></li>
                 <li><a href="">ค้นหาเบอร์จากความหมาย</a></li>
                 <li><a href="">บทความ</a></li>
