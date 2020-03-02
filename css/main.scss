@@ -8,7 +8,11 @@
     .head-text{
         display: flex;
         justify-content: space-between;
-        margin: 1% 0;
+        margin: 5% 0;
+
+        @media screen and (min-width:481px) {
+            margin: 1% 0;
+        }
 
         .left{
             display: flex;
