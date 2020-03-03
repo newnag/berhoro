@@ -28,10 +28,15 @@ input::-webkit-inner-spin-button {
     width: 90%;
     margin: 0 auto;
 }
+input,button,textarea{
+    &:focus{
+        outline: none;
+    }
+}
 
 // -------------------------------- End Zone Tag All ------------------------------ //
 
-// --------------------------------- Head ---------------------------------------- //
+// --------------------------------- Head ----------------------------------------- //
 nav{
     height: 105px;
     z-index: 2;
@@ -184,7 +189,6 @@ nav{
     } 
 }
 
-
 .search-box{
     background: linear-gradient(#c5a04f,#8e5415);
 
@@ -213,7 +217,11 @@ nav{
         margin: 0 auto;
         flex-direction: column;
 
-        @media screen and (min-width:481px) {
+        @media screen and (min-width:481px) and (max-width:768px) {
+            width: 95%;
+            flex-direction: unset;
+        }
+        @media screen and (min-width:769px) {
             width: 70%;
             flex-direction: unset;
         }
@@ -510,6 +518,11 @@ nav{
                     // display: inline-block;
                     // width: 25%;
                     // text-align: center;
+                    width: 55px;
+
+                    @media screen and (min-width:1600px) {
+                        width:unset
+                    }
 
                     span{
                         font-size: 1rem;
@@ -564,6 +577,7 @@ nav{
     }
 }
 
+// ---------------------------------- content -------------------------------------- //
 .content{
     display: grid;
     grid-template-areas: 'content' 'sidebar';
@@ -572,8 +586,7 @@ nav{
         width: 95%!important;
     }
     @media screen and (min-width:768px) and (max-width:1023px) {
-        grid-template-columns: 25% 73%;
-        grid-gap: 2%;
+        grid-template-columns: 100%;
     }
     @media screen and (min-width:1024px) {
         grid-template-columns: 25% 73%;
@@ -581,7 +594,7 @@ nav{
     }
 
     .side-menu{
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:768px) {
             grid-area: sidebar;
         }
 
@@ -650,7 +663,7 @@ nav{
                     color: $sideMenu_color;
                     font-size: 1.2rem;
 
-                    @media screen and (min-width:768px) and (max-width:1023px) {
+                    @media screen and (min-width:769px) and (max-width:1023px) {
                         font-size: .8rem;
                     }
                 }
@@ -665,6 +678,10 @@ nav{
 
                     &:focus{
                         outline: none;
+                    }
+
+                    @media screen and (min-width:481px) and (max-width:768px) {
+                        font-size:1.2rem
                     }
                 }
             }
@@ -684,7 +701,7 @@ nav{
                         width: 20%;
 
                         @media screen and (min-width:481px) and (max-width:768px) {
-                            width: 20%;
+                            height: 5rem;
                         }
                         @media screen and (min-width:769px) and (max-width:1024px) {
                             width: 15%;
@@ -732,6 +749,13 @@ nav{
         }
 
         .provicy{
+            @media screen and (max-width:768px) {
+                display: grid;
+                grid-template-columns: repeat(2,49%);
+                grid-gap: 1%;
+                grid-row-gap: 5px;
+            }
+
             figure{
                 margin: 5% 0;
                 img{
@@ -743,6 +767,131 @@ nav{
     }  
 }
 
+.about-content{
+    .head-text{
+        text-align: center;
+        margin: 6% 0;
+        background: linear-gradient(#c5a04f,#8e5415);
+        padding: 1%;
+        border-radius: 10px 60px 10px 10px;
+
+        h1{
+            color: #fff;
+        }
+    }
+
+    .about{
+        margin: 3% 0;
+    }
+
+    .map{
+        margin: 5% 0;
+
+        iframe{
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+
+            @media screen and(min-width:768px) {
+                height: 300px;
+            }
+        }
+    }
+}
+
+.contact{
+    .head-text{
+        text-align: center;
+        margin: 6% 0;
+        background: linear-gradient(#c5a04f,#8e5415);
+        padding: 1%;
+        border-radius: 10px 60px 10px 10px;
+
+        h1{
+            color: #fff;
+        }
+    }
+
+    .boxForm{
+        margin: 3% 0;
+
+        form{
+            .person-data{
+                display: grid;
+
+                @media screen and (min-width:1366px) {
+                    grid-template-columns: repeat(2,48%);
+                    grid-gap: 2%;
+                    grid-row-gap: 20px;
+                }
+
+                input{
+                    border: 1px solid #000;
+                    border-radius: 20px;
+                    padding: 3%;
+
+                    &::placeholder { 
+                        color: #000;
+                    }
+                }
+            }
+            .detail{
+                margin: 3% 0;
+
+                textarea{
+                    width: 100%;
+                    border: 1px solid #000;
+                    border-radius: 20px;
+                    padding: 2%;
+
+                    &::placeholder { 
+                        color: #000;
+                    }
+                }
+            }
+            .button-contact{
+                display: flex;
+                justify-content: center;
+
+                button{
+                    width: 20%;
+                    height: 50px;
+                    border: unset;
+                    border-radius: 20px;
+                    color: #fff;
+                    background: #c6a150;
+                    margin: 0 2%;
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .map{
+        margin: 5% 0;
+
+        iframe{
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+
+            @media screen and(min-width:768px) {
+                height: 300px;
+            }
+        }
+    }
+
+    .img-cer{
+        figure{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+// ----------------------------------- footer -------------------------------------- //
 .review{
     margin: 3% 0;
     background: linear-gradient(#c5a04f,#8e5415);
@@ -828,9 +977,6 @@ nav{
                 justify-content: space-between;
 
                 button{
-                    &:focus{
-                        outline: none;
-                    }
                     span{
                         font-size: 2rem;
                         color: #fff;

@@ -4,7 +4,6 @@
 <?php
     $url = explode('/',$_SERVER['REQUEST_URI']);
     $slug = urldecode($url[1]);
-    //echo $slug;
 ?>
 
 <head>
@@ -29,6 +28,12 @@
                     case 'home' :
                         include('template/main.php');
                         echo'<link rel="stylesheet" href="css/main.min.css?v='.date('his').'">';
+                        break;
+                    case 'about' :
+                        include('template/about.php');
+                        break;
+                    case 'contact' :
+                        include('template/contact.php');
                         break;
                 }
              ?>
@@ -103,6 +108,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <?php include('template/footer.php') ?>

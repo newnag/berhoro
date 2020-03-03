@@ -73,6 +73,10 @@ $background_menu: #c19a4b;
                 color: $sideMenu_color;
                 font-size: .8rem;
 
+                @media screen and (min-width:481px) and (max-width:768px) {
+                    font-size: 1rem;
+                }
+
                 span:nth-child(1){
                     width: 70%;
                     height: 2.2rem;
