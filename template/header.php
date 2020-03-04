@@ -18,10 +18,10 @@
                         <div class="hide-button"><i class="fas fa-angle-double-left"></i></div>
                     </ul>
                 </li>
-                <li><a href="">ทำนายเบอร์</a></li>
+                <li><a href="fortune-ber">ทำนายเบอร์</a></li>
                 <li><a href="">ค้นหาเบอร์จากความหมาย</a></li>
-                <li><a href="">บทความ</a></li>
-                <li><a href="">วิธีการสั่งซื้อ</a></li>
+                <li><a href="article">บทความ</a></li>
+                <li><a href="howtobuy">วิธีการสั่งซื้อ</a></li>
                 <li><a href="about">เกี่ยวกับเรา</a></li>
                 <li><a href="contact">ติดต่อเรา</a></li>
                 <li><a href="" class="cart"><i class="fas fa-shopping-basket"></i></a></li>

@@ -102,3 +102,15 @@ $background_menu: #c19a4b;
         }
     }
 }
+
+@mixin head_text_content {
+    text-align: center;
+    margin: 6% 0;
+    background: linear-gradient(#c5a04f,#8e5415);
+    padding: 1%;
+    border-radius: 10px 60px 10px 10px;
+
+    h1{
+        color: #fff;
+    }
+}

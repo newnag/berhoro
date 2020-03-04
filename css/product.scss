@@ -1,0 +1,79 @@
+@import 'variable';
+
+.fortube-ber{
+    margin: 5% 0;
+
+    .fortune-box{
+        background: url(/img/BG-fortune.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        border-radius: 20px;
+
+        @media screen and (min-width:481px) and (max-width:768px) {
+            height: 180px;
+        }
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            height: 200px;
+        }
+        @media screen and (min-width:1025px){
+            height: 280px;
+        }
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+
+            h1{
+                color: $background_main;
+                
+                @media screen and (max-width:480px){
+                    font-size: 1.2rem;
+                }
+            }
+            .input{
+                width: 60%;
+                text-align: center;
+                margin: 5% 0;
+
+                @media screen and (max-width:480px){
+                    width: 100%;
+                    margin: 3% 0;
+                }
+
+                input{
+                    width: 50%;
+                    padding: 2%;
+                    border-radius: 20px;
+                    border: unset;
+                    margin: 0 5%;
+
+                    @media screen and (max-width:480px){
+                        margin: 0 3%;
+                    }
+                }
+                button{
+                    width: 15%;
+                    padding: 2%;
+                    border: unset;
+                    border-radius: 20px;
+                    background: $background_main;
+                    color: $background_menu;
+                    margin: 0 5%;
+                    font-size: 1rem;
+                    box-shadow: 0px 5px 20px #0000009e;
+                    cursor: pointer;
+
+                    @media screen and (max-width:480px){
+                        margin: 0 3%;
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}

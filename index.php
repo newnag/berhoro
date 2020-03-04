@@ -23,17 +23,27 @@
                 switch($slug){
                     case '' :
                         include('template/main.php');
-                        echo'<link rel="stylesheet" href="css/main.min.css?v='.date('his').'">';
                         break;
                     case 'home' :
                         include('template/main.php');
-                        echo'<link rel="stylesheet" href="css/main.min.css?v='.date('his').'">';
                         break;
                     case 'about' :
                         include('template/about.php');
                         break;
                     case 'contact' :
                         include('template/contact.php');
+                        break;
+                    case 'howtobuy' :
+                        include('template/howtobuy.php');
+                        break;
+                    case 'article' :
+                        include('template/article.php');
+                        break;
+                    case 'article-detail' :
+                        include('template/article-detail.php');
+                        break;
+                    case 'fortune-ber' :
+                        include('template/fortune-ber.php');
                         break;
                 }
              ?>
