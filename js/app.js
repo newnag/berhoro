@@ -68,7 +68,7 @@ $('.search-num input').keypress(function(){
     $(this).next().focus();
 })
 
-// ----------------- ตัวเลขชอบไม่ชอบ ----------------- //
+// ----------------- ตัวเลขชอบไม่ชอบ ------------------ //
 function getFav_hate(Class,num){
     console.log(Class);
 
@@ -94,3 +94,30 @@ $('.kirai .button-num button').click(function(){
     let data1 = $(this).attr('data-favnum');
     getFav_hate("kirai",data1);
 });
+
+// ----------------- เลือกข้อมูลในกราฟ ------------------ //
+$('.graph .select-data button').click(function(){
+    $('.graph .select-data button').removeClass("active-select-data");
+    $(this).addClass("active-select-data");
+    if($(this).text() == "เครือข่าย"){
+        $('.graph .network').fadeIn(function(){
+            $(this).css("display","flex");
+        });
+        $('.graph .grahp-data').fadeOut();
+    }
+    else{
+        $('.graph .network').fadeOut();
+        $('.graph .grahp-data').fadeIn();
+    }
+});
+
+// ------------ แปลงคะแนนเบอร์มาเป็นความสูงกราฟ ---------- //
+if($('.graph .grahp-data').is(":visible")){
+    let score = $('.grahp-data .data .gradegraph .candy .aplus').attr('data-grade');
+    console.log(score);
+    let sum = (75/1000)*score;
+    console.log(sum);
+    $('.grahp-data .data .gradegraph .candy .aplus').css("height",sum);
+}
+
+

@@ -76,4 +76,180 @@
             }
         }
     }
+
+    .result-graph{
+        display: grid;
+        grid-template-columns: 30% 65%;
+        grid-gap: 5%;
+        margin: 5% 0;
+
+        .result{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            background: linear-gradient(#c5a04f,#8e5415);
+            padding: 2%;
+            border-radius: 20px;
+
+            .left{
+                color: #fff;
+
+                .ber{
+                    span{
+                        font-size: 2rem;
+                    }
+                }
+                span{
+                    font-size: .8rem;
+                }
+                .score{
+                    span:nth-child(1){
+                        font-size: 3rem;
+                    }
+                    span:nth-child(2){
+                        font-size: 2rem;
+                    }
+                }
+
+            }
+            .right{
+                color: #fff;
+
+                .grade{
+                    background: #fff;
+                    color: goldenrod;
+                    border-radius: 20px;
+                    height: 25%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2% 0;
+                }
+                .rank{
+                    font-size: 5rem;
+                }
+            }
+        }
+
+        .graph{
+            background: #eeeeee;
+            border-radius: 20px;
+            position: relative;
+            height: 150px;
+
+            .select-data{
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                width: 20%;
+
+                button{
+                    border: unset;
+                    border-radius: 20px;
+                    background: #c1c1c1;
+                    color: #fff;
+                    width: 40%;
+                    cursor: pointer;
+                    padding: 1%;
+                }
+                .active-select-data{
+                    background: $background_menu;
+                }
+            }
+            
+            .network{
+                display: none;
+                //display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            .grahp-data{
+                display: block;
+                .head-ber{
+                    display: flex;
+                    justify-content: space-around;
+                    background: #fff;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 35%;
+                    border-radius: 0 0 0 30px;
+                    box-shadow: 0px 2px 5px #0000009e;
+
+                    figure{
+                        width: 15%;
+
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                    h2{
+                        color: $price_color;
+                        font-size: 2rem;
+                    }
+                }
+                .data{
+                    display: grid;
+                    grid-template-columns: repeat(9,11.11%);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 65%;
+                    padding: 0 5%;
+
+                    .range{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        font-size: .8rem;
+                        padding-bottom: 25%;
+                    }
+                    .gradegraph{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .candy{
+                            height: 75px;
+                            width: 30%;
+                            display: flex;
+                            flex-direction: column-reverse;
+
+                            .aplus,.a,.bplus,.b,.cplus,.c,.d,.f{
+                                box-shadow: 2px 2px #3c3b3b42;
+                                transition: all 1s;
+                            }
+                            .aplus{
+                                background: linear-gradient(#16cf4d,#0b6827);
+                            }
+                            .a{
+                                background: linear-gradient(#c9f9dd,#2c9200);
+                            }
+                            .bplus{
+                                background: linear-gradient(#e2f9d0,#8bcf02);
+                            }
+                            .b{
+                                background: linear-gradient(#fdeb17,#f5ac00);
+                            }
+                            .cplus{
+                                background: linear-gradient(#f97400,#e2cb00);
+                            }
+                            .c{
+                                background: linear-gradient(#f97d00,#ac0101);
+                            }
+                            .d{
+                                background: linear-gradient(#ff0000,#430202);
+                            }
+                            .f{
+                                background: linear-gradient(#680b0b,#2d0000);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
