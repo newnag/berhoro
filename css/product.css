@@ -104,6 +104,45 @@
   }
 }
 
+.fortube-ber .fortune-box .box-ber {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.fortube-ber .fortune-box .box-ber span {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .fortube-ber .fortune-box .box-ber span {
+    font-size: 1.5rem;
+  }
+}
+
+.fortube-ber .fortune-box .box-ber h1 {
+  font-size: 3rem;
+  margin: 3% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .fortube-ber .fortune-box .box-ber h1 {
+    font-size: 2rem;
+  }
+}
+
 .fortube-ber .result-graph {
   display: -ms-grid;
   display: grid;
@@ -111,6 +150,13 @@
       grid-template-columns: 30% 65%;
   grid-gap: 5%;
   margin: 5% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .fortube-ber .result-graph {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
 }
 
 .fortube-ber .result-graph .result {
@@ -132,16 +178,88 @@
   font-size: 2rem;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .fortube-ber .result-graph .result .left .ber span {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .fortube-ber .result-graph .result .left .ber span {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .fortube-ber .result-graph .result .left .ber span {
+    font-size: 1.8rem;
+  }
+}
+
 .fortube-ber .result-graph .result .left span {
   font-size: .8rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .fortube-ber .result-graph .result .left .score {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .fortube-ber .result-graph .result .left .score {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .fortube-ber .result-graph .result .left .score {
+    margin-top: 6%;
+  }
 }
 
 .fortube-ber .result-graph .result .left .score span:nth-child(1) {
   font-size: 3rem;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .fortube-ber .result-graph .result .left .score span:nth-child(1) {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .fortube-ber .result-graph .result .left .score span:nth-child(1) {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .fortube-ber .result-graph .result .left .score span:nth-child(1) {
+    font-size: 2rem;
+  }
+}
+
 .fortube-ber .result-graph .result .left .score span:nth-child(2) {
   font-size: 2rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .fortube-ber .result-graph .result .left .score span:nth-child(2) {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .fortube-ber .result-graph .result .left .score span:nth-child(2) {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .fortube-ber .result-graph .result .left .score span:nth-child(2) {
+    font-size: 1.5rem;
+  }
 }
 
 .fortube-ber .result-graph .result .right {
@@ -169,6 +287,27 @@
   font-size: 5rem;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .fortube-ber .result-graph .result .right .rank {
+    font-size: 3rem;
+    margin-top: 25%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .fortube-ber .result-graph .result .right .rank {
+    font-size: 3rem;
+    margin-top: 30%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .fortube-ber .result-graph .result .right .rank {
+    font-size: 3rem;
+    margin-top: 25%;
+  }
+}
+
 .fortube-ber .result-graph .graph {
   background: #eeeeee;
   border-radius: 20px;
@@ -181,6 +320,30 @@
   top: 5%;
   left: 5%;
   width: 20%;
+}
+
+@media screen and (max-width: 480px) {
+  .fortube-ber .result-graph .graph .select-data {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .fortube-ber .result-graph .graph .select-data {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .fortube-ber .result-graph .graph .select-data {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .fortube-ber .result-graph .graph .select-data {
+    width: 30%;
+  }
 }
 
 .fortube-ber .result-graph .graph .select-data button {
@@ -228,8 +391,33 @@
           box-shadow: 0px 2px 5px #0000009e;
 }
 
+@media screen and (max-width: 480px) {
+  .fortube-ber .result-graph .graph .grahp-data .head-ber {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .fortube-ber .result-graph .graph .grahp-data .head-ber {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .fortube-ber .result-graph .graph .grahp-data .head-ber {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .fortube-ber .result-graph .graph .grahp-data .head-ber {
+    width: 40%;
+  }
+}
+
 .fortube-ber .result-graph .graph .grahp-data .head-ber figure {
   width: 15%;
+  margin: auto 0;
 }
 
 .fortube-ber .result-graph .graph .grahp-data .head-ber figure img {
@@ -239,6 +427,30 @@
 .fortube-ber .result-graph .graph .grahp-data .head-ber h2 {
   color: #daaa2c;
   font-size: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .fortube-ber .result-graph .graph .grahp-data .head-ber h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .fortube-ber .result-graph .graph .grahp-data .head-ber h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .fortube-ber .result-graph .graph .grahp-data .head-ber h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .fortube-ber .result-graph .graph .grahp-data .head-ber h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .fortube-ber .result-graph .graph .grahp-data .data {
@@ -344,6 +556,72 @@
   background: linear-gradient(#680b0b, #2d0000);
 }
 
+.fortube-ber .button .button-contact {
+  width: 15%;
+  height: 60px;
+  margin: 0 1%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#885013), to(#582d00));
+  background: linear-gradient(#885013, #582d00);
+  border: unset;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .fortube-ber .button .button-contact {
+    width: 47%;
+    margin: 2% 1%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .fortube-ber .button .button-contact {
+    width: 47%;
+    margin: 2% 1%;
+    font-size: 1.5rem;
+  }
+}
+
+.fortube-ber .button .button-shop {
+  width: 30%;
+  height: 60px;
+  margin: 0 1%;
+  border: unset;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .fortube-ber .button .button-shop {
+    width: 47%;
+    margin: 2% 1%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .fortube-ber .button .button-shop {
+    width: 47%;
+    margin: 2% 1%;
+    font-size: 1.5rem;
+  }
+}
+
+.fortube-ber .button .buynow {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6403f), to(#a90504));
+  background: linear-gradient(#f6403f, #a90504);
+}
+
+.fortube-ber .button .cart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa9a46), to(#cb6002));
+  background: linear-gradient(#fa9a46, #cb6002);
+}
+
 .fortube-ber .head-text-fortune {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,6 +648,12 @@
   color: #fff;
 }
 
+@media screen and (max-width: 480px) {
+  .fortube-ber .head-text-fortune .head-text {
+    width: 80%;
+  }
+}
+
 .fortube-ber .head-text-fortune .manual {
   color: #8f5315;
   width: 10%;
@@ -385,7 +669,61 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+  .fortube-ber .head-text-fortune .manual {
+    width: 20%;
+  }
+}
+
 .fortube-ber .head-text-fortune .manual span {
   margin: 0 5%;
+}
+
+.fortube-ber .detail-zone .box {
+  padding: 0 2% 2% 2%;
+  border-bottom: 1px solid gray;
+}
+
+.fortube-ber .detail-zone .box .head-detail {
+  margin: 5% 0;
+}
+
+.fortube-ber .detail-zone .box .head-detail h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .fortube-ber .detail-zone .box .head-detail h3 {
+    font-size: 1rem;
+  }
+}
+
+.fortube-ber .detail-zone .box .head-detail h3 .no0, .fortube-ber .detail-zone .box .head-detail h3 .no1, .fortube-ber .detail-zone .box .head-detail h3 .no2, .fortube-ber .detail-zone .box .head-detail h3 .no3, .fortube-ber .detail-zone .box .head-detail h3 .no4, .fortube-ber .detail-zone .box .head-detail h3 .no5, .fortube-ber .detail-zone .box .head-detail h3 .no6, .fortube-ber .detail-zone .box .head-detail h3 .no7 {
+  color: lightgray;
+}
+
+.fortube-ber .detail-zone .box .head-detail h3 .no0 {
+  margin-left: 1%;
+}
+
+.fortube-ber .detail-zone .box .head-detail h3 .no7 {
+  margin-right: 1%;
+}
+
+.fortube-ber .detail-zone .box .head-detail h3 .pair {
+  color: #c19a4b;
+}
+
+.fortube-ber .detail-zone .box .detail p {
+  text-indent: 2%;
+}
+
+@media screen and (max-width: 480px) {
+  .fortube-ber .detail-zone .box .detail p {
+    font-size: .8rem;
+    text-indent: 5%;
+  }
 }
 /*# sourceMappingURL=product.css.map */

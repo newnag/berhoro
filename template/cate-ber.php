@@ -1,9 +1,5 @@
-<div class="main-content">
-    <div class="head-text">
-        <div class="left">
-            <span>เบอร์ทั้งหมด</span>
-            <span>30000 เบอร์</span>
-        </div>
+<div class="sumber-content">
+    <div class="sum-head-text">
         <div class="right">
             <div class="network">
                 <label>เครือข่าย</label>
@@ -17,6 +13,11 @@
                     <option value="">ทั้งหมด</option>
                 </select>
             </div>
+        </div>
+
+        <div class="title-text">
+            <h1>เบอร์หงส์ เสริมโชคลาบ เงินทอง</h1>
+            <span>2000 เบอร์</span>
         </div>
     </div>
 

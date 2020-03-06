@@ -1,8 +1,10 @@
 <div class="side-menu">
+
+    <!-- หมวดหมู่เบอร์ -->
     <div class="menu-box">
         <div class="head-text">
             <h2>หมวดหมู่เบอร์</h2>
-            <a href=""><button>ทั้งหมด</button></a>
+            <a href="cate-ber"><button>ทั้งหมด</button></a>
         </div>
 
         <div class="menu">
@@ -136,6 +138,7 @@
         </div>
     </div>
     
+    <!-- ช่องทางชำระเงิน -->
     <div class="payment-box">
         <div class="head-text">
             <h2>ชำระผ่านบัตรเครดิต</h2>
@@ -144,6 +147,7 @@
         <figure><a href=""><img src="img/Artboard–14.jpg" alt=""></a></figure>
     </div>
 
+    <!-- จัดส่งล่าสุด -->
     <div class="last-release">
         <div class="head-text">
             <h2>จัดส่งสินค้าล่าสุด</h2>
@@ -207,6 +211,7 @@
         </div>
     </div>
 
+    <!-- บทความ -->
     <div class="article">
         <div class="head-text">
             <h2>บทความ</h2>
@@ -264,7 +269,7 @@
     <div class="sum-nubmer">
         <div class="head-text">
             <h2>ผลรวมเบอร์</h2>
-            <a href=""><button>ทั้งหมด</button></a>
+            <a href="sum-ber"><button>ทั้งหมด</button></a>
         </div>
 
         <div class="menu">

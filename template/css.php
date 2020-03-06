@@ -31,6 +31,15 @@
         case 'fortune-ber' :
             echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
             break;
+        case 'detail-ber' :
+            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
+            break;
+        case 'sum-ber' :
+            echo'<link rel="stylesheet" href="css/main.min.css?v='.date('his').'">';
+            break;
+        case 'cate-ber' :
+            echo'<link rel="stylesheet" href="css/main.min.css?v='.date('his').'">';
+            break;
     }
 ?>
 

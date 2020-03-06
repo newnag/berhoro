@@ -1,6 +1,6 @@
 @import 'variable';
 
-.main-content{ 
+.main-content,.sumber-content{ 
     @media screen and (max-width:767px) {
         grid-area: content;
     }
@@ -60,6 +60,73 @@
                     &:focus{
                         outline: none;
                     }
+                }
+            }
+        }
+    }
+
+    .sum-head-text{
+        display: flex;
+        flex-direction: column;
+        padding: 1% 0;
+
+        .right{
+            display: flex;
+            justify-content: flex-end;
+
+            .network,.grade{
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                @media screen and (max-width:480px) {
+                    width:50%
+                }
+                @media screen and (min-width:481px) and (max-width:768px) {
+                    width:40%
+                }
+                @media screen and (min-width:769px) and (max-width:1024px) {
+                    width:30%
+                }
+
+                select{
+                    background: linear-gradient(#c5a04f,#8e5415);
+                    color: #fff;
+                    border: unset;
+                    border-radius: 10px;
+                    width: 40%;
+                    height: 35px;
+                    text-align-last: center;
+                    margin-left: 5%;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .title-text{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(#c5a04f,#8e5415);
+            color: #fff;
+            padding: 1% 3%;
+            margin: 1% 0;
+            border-radius: 5px 50px 5px 5px;
+
+            h1{
+                @media screen and (max-width:480px) {
+                    font-size: 1rem;
+                }
+            }
+            span{
+                font-size: 1.5rem;
+
+                @media screen and (max-width:480px) {
+                    font-size: 1rem;
                 }
             }
         }

@@ -45,6 +45,15 @@
                     case 'fortune-ber' :
                         include('template/fortune-ber.php');
                         break;
+                    case 'detail-ber' :
+                        include('template/detail-ber.php');
+                        break;
+                    case 'sum-ber' :
+                        include('template/sum-ber.php');
+                        break;
+                    case 'cate-ber' :
+                        include('template/cate-ber.php');
+                        break;
                 }
              ?>
 

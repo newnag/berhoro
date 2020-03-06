@@ -13,7 +13,7 @@
   border-radius: 10px 60px 10px 10px;
 }
 
-.about-content .head-text h1 {
+.about-content .head-text h1, .about-content .head-text h2 {
   color: #fff;
 }
 
@@ -52,7 +52,7 @@
   border-radius: 10px 60px 10px 10px;
 }
 
-.contact .head-text h1 {
+.contact .head-text h1, .contact .head-text h2 {
   color: #fff;
 }
 
@@ -182,7 +182,7 @@
   border-radius: 10px 60px 10px 10px;
 }
 
-.howtobuy .head-text h1 {
+.howtobuy .head-text h1, .howtobuy .head-text h2 {
   color: #fff;
 }
 
@@ -294,7 +294,7 @@
   border: 1px solid gray;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1025px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   .article-content {
     grid-area: content;
   }
@@ -309,7 +309,7 @@
   border-radius: 10px 60px 10px 10px;
 }
 
-.article-content .head-text h1 {
+.article-content .head-text h1, .article-content .head-text h2 {
   color: #fff;
 }
 
@@ -406,7 +406,7 @@
   border-radius: 10px 60px 10px 10px;
 }
 
-.article-detail .head-text h1 {
+.article-detail .head-text h1, .article-detail .head-text h2 {
   color: #fff;
 }
 /*# sourceMappingURL=content.css.map */

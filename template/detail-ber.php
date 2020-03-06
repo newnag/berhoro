@@ -1,13 +1,8 @@
 <div class="fortube-ber">
     <div class="fortune-box">
-        <div class="box">
-            <h1>ทำนายเบอร์</h1>
-            <div class="input">
-                <form action="#">
-                    <input type="tel" maxlength="10" placeholder="ทำนายเบอร์">
-                    <button type="submit">ทำนาย</button>
-                </form>
-            </div>
+        <div class="box-ber">
+            <span>เบอร์</span>
+            <h1>0897644358</h1>
         </div>
     </div>
 
@@ -29,11 +24,11 @@
                 <button class="active-select-data">กราฟ</button>
             </div>
 
-            <div class="network"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+            <div class="network"><figure><img src="img/icon/ture move h-02.png" alt=""></figure></div>
 
             <div class="grahp-data">
                 <div class="head-ber">
-                    <figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure>
+                    <figure><img src="img/icon/ture move h-02.png" alt=""></figure>
                     <h2>0897644358</h2>
                 </div>
                 <div class="data">
@@ -92,6 +87,13 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="button">
+        <button class="button-contact"><i class="fas fa-mobile-alt"></i> โทร</button>
+        <button class="button-contact"><i class="fab fa-line"></i> ไลน์</button>
+        <button class="button-shop buynow"><i class="fas fa-coins"></i> ซื้อทันที</button>
+        <button class="button-shop cart"><i class="fas fa-shopping-basket"></i> หยิบใส่ตระกร้า</button>
     </div>
 
     <div class="head-text-fortune">
