@@ -93,4 +93,20 @@
             </div>
         </div>
     </div>
+
+    <div class="head-text-fortune">
+        <div class="head-text">
+            <h2>เลขคู่ของเบอร์ 0897644358</h2>
+        </div>
+
+        <div class="manual"><span>คู่มือ</span><i class="fas fa-book"></i></div>
+    </div>
+    
+    <div class="detail-zone">
+        <h3>คำทำนายคู่เลข</h3>
+
+        <div class="head-detail">
+            <h3>คู่เลข 0897644358 : พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</h3>
+        </div>
+    </div>
 </div>

@@ -252,4 +252,27 @@
             }
         }
     }
+
+    .head-text-fortune{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .head-text{
+            @include head_text_content();
+            width: 90%;
+        }
+        .manual{
+            color: #8f5315;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            span{
+                margin: 0 5%;
+            }
+        }
+    }
 }
