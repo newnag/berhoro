@@ -138,7 +138,7 @@
         </div>
     </div>
     
-    <!-- ช่องทางชำระเงิน -->
+    <!-- บทความช่องทางชำระเงิน -->
     <div class="payment-box">
         <div class="head-text">
             <h2>ชำระผ่านบัตรเครดิต</h2>
@@ -151,7 +151,7 @@
     <div class="last-release">
         <div class="head-text">
             <h2>จัดส่งสินค้าล่าสุด</h2>
-            <a href=""><button>ทั้งหมด</button></a>
+            <a href="last-releast"><button>ทั้งหมด</button></a>
         </div>
 
         <div class="menu">
@@ -159,48 +159,62 @@
                 <li>
                     <a href="">
                         <span>แอนนี่</span>
-                        <span>EI630234805TH</span>
+                        <div class="num-ems">
+                            <span>EI630234805TH</span>
+                        </div>
+                        
                     </a>
                 </li>
 
                 <li>
                     <a href="">
                         <span>น้องพลอย</span>
-                        <span>EI630234805TH</span>
+                        <div class="num-ems">
+                            <span>EI630234805TH</span>
+                        </div>
                     </a>
                 </li>
 
                 <li>
                     <a href="">
                         <span>น้องสา</span>
-                        <span>EI630234805TH</span>
+                        <div class="num-ems">
+                            <span>EI630234805TH</span>
+                        </div>
                     </a>
                 </li>
 
                 <li>
                     <a href="">
                         <span>น้ำฝน</span>
-                        <span>EI630234805TH</span>
+                        <div class="num-ems">
+                            <span>EI630234805TH</span>
+                        </div>
                     </a>
                 </li>
 
                 <li>
                     <a href="">
                         <span>เจนนี่</span>
-                        <span>EI630234805TH</span>
+                        <div class="num-ems">
+                            <span>EI630234805TH</span>
+                        </div>
                     </a>
                 </li>
 
                 <li>
                     <a href="">
                         <span>หนูนา</span>
-                        <span>EI630234805TH</span>
+                        <div class="num-ems">
+                            <span>EI630234805TH</span>
+                        </div>
                     </a>
                 </li>
             </ul>
         </div>
     </div>
 
+    <!-- ลิ้งไปเว็บems -->
     <div class="ems">
         <div class="head-text">
             <h2>ติดตามสถานะสินค้า</h2>
@@ -215,7 +229,7 @@
     <div class="article">
         <div class="head-text">
             <h2>บทความ</h2>
-            <a href=""><button>ทั้งหมด</button></a>
+            <a href="article"><button>ทั้งหมด</button></a>
         </div>
 
         <div class="menu">
@@ -266,6 +280,7 @@
         </div>
     </div>
 
+    <!-- ผลรวมเบอร์ -->
     <div class="sum-nubmer">
         <div class="head-text">
             <h2>ผลรวมเบอร์</h2>
@@ -375,6 +390,7 @@
         </div>
     </div>
 
+    <!-- บทความนโยบายประกันสินค้า -->
     <div class="provicy">
         <a href=""><figure><img src="img/Artboard – 15.jpg" alt=""></figure></a>
         <a href=""><figure><img src="img/Artboard – 16.jpg" alt=""></figure></a>

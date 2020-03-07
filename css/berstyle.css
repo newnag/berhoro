@@ -825,7 +825,7 @@ nav .topnav .hamberger i {
 
 @media screen and (min-width: 480px) {
   .content .side-menu .menu-box .menu ul li a span:nth-child(1) {
-    height: 2.5rem;
+    height: 35px;
   }
 }
 
@@ -937,7 +937,7 @@ nav .topnav .hamberger i {
 
 @media screen and (min-width: 480px) {
   .content .side-menu .last-release .menu ul li a span:nth-child(1) {
-    height: 2.5rem;
+    height: 35px;
   }
 }
 
@@ -950,6 +950,35 @@ nav .topnav .hamberger i {
   padding: 3%;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+.content .side-menu .last-release .menu a {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+}
+
+.content .side-menu .last-release .menu a .num-ems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.content .side-menu .last-release .menu a .num-ems span {
+  height: unset !important;
+  width: 70%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .content .side-menu .ems .head-text {
@@ -1089,7 +1118,7 @@ nav .topnav .hamberger i {
 
 @media screen and (min-width: 480px) {
   .content .side-menu .article .menu ul li a span:nth-child(1) {
-    height: 2.5rem;
+    height: 35px;
   }
 }
 
@@ -1215,7 +1244,7 @@ nav .topnav .hamberger i {
 
 @media screen and (min-width: 480px) {
   .content .side-menu .sum-nubmer .menu ul li a span:nth-child(1) {
-    height: 2.5rem;
+    height: 35px;
   }
 }
 

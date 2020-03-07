@@ -40,6 +40,12 @@
         case 'cate-ber' :
             echo'<link rel="stylesheet" href="css/main.min.css?v='.date('his').'">';
             break;
+        case 'last-releast' :
+            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
+            break;
+        case 'cart' :
+            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
+            break;
     }
 ?>
 

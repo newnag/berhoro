@@ -86,7 +86,7 @@ $background_menu: #c19a4b;
                     -webkit-box-orient: vertical;
 
                     @media screen and (min-width:480px) {
-                        height: 2.5rem;
+                        height: 35px;
                     }
                 }
 
@@ -112,5 +112,24 @@ $background_menu: #c19a4b;
 
     h1,h2{
         color: #fff;
+    }
+}
+
+@mixin pagination {  
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0;
+
+    a{
+        color: gray;
+
+        &:hover{
+            color: #000;
+            transform: scale(1.2);
+            transition: all .2s;
+        }
+    }
+    .current{
+        color: #000;
     }
 }

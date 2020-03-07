@@ -24,7 +24,7 @@
                 <li><a href="howtobuy">วิธีการสั่งซื้อ</a></li>
                 <li><a href="about">เกี่ยวกับเรา</a></li>
                 <li><a href="contact">ติดต่อเรา</a></li>
-                <li><a href="" class="cart"><i class="fas fa-shopping-basket"></i></a></li>
+                <li><a href="cart" class="cart"><i class="fas fa-shopping-basket"></i></a></li>
                 <li class="buttonX"><i class="fas fa-times"></i></li>
             </ul>
 

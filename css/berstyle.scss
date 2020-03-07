@@ -641,6 +641,26 @@ nav{
 
             .menu{
                 @include menu();
+
+                a{
+                    display: grid!important;
+                    grid-template-columns: repeat(2,50%);
+
+                    .num-ems{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+
+                        span{
+                            height: unset!important;
+                            width: 70%;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+                }
             }
         }
         

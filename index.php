@@ -54,6 +54,12 @@
                     case 'cate-ber' :
                         include('template/cate-ber.php');
                         break;
+                    case 'last-releast' :
+                        include('template/last-releast.php');
+                        break;
+                    case 'cart' :
+                        include('template/cart.php');
+                        break;
                 }
              ?>
 
