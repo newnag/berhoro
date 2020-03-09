@@ -183,6 +183,9 @@
                     color: gray;
                     font-size: .8rem;
                 }
+                .select{
+                    color: lightgray!important;
+                }
             }
 
             .detail{
@@ -204,9 +207,6 @@
                     color: $price_color;
                     font-size: 1.2rem;
                     text-align: end;
-
-                   
-
                 }
 
                 .icon{
@@ -218,7 +218,14 @@
                     i{
                         cursor: pointer;
                     }
-                }
+                    .unselect{
+                        display: none;
+                        color: red;
+                    }
+                } 
+            }
+            .select{
+                color: lightgray!important;
             }
         }
     }

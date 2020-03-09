@@ -73,6 +73,14 @@
         </div>
     </div>
 
+    <div class="box-loading">
+        <div class="loading"></div>
+    </div>
+
+    <div class="thank-you">
+        <figure><img src="img/thank.png" alt=""></figure>
+    </div>
+
     <div class="howtobuy">
         <div class="head-text">
             <h1>ช่องทางการชำระเงิน</h1>

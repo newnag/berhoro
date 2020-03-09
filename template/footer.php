@@ -9,7 +9,7 @@
         <figure><img src="img/logo/Artboard – 29.jpg" alt=""></figure>
     </div>
 
-    <div class="contact">
+    <div class="contact-footer">
         <h3>ติดต่อเรา</h3>
         <p class="address">
             99/444 กาญจนาภิเษก แขวงคันนายาว เขตขันนายาว กรุงเทพมหานคร 10230

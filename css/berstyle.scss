@@ -56,9 +56,10 @@ nav{
         }
         
         .logo-nav{
-            
-
-            @media screen and (min-width:1025px) {
+            @media screen and (min-width:1025px) and (max-width:1365px) {
+                width: 30%;
+            }
+            @media screen and (min-width:1366px) {
                 width: 50%;
             }
             
@@ -83,7 +84,17 @@ nav{
                 z-index: 5;
                 padding: 10% 5%;
             }
-            @media screen and (min-width:1025px) {
+            @media screen and (min-width:1025px) and (max-width:1365px) {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                a{
+                    font-size: 1rem;
+                }
+            }
+            @media screen and (min-width:1366px) {
                 width: 50%;
                 display: flex;
                 align-items: center;
@@ -111,10 +122,25 @@ nav{
                     }
                 }
             }
+            .cart{
+                position: relative;
+                i{
+                    font-size: 1.5rem;
+                }
+                .num-shop-cart{
+                    position: absolute;
+                    top: -10px;
+                    right: -15px;
+                    background: gold;
+                    border-radius: 20px;
+                    width: 80%;
+                    text-align: center;
+                }
+            }
             .buttonX{
                 margin-top: 10%;
 
-                @media screen and (min-width:1024px) {
+                @media screen and (min-width:1025px) {
                     display: none;
                 }
 
@@ -161,25 +187,27 @@ nav{
             }
         }
 
-        .cart-mobile{
-            margin-left: 30%;
-
-            @media screen and (min-width:1025px) {
-                display: none;
-            }
-        }
-
-        .hamberger{
-            margin-right: 5%;
+        .group-mobile-menu{
+            display: flex;
+            width: 30%;
+            justify-content: space-evenly;
 
             @media screen and (min-width:1025px) {
                 display: none;
             }
 
-            i{
-                font-size: 1.5rem;
+            .cart-mobile{
+            }
+    
+            .hamberger{
+                margin-right: 5%;
+    
+                i{
+                    font-size: 1.5rem;
+                }
             }
         }
+        
     }
 }
 
@@ -216,10 +244,10 @@ nav{
         margin: 0 auto;
         flex-direction: column;
 
-        @media screen and (min-width:481px) and (max-width:768px) {
-            width: 95%;
-            flex-direction: unset;
-        }
+        // @media screen and (min-width:481px) and (max-width:768px) {
+        //     width: 95%;
+        //     flex-direction: unset;
+        // }
         @media screen and (min-width:769px) {
             width: 70%;
             flex-direction: unset;
@@ -231,7 +259,7 @@ nav{
             border-bottom: 1px solid #fff;
             
 
-            @media screen and (min-width:481px) {
+            @media screen and (min-width:769px) {
                 width: 50%;
                 padding: 0 3%;
                 border-right: 1px solid #fff;
@@ -373,7 +401,7 @@ nav{
             padding: 3% 0;
             border-bottom: 1px solid #fff;
 
-            @media screen and (min-width:481px) {
+            @media screen and (min-width:769px) {
                 width: 50%;
                 padding: 0 3%;
                 border-bottom: unset;
@@ -452,7 +480,7 @@ nav{
                         }
                     }
                     .active{
-                        filter: invert(1);
+                        border: 3px solid orange;  
                     }
                 }
             }
@@ -483,6 +511,7 @@ nav{
                         background: #fff;
                         border-radius: 10%;
                         padding: 0 10%;
+                        cursor: pointer;
 
                         // cursor: pointer;
                         // display: inline-block;
@@ -504,6 +533,9 @@ nav{
                             color: $price_color;
                             cursor: pointer;
                         }
+                    }
+                    .active{
+                        border: 3px solid orange;  
                     }
                 }  
                 
@@ -968,7 +1000,7 @@ footer{
         }
     }
 
-    .contact{
+    .contact-footer{
         margin: 0 20%;
 
         @media screen and (min-width:481px) {

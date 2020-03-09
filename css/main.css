@@ -271,6 +271,10 @@
   font-size: .8rem;
 }
 
+.main-content .grid-content .box .number .select, .sumber-content .grid-content .box .number .select {
+  color: lightgray !important;
+}
+
 .main-content .grid-content .box .detail, .sumber-content .grid-content .box .detail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,6 +315,15 @@
 
 .main-content .grid-content .box .detail .icon i, .sumber-content .grid-content .box .detail .icon i {
   cursor: pointer;
+}
+
+.main-content .grid-content .box .detail .icon .unselect, .sumber-content .grid-content .box .detail .icon .unselect {
+  display: none;
+  color: red;
+}
+
+.main-content .grid-content .box .select, .sumber-content .grid-content .box .select {
+  color: lightgray !important;
 }
 
 .main-content .pagination, .sumber-content .pagination {

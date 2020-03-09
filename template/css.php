@@ -52,3 +52,4 @@
 <script src="https://kit.fontawesome.com/37e3c13129.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="plugin/owl.carousel.css">
 <link rel="stylesheet" href="plugin/owl.theme.default.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>

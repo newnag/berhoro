@@ -618,11 +618,38 @@
                 
                 @media screen and (min-width:481px) and (max-width:1024px) {
                     height: 650px;
-                    overflow: scroll;
+                    overflow-y: scroll;
+
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background: $background_main;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: linear-gradient(#c5a04f,#8e5415);
+                    }
+                    &::-webkit-scrollbar-thumb:hover {
+                        background: $background_menu;
+                    }
                 }
                 @media screen and (min-width:1025px) {
                     height: 700px;
-                    overflow: scroll;
+                    overflow-y: scroll;
+
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background: $background_main;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: linear-gradient(#c5a04f,#8e5415);
+                        border-radius: 20px;
+                    }
+                    &::-webkit-scrollbar-thumb:hover {
+                        background: $background_menu;
+                    }
                 }
 
                 .box{
@@ -630,6 +657,7 @@
                     grid-template-columns: 20% 50% 30%;
                     padding: 4% 0;
                     border-bottom: 1px solid gray;
+                    margin-right: 15px;
         
                     .logo{
                         figure{
@@ -679,7 +707,7 @@
         
                         .price{
                             color: $price_color;
-                            font-size: 1.8rem;
+                            font-size: 1.5rem;
                             text-align: end;
         
                             @media screen and (max-width:480px) {
@@ -806,6 +834,51 @@
                         background: #ffa04c;
                     }
                }
+            }
+        }
+    }
+
+    .box-loading{
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%,-50%);
+        background-color: #000000bf;
+        z-index: 10;
+
+        .loading{
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            position: fixed;
+            top: 45%;
+            left: 45%;
+
+            @media screen and (max-width:480px){
+                left: 35%;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        }
+    }
+    .thank-you{
+        display: none;
+
+        figure{
+            width: 70%;
+            margin: 0 auto;
+
+            img{
+                max-width: 100%;
             }
         }
     }

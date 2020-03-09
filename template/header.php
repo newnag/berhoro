@@ -3,6 +3,7 @@
         <div class="topnav">
             <div class="logo-nav"><figure><a href="/home"><img src="img/logo/logo.png" alt=""></a></figure></div>
 
+            <!-- เมนูปกติ -->
             <ul class="nav-menu">
                 <li class="cate-mobile">
                     <a href="#">เมนูหมวดหมู่เบอร์</a>
@@ -24,17 +25,28 @@
                 <li><a href="howtobuy">วิธีการสั่งซื้อ</a></li>
                 <li><a href="about">เกี่ยวกับเรา</a></li>
                 <li><a href="contact">ติดต่อเรา</a></li>
-                <li><a href="cart" class="cart"><i class="fas fa-shopping-basket"></i></a></li>
+                <li>
+                    <a href="cart" class="cart">
+                        <i class="fas fa-shopping-basket"></i>
+                        <div class="num-shop-cart">
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
                 <li class="buttonX"><i class="fas fa-times"></i></li>
             </ul>
 
-            <div class="cart-mobile">
-                <li><i class="fas fa-shopping-basket"></i></li>
-            </div>
+            <!-- ปุ่มเมนูตอน responsive -->
+            <div class="group-mobile-menu">
+                <div class="cart-mobile">
+                    <li><a href="cart" class="cart"><i class="fas fa-shopping-basket"></i></a></li>
+                </div>
 
-            <div class="hamberger">
-                <i class="fas fa-bars"></i>
+                <div class="hamberger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
+            
         </div>
     </nav>
 
@@ -42,6 +54,7 @@
         <figure><img src="img/Artboard–30.jpg" alt=""></figure>
     </div>
 
+    <!-- ค้นหาเบอร์ -->
     <?php if($slug == "home" || $slug == ""): ?>
         <section>
             <div class="search-box">
@@ -49,7 +62,7 @@
 
                 <div class="box">
                     <div class="left-box">
-                        <form action="" class="fortune-box-num">
+                        <form action="" class="fortune-box-num" id="search">
                             <div class="fortune-num">
                                 <input type="tel" name="fortune-num" maxlength="10" placeholder="ทำนายเบอร์">
                                 <a href=""><button type="submit">ทำนาย</button></a>
@@ -217,7 +230,7 @@
 
                 <div class="button-form">
                     <button>ค้นหา</button>
-                    <button>เริ่มใหม่</button>
+                    <button class="reset">เริ่มใหม่</button>
                 </div>
             </div>
         </section>

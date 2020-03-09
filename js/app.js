@@ -24,6 +24,10 @@ $('.favorite-num .kirai .button-num button').click(function(){
 $('.improve-luck .luck-box div').click(function(){
     $(this).toggleClass('active');
 });
+// ---------------------เลือกเบอร์มงคล---------------------- //
+$('.ber-goodluck .goodluck-box div').click(function(){
+    $(this).toggleClass('active');
+});
 
 // -----------------กดสลับค้นหาอย่างละเอียด---------------- //
 $('.open-more-filter').click(function(){
@@ -95,6 +99,17 @@ $('.kirai .button-num button').click(function(){
     getFav_hate("kirai",data1);
 });
 
+// ------------------ ล้างข้อมูลช่องค้นหาเบอร์ -------------- //
+$('.search-box .button-form .reset').click(function(){
+    $('.search-box .box .left-box form input').val("");
+    $('.search-box .box .left-box .search-num input[type=tel]').val("");
+    $('.search-box .box .left-box .more-filter .search-some input').val("");
+    $('.search-box .box .left-box .more-filter .cate-num select').val("");
+    $('.search-box .box .left-box .more-filter .sum-network select').val("");
+    $('.search-box .box .left-box .more-filter .range-price input').val("");
+    $('.search-box .box .right-box .favorite-num button').removeClass('active-button');
+});
+
 // ----------------- เลือกข้อมูลในกราฟ ------------------ //
 $('.graph .select-data button').click(function(){
     $('.graph .select-data button').removeClass("active-select-data");
@@ -120,4 +135,66 @@ if($('.graph .grahp-data').is(":visible")){
     $('.grahp-data .data .gradegraph .candy .aplus').css("height",sum);
 }
 
+// ------------------ กดสั่งซื้อแล้วขึ้นขอบคุณ ------------------- //
+$('.checkout-box .address-box .button-checkout .buy').click(function(){
+    if($('.input-zone input').val() && $('.adddress').val()){
+        $('.box-loading').fadeIn();
+        setTimeout(() => {
+            $('.box-loading').fadeOut();
+            $('.cart-box').hide();
+            $('.thank-you').show();
+        }, 2000);
+    }
+    else{
+        Swal.fire({
+            icon: 'warning',
+            title: 'เกิดข้อผิดพลาด',
+            text: 'กรุณากรอกข้อมูลให้ครบทุกช่อง',
+          })
+    }
+});
 
+// ----------------- กดเบอร์เข้าตระกร้า ------------------- //
+var number_item_cart = 0;
+$('.main-content .grid-content .box .detail .icon .shop').click(function(){
+
+    let timerInterval
+    Swal.fire({
+        title: '<i class="fas fa-shopping-basket shop"></i>',
+        html: 'กำลังนำเข้าสู่ตระกร้า',
+        timer: 800,
+        timerProgressBar: false,
+        onBeforeOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+            const content = Swal.getContent()
+            if (content) {
+                const b = content.querySelector('b')
+                if (b) {
+                b.textContent = Swal.getTimerLeft()
+                }
+            }
+            }, 100)
+        },
+        onClose: () => {
+            clearInterval(timerInterval)
+        }
+        }).then((result) => {
+            $(this).closest('.detail').prev().children('a').addClass('select');
+            $(this).closest('.icon').prev().addClass('select');
+            $(this).hide();
+            $(this).next().show();
+            number_item_cart++;
+            num_in_cart(number_item_cart);
+    });
+});
+$('.main-content .grid-content .box .detail .icon .unselect').click(function(){
+    $(this).hide();
+    $(this).prev().show();
+    number_item_cart--;
+    num_in_cart(number_item_cart);
+});
+// เพิ่มลดเลขตระกร้า
+function num_in_cart(number_item_cart){
+    $('.num-shop-cart span').text(number_item_cart);
+}
