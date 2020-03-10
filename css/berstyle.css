@@ -776,6 +776,7 @@ nav .topnav .group-mobile-menu .hamberger i {
     -ms-grid-columns: 25% 73%;
         grid-template-columns: 25% 73%;
     grid-gap: 2%;
+    grid-row-gap: 80px;
   }
 }
 
@@ -830,7 +831,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 }
 
 .content .side-menu .menu-box .menu ul li {
-  margin: 5% 0;
+  margin: 3% 0;
 }
 
 .content .side-menu .menu-box .menu ul li a {
@@ -841,7 +842,7 @@ nav .topnav .group-mobile-menu .hamberger i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #fffdea;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -861,7 +862,8 @@ nav .topnav .group-mobile-menu .hamberger i {
 
 @media screen and (min-width: 480px) {
   .content .side-menu .menu-box .menu ul li a span:nth-child(1) {
-    height: 35px;
+    height: 43px;
+    padding: 1% 0;
   }
 }
 
@@ -942,7 +944,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 }
 
 .content .side-menu .last-release .menu ul li {
-  margin: 5% 0;
+  margin: 3% 0;
 }
 
 .content .side-menu .last-release .menu ul li a {
@@ -953,7 +955,7 @@ nav .topnav .group-mobile-menu .hamberger i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #fffdea;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -973,7 +975,8 @@ nav .topnav .group-mobile-menu .hamberger i {
 
 @media screen and (min-width: 480px) {
   .content .side-menu .last-release .menu ul li a span:nth-child(1) {
-    height: 35px;
+    height: 43px;
+    padding: 1% 0;
   }
 }
 
@@ -1123,7 +1126,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 }
 
 .content .side-menu .article .menu ul li {
-  margin: 5% 0;
+  margin: 3% 0;
 }
 
 .content .side-menu .article .menu ul li a {
@@ -1134,7 +1137,7 @@ nav .topnav .group-mobile-menu .hamberger i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #fffdea;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -1154,7 +1157,8 @@ nav .topnav .group-mobile-menu .hamberger i {
 
 @media screen and (min-width: 480px) {
   .content .side-menu .article .menu ul li a span:nth-child(1) {
-    height: 35px;
+    height: 43px;
+    padding: 1% 0;
   }
 }
 
@@ -1249,7 +1253,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 }
 
 .content .side-menu .sum-nubmer .menu ul li {
-  margin: 5% 0;
+  margin: 3% 0;
 }
 
 .content .side-menu .sum-nubmer .menu ul li a {
@@ -1260,7 +1264,7 @@ nav .topnav .group-mobile-menu .hamberger i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #fffdea;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -1280,7 +1284,8 @@ nav .topnav .group-mobile-menu .hamberger i {
 
 @media screen and (min-width: 480px) {
   .content .side-menu .sum-nubmer .menu ul li a span:nth-child(1) {
-    height: 35px;
+    height: 43px;
+    padding: 1% 0;
   }
 }
 

@@ -46,6 +46,12 @@
         case 'cart' :
             echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
             break;
+        case 'review' :
+            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('his').'">';
+            break;
+        case 'ber-mean' :
+            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
+            break;
     }
 ?>
 

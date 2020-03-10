@@ -18,7 +18,7 @@
             height: 200px;
         }
         @media screen and (min-width:1025px){
-            height: 280px;
+            height: 250px;
         }
 
         .box{
@@ -46,11 +46,12 @@
                 }
 
                 input{
-                    width: 50%;
+                    width: 55%;
                     padding: 2%;
                     border-radius: 20px;
                     border: unset;
                     margin: 0 5%;
+                    height: 50px;
 
                     @media screen and (max-width:480px){
                         margin: 0 3%;
@@ -152,7 +153,7 @@
                     }
 
                     span:nth-child(1){
-                        font-size: 3rem;
+                        font-size: 2.5rem;
 
                         @media screen and (min-width:481px) and (max-width:768px) {
                             font-size: 1.5rem;
@@ -194,7 +195,7 @@
                     padding: 2% 0;
                 }
                 .rank{
-                    font-size: 5rem;
+                    font-size: 4rem;
 
                     @media screen and (min-width:481px) and (max-width:768px) {
                         font-size: 3rem;
@@ -972,6 +973,159 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.ber-mean-page{
+    background: url(/img/ring/BGring.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    border-radius: 30px;
+    margin: 6% 0;
+
+    .box-search{
+        display: grid;
+        grid-template-columns: repeat(2,48%);
+        grid-gap: 2%;
+        position: relative;
+        height: 100%;
+        padding: 5%;
+        
+        .box-magic{
+            figure{
+                position: relative;
+
+                img{
+                    width: 100%;
+                }
+
+                .gem-1,.gem-2,.gem-3,.gem-4,.gem-5{
+                    figure{
+                        position: relative;
+                        img{
+                            max-width: 100%;
+                        }
+                        label{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+                .gem-1{
+                    position: absolute;
+                    top: 2.8%;
+                    left: 42.8%;
+                    width: 14%;
+                }
+                .gem-2{
+                    position: absolute;
+                    top: 32.8%;
+                    left: 2.3%;
+                    width: 14%;
+                }
+                .gem-3{
+                    position: absolute;
+                    top: 80.6%;
+                    left: 18.2%;
+                    width: 14%;
+                }
+                .gem-4{
+                    position: absolute;
+                    top: 80.6%;
+                    left: 66.8%;
+                    width: 14%;
+                }
+                .gem-5{
+                    position: absolute;
+                    top: 32.8%;
+                    left: 83.2%;
+                    width: 14%;
+                }
+            }
+        }
+
+        .select-data{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                color: $background_main;
+                font-size: 2rem;
+            }
+            select{
+                width: 40%;
+                margin: 10% 0;
+                height: 50px;
+                border-radius: 20px;
+                padding: 0 3%;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+            .button-group{
+                width: 100%;
+                text-align: center;
+
+                button{
+                    width: 20%;
+                    height: 50px;
+                    font-size: 1rem;
+                    border: unset;
+                    border-radius: 20px;
+                    color: $background_menu;
+                    margin: 0 5%;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .ps{
+            position: absolute;
+            bottom: 5%;
+            left: 3%;
+    
+            p{
+                color: $sideMenu_color;
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .choice{
+        .speak{
+            @include choice();
+        }
+        .mind{
+            @include choice();
+        }
+        .money{
+            @include choice();
+        }
+        .job{
+            @include choice();
+        }
+        .luck{
+            @include choice();
+        }
+        .love{
+            @include choice();
+        }
+        .property{
+            @include choice();
         }
     }
 }

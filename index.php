@@ -60,6 +60,12 @@
                     case 'cart' :
                         include('template/cart.php');
                         break;
+                    case 'review' :
+                        include('template/review.php');
+                        break;
+                    case 'ber-mean' :
+                        include('template/number-no-imi.php');
+                        break;
                 }
              ?>
 
@@ -70,7 +76,7 @@
             <div class="review-box container">
                 <div class="head-text">
                     <h2>รีวิว</h2>
-                    <a href=""><button>ทั้งหมด</button></a>
+                    <a href="review"><button>ทั้งหมด</button></a>
                 </div>
 
                 <div class="slide-review owl-carousel">

@@ -25,7 +25,7 @@
 
 @media screen and (min-width: 1025px) {
   .fortube-ber .fortune-box {
-    height: 280px;
+    height: 250px;
   }
 }
 
@@ -70,11 +70,12 @@
 }
 
 .fortube-ber .fortune-box .box .input input {
-  width: 50%;
+  width: 55%;
   padding: 2%;
   border-radius: 20px;
   border: unset;
   margin: 0 5%;
+  height: 50px;
 }
 
 @media screen and (max-width: 480px) {
@@ -219,7 +220,7 @@
 }
 
 .fortube-ber .result-graph .result .left .score span:nth-child(1) {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -284,7 +285,7 @@
 }
 
 .fortube-ber .result-graph .result .right .rank {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -1370,5 +1371,597 @@
 .cart-page .howtobuy .payby .paybycredit .box-credit figure img {
   max-width: 100%;
   border: 1px solid gray;
+}
+
+.ber-mean-page {
+  background: url(/img/ring/BGring.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  border-radius: 30px;
+  margin: 6% 0;
+}
+
+.ber-mean-page .box-search {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (48%)[2];
+      grid-template-columns: repeat(2, 48%);
+  grid-gap: 2%;
+  position: relative;
+  height: 100%;
+  padding: 5%;
+}
+
+.ber-mean-page .box-search .box-magic figure {
+  position: relative;
+}
+
+.ber-mean-page .box-search .box-magic figure img {
+  width: 100%;
+}
+
+.ber-mean-page .box-search .box-magic figure .gem-1 figure, .ber-mean-page .box-search .box-magic figure .gem-2 figure, .ber-mean-page .box-search .box-magic figure .gem-3 figure, .ber-mean-page .box-search .box-magic figure .gem-4 figure, .ber-mean-page .box-search .box-magic figure .gem-5 figure {
+  position: relative;
+}
+
+.ber-mean-page .box-search .box-magic figure .gem-1 figure img, .ber-mean-page .box-search .box-magic figure .gem-2 figure img, .ber-mean-page .box-search .box-magic figure .gem-3 figure img, .ber-mean-page .box-search .box-magic figure .gem-4 figure img, .ber-mean-page .box-search .box-magic figure .gem-5 figure img {
+  max-width: 100%;
+}
+
+.ber-mean-page .box-search .box-magic figure .gem-1 figure label, .ber-mean-page .box-search .box-magic figure .gem-2 figure label, .ber-mean-page .box-search .box-magic figure .gem-3 figure label, .ber-mean-page .box-search .box-magic figure .gem-4 figure label, .ber-mean-page .box-search .box-magic figure .gem-5 figure label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .8rem;
+}
+
+.ber-mean-page .box-search .box-magic figure .gem-1 {
+  position: absolute;
+  top: 2.8%;
+  left: 42.8%;
+  width: 14%;
+}
+
+.ber-mean-page .box-search .box-magic figure .gem-2 {
+  position: absolute;
+  top: 32.8%;
+  left: 2.3%;
+  width: 14%;
+}
+
+.ber-mean-page .box-search .box-magic figure .gem-3 {
+  position: absolute;
+  top: 80.6%;
+  left: 18.2%;
+  width: 14%;
+}
+
+.ber-mean-page .box-search .box-magic figure .gem-4 {
+  position: absolute;
+  top: 80.6%;
+  left: 66.8%;
+  width: 14%;
+}
+
+.ber-mean-page .box-search .box-magic figure .gem-5 {
+  position: absolute;
+  top: 32.8%;
+  left: 83.2%;
+  width: 14%;
+}
+
+.ber-mean-page .box-search .select-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ber-mean-page .box-search .select-data h1 {
+  color: #f3f3f3;
+  font-size: 2rem;
+}
+
+.ber-mean-page .box-search .select-data select {
+  width: 40%;
+  margin: 10% 0;
+  height: 50px;
+  border-radius: 20px;
+  padding: 0 3%;
+}
+
+.ber-mean-page .box-search .select-data select:focus {
+  outline: none;
+}
+
+.ber-mean-page .box-search .select-data .button-group {
+  width: 100%;
+  text-align: center;
+}
+
+.ber-mean-page .box-search .select-data .button-group button {
+  width: 20%;
+  height: 50px;
+  font-size: 1rem;
+  border: unset;
+  border-radius: 20px;
+  color: #c19a4b;
+  margin: 0 5%;
+  cursor: pointer;
+}
+
+.ber-mean-page .box-search .ps {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+}
+
+.ber-mean-page .box-search .ps p {
+  color: #fffdea;
+  font-size: .8rem;
+}
+
+.ber-mean-page .choice .speak .head-text {
+  text-align: center;
+  margin: 6% 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
+  background: linear-gradient(#c5a04f, #8e5415);
+  padding: 1%;
+  border-radius: 10px 60px 10px 10px;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.ber-mean-page .choice .speak .head-text h1, .ber-mean-page .choice .speak .head-text h2 {
+  color: #fff;
+}
+
+.ber-mean-page .choice .speak .selector {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (8.11%)[9];
+      grid-template-columns: repeat(9, 8.11%);
+  grid-gap: 3.3%;
+  grid-row-gap: 20px;
+}
+
+.ber-mean-page .choice .speak .selector figure {
+  position: relative;
+}
+
+.ber-mean-page .choice .speak .selector figure img {
+  max-width: 100%;
+}
+
+.ber-mean-page .choice .speak .selector figure label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 15%;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.ber-mean-page .choice .speak .selector .select img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.ber-mean-page .choice .speak .selector .select label {
+  color: gray;
+}
+
+.ber-mean-page .choice .mind .head-text {
+  text-align: center;
+  margin: 6% 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
+  background: linear-gradient(#c5a04f, #8e5415);
+  padding: 1%;
+  border-radius: 10px 60px 10px 10px;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.ber-mean-page .choice .mind .head-text h1, .ber-mean-page .choice .mind .head-text h2 {
+  color: #fff;
+}
+
+.ber-mean-page .choice .mind .selector {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (8.11%)[9];
+      grid-template-columns: repeat(9, 8.11%);
+  grid-gap: 3.3%;
+  grid-row-gap: 20px;
+}
+
+.ber-mean-page .choice .mind .selector figure {
+  position: relative;
+}
+
+.ber-mean-page .choice .mind .selector figure img {
+  max-width: 100%;
+}
+
+.ber-mean-page .choice .mind .selector figure label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 15%;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.ber-mean-page .choice .mind .selector .select img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.ber-mean-page .choice .mind .selector .select label {
+  color: gray;
+}
+
+.ber-mean-page .choice .money .head-text {
+  text-align: center;
+  margin: 6% 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
+  background: linear-gradient(#c5a04f, #8e5415);
+  padding: 1%;
+  border-radius: 10px 60px 10px 10px;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.ber-mean-page .choice .money .head-text h1, .ber-mean-page .choice .money .head-text h2 {
+  color: #fff;
+}
+
+.ber-mean-page .choice .money .selector {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (8.11%)[9];
+      grid-template-columns: repeat(9, 8.11%);
+  grid-gap: 3.3%;
+  grid-row-gap: 20px;
+}
+
+.ber-mean-page .choice .money .selector figure {
+  position: relative;
+}
+
+.ber-mean-page .choice .money .selector figure img {
+  max-width: 100%;
+}
+
+.ber-mean-page .choice .money .selector figure label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 15%;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.ber-mean-page .choice .money .selector .select img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.ber-mean-page .choice .money .selector .select label {
+  color: gray;
+}
+
+.ber-mean-page .choice .job .head-text {
+  text-align: center;
+  margin: 6% 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
+  background: linear-gradient(#c5a04f, #8e5415);
+  padding: 1%;
+  border-radius: 10px 60px 10px 10px;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.ber-mean-page .choice .job .head-text h1, .ber-mean-page .choice .job .head-text h2 {
+  color: #fff;
+}
+
+.ber-mean-page .choice .job .selector {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (8.11%)[9];
+      grid-template-columns: repeat(9, 8.11%);
+  grid-gap: 3.3%;
+  grid-row-gap: 20px;
+}
+
+.ber-mean-page .choice .job .selector figure {
+  position: relative;
+}
+
+.ber-mean-page .choice .job .selector figure img {
+  max-width: 100%;
+}
+
+.ber-mean-page .choice .job .selector figure label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 15%;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.ber-mean-page .choice .job .selector .select img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.ber-mean-page .choice .job .selector .select label {
+  color: gray;
+}
+
+.ber-mean-page .choice .luck .head-text {
+  text-align: center;
+  margin: 6% 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
+  background: linear-gradient(#c5a04f, #8e5415);
+  padding: 1%;
+  border-radius: 10px 60px 10px 10px;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.ber-mean-page .choice .luck .head-text h1, .ber-mean-page .choice .luck .head-text h2 {
+  color: #fff;
+}
+
+.ber-mean-page .choice .luck .selector {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (8.11%)[9];
+      grid-template-columns: repeat(9, 8.11%);
+  grid-gap: 3.3%;
+  grid-row-gap: 20px;
+}
+
+.ber-mean-page .choice .luck .selector figure {
+  position: relative;
+}
+
+.ber-mean-page .choice .luck .selector figure img {
+  max-width: 100%;
+}
+
+.ber-mean-page .choice .luck .selector figure label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 15%;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.ber-mean-page .choice .luck .selector .select img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.ber-mean-page .choice .luck .selector .select label {
+  color: gray;
+}
+
+.ber-mean-page .choice .love .head-text {
+  text-align: center;
+  margin: 6% 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
+  background: linear-gradient(#c5a04f, #8e5415);
+  padding: 1%;
+  border-radius: 10px 60px 10px 10px;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.ber-mean-page .choice .love .head-text h1, .ber-mean-page .choice .love .head-text h2 {
+  color: #fff;
+}
+
+.ber-mean-page .choice .love .selector {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (8.11%)[9];
+      grid-template-columns: repeat(9, 8.11%);
+  grid-gap: 3.3%;
+  grid-row-gap: 20px;
+}
+
+.ber-mean-page .choice .love .selector figure {
+  position: relative;
+}
+
+.ber-mean-page .choice .love .selector figure img {
+  max-width: 100%;
+}
+
+.ber-mean-page .choice .love .selector figure label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 15%;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.ber-mean-page .choice .love .selector .select img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.ber-mean-page .choice .love .selector .select label {
+  color: gray;
+}
+
+.ber-mean-page .choice .property .head-text {
+  text-align: center;
+  margin: 6% 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
+  background: linear-gradient(#c5a04f, #8e5415);
+  padding: 1%;
+  border-radius: 10px 60px 10px 10px;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.ber-mean-page .choice .property .head-text h1, .ber-mean-page .choice .property .head-text h2 {
+  color: #fff;
+}
+
+.ber-mean-page .choice .property .selector {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (8.11%)[9];
+      grid-template-columns: repeat(9, 8.11%);
+  grid-gap: 3.3%;
+  grid-row-gap: 20px;
+}
+
+.ber-mean-page .choice .property .selector figure {
+  position: relative;
+}
+
+.ber-mean-page .choice .property .selector figure img {
+  max-width: 100%;
+}
+
+.ber-mean-page .choice .property .selector figure label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 15%;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.ber-mean-page .choice .property .selector .select img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.ber-mean-page .choice .property .selector .select label {
+  color: gray;
 }
 /*# sourceMappingURL=product.css.map */

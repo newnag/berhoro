@@ -2,13 +2,22 @@ $('.ems-trackbox button').click(function(){
     window.open('https://track.thailandpost.co.th/', '_blank');
 });
 
-// --------------------กดดูรูปสไลด์รีวิว----------------- //
-$('.slide-review figure').click(function(){
+// --------------------กดดูรูปสไลด์รีวิว-------------------- //
+$('.review .slide-review figure').click(function(){
     let img = $(this).children().attr('src');
-    $('.show-review').fadeIn();
-    $('.show-review .box-show figure img').attr('src',img);
+    $('.review .show-review').fadeIn();
+    $('.review .show-review .box-show figure img').attr('src',img);
 });
-$('.show-review .box-show .close-button').click(function(){
+$('.review .show-review .box-show .close-button').click(function(){
+    $(this).closest('.show-review').fadeOut();
+});
+// ------------------- กดดูรูปในหน้ารีวิว ------------------- //
+$('.review-page .gallery .column figure').click(function(){
+    let slug = $(this).find('img').attr('src');
+    $('.review-page .show-review').fadeIn();
+    $('.review-page .show-review .box-show figure img').attr('src',slug);
+});
+$('.review-page .show-review .box-show .close-button').click(function(){
     $(this).closest('.show-review').fadeOut();
 });
 
@@ -176,10 +185,10 @@ $('.main-content .grid-content .box .detail .icon .shop').click(function(){
             }
             }, 100)
         },
-        onClose: () => {
-            clearInterval(timerInterval)
-        }
-        }).then((result) => {
+            onClose: () => {
+                clearInterval(timerInterval)
+            }
+        }).then(() => {
             $(this).closest('.detail').prev().children('a').addClass('select');
             $(this).closest('.icon').prev().addClass('select');
             $(this).hide();
@@ -191,10 +200,62 @@ $('.main-content .grid-content .box .detail .icon .shop').click(function(){
 $('.main-content .grid-content .box .detail .icon .unselect').click(function(){
     $(this).hide();
     $(this).prev().show();
+    $(this).closest('.detail').prev().children('a').removeClass('select');
+    $(this).closest('.icon').prev().removeClass('select');
     number_item_cart--;
     num_in_cart(number_item_cart);
 });
-// เพิ่มลดเลขตระกร้า
+// Testเพิ่มลดเลขตระกร้า
 function num_in_cart(number_item_cart){
     $('.num-shop-cart span').text(number_item_cart);
 }
+
+// ----------------------------- test กดเลือกความหมายเบอร์ ------------------------ //
+// ฟังก์ชั่นกดความหมายขึ้นวงแหวนเวท
+function choice_ber(that){
+    //let className = $(that).parent().parent().attr('class'); // เก็บชื่อ class
+    let img_slug = $(that).find('img').attr('src'); // เก็บลิ้งกรอบพื้นหลัง
+    let text = $(that).find('label').text(); // เก็บข้อความในกรอบที่กด
+    $(that).addClass('select');
+
+    if(!$('.gem-1').hasClass('cast')){
+        $('.gem-1').find('img').attr('src',img_slug);
+        $('.gem-1').find('label').text(text);
+        $('.gem-1').addClass('cast');
+    }
+    else if(!$('.gem-2').hasClass('cast')){
+        $('.gem-2').find('img').attr('src',img_slug);
+        $('.gem-2').find('label').text(text);
+        $('.gem-2').addClass('cast');
+    }
+    else if(!$('.gem-3').hasClass('cast')){
+        $('.gem-3').find('img').attr('src',img_slug);
+        $('.gem-3').find('label').text(text);
+        $('.gem-3').addClass('cast');
+    }
+    else if(!$('.gem-4').hasClass('cast')){
+        $('.gem-4').find('img').attr('src',img_slug);
+        $('.gem-4').find('label').text(text);
+        $('.gem-4').addClass('cast');
+    }
+    else if(!$('.gem-5').hasClass('cast')){
+        $('.gem-5').find('img').attr('src',img_slug);
+        $('.gem-5').find('label').text(text);
+        $('.gem-5').addClass('cast');
+    }
+    else{
+        Swal.fire(
+            'เกิดข้อผิดพลาด',
+            'ท่านได้เลือกความหมายครบทั้ง 5 จำนวนแล้ว',
+            'warning'
+          )
+    }
+}
+$('.ber-mean-page .choice .selector figure').click(function(){
+    choice_ber(this);
+});
+
+// กดเอาความหมายเบอร์ออก
+$('.box-search .box-magic figure div').click(function(){
+    
+});

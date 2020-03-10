@@ -20,7 +20,7 @@
                     </ul>
                 </li>
                 <li><a href="fortune-ber">ทำนายเบอร์</a></li>
-                <li><a href="">ค้นหาเบอร์จากความหมาย</a></li>
+                <li><a href="ber-mean">ค้นหาเบอร์จากความหมาย</a></li>
                 <li><a href="article">บทความ</a></li>
                 <li><a href="howtobuy">วิธีการสั่งซื้อ</a></li>
                 <li><a href="about">เกี่ยวกับเรา</a></li>
