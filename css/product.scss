@@ -978,11 +978,6 @@
 }
 
 .ber-mean-page{
-    background: url(/img/ring/BGring.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 700px;
-    border-radius: 30px;
     margin: 6% 0;
 
     .box-search{
@@ -990,18 +985,35 @@
         grid-template-columns: repeat(2,48%);
         grid-gap: 2%;
         position: relative;
-        height: 100%;
         padding: 5%;
+        background: url(/img/ring/BGring.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        height: 700px;
+
+        @media screen and (max-width:769px) {
+            grid-template-columns: 100%;
+            background: linear-gradient(#c5a04f,#8e5415);
+        }
+        @media screen and (min-width:481px) and (max-width:767px) {
+            height: 980px;
+        }
         
         .box-magic{
             figure{
                 position: relative;
+
+                @media screen and (max-width:1366px) {
+                    display: none;
+                }
 
                 img{
                     width: 100%;
                 }
 
                 .gem-1,.gem-2,.gem-3,.gem-4,.gem-5{
+
                     figure{
                         position: relative;
                         img{
@@ -1019,6 +1031,11 @@
                             justify-content: center;
                             align-items: center;
                             font-size: .8rem;
+                            cursor: pointer;
+
+                            @media screen and (max-width:480px) {
+                                font-size: .6rem;
+                            }
                         }
                     }
                 }
@@ -1053,6 +1070,135 @@
                     width: 14%;
                 }
             }
+
+            .magic-mobile{
+                width: 100%;
+                position: relative;
+                padding-top: 15%;
+
+                @media screen and (min-width:1367px) {
+                    display: none;
+                }
+
+                img{
+                    width: 100%;
+                }
+
+                .gem1-mobile{
+                    position: absolute;
+                    top: 1%;
+                    left: 35%;
+                    width: 30%;
+
+                    img.gem-select{
+                        position: absolute;
+                        top: 13%;
+                        left: 18%;
+                        width: 64%;
+                    }
+                    label.gem-select{
+                        font-size: .6rem;
+                        position: absolute;
+                        top: 25%;
+                        left: 30%;
+                        width: 50%;
+                        height: 100%;
+                        color: #fff;
+                    }
+                }
+
+                .gem2-mobile{
+                    position: absolute;
+                    top: 30%;
+                    left: -9%;
+                    width: 30%;
+
+                    img.gem-select{
+                        position: absolute;
+                        top: 12.6%;
+                        left: 18%;
+                        width: 64%;
+                    }
+                    label.gem-select{
+                        font-size: .6rem;
+                        position: absolute;
+                        top: 25%;
+                        left: 30%;
+                        width: 50%;
+                        height: 100%;
+                        color: #fff;
+                    }
+                }
+
+                .gem3-mobile{
+                    position: absolute;
+                    top: 76%;
+                    left: 7%;
+                    width: 30%;
+
+                    img.gem-select{
+                        position: absolute;
+                        top: 12%;
+                        left: 18%;
+                        width: 64%;
+                    }
+                    label.gem-select{
+                        font-size: .6rem;
+                        position: absolute;
+                        top: 25%;
+                        left: 30%;
+                        width: 50%;
+                        height: 100%;
+                        color: #fff;
+                    }
+                }
+
+                .gem4-mobile{
+                    position: absolute;
+                    top: 76%;
+                    right: 7%;
+                    width: 30%;
+
+                    img.gem-select{
+                        position: absolute;
+                        top: 12.6%;
+                        left: 17.6%;
+                        width: 64%;
+                    }
+                    label.gem-select{
+                        font-size: .6rem;
+                        position: absolute;
+                        top: 25%;
+                        left: 30%;
+                        width: 50%;
+                        height: 100%;
+                        color: #fff;
+                    }
+                }
+
+                .gem5-mobile{
+                    position: absolute;
+                    top: 30%;
+                    right: -9%;
+                    width: 30%;
+
+                    img.gem-select{
+                        position: absolute;
+                        top: 13%;
+                        left: 18%;
+                        width: 64%;
+                    }
+                    label.gem-select{
+                        font-size: .6rem;
+                        position: absolute;
+                        top: 25%;
+                        left: 30%;
+                        width: 50%;
+                        height: 100%;
+                        color: #fff;
+                    }
+                }
+            }
         }
 
         .select-data{
@@ -1072,6 +1218,10 @@
                 border-radius: 20px;
                 padding: 0 3%;
 
+                @media screen and (max-width:480px) {
+                    width: 60%;
+                }
+
                 &:focus{
                     outline: none;
                 }
@@ -1089,6 +1239,10 @@
                     color: $background_menu;
                     margin: 0 5%;
                     cursor: pointer;
+
+                    @media screen and (max-width:480px) {
+                        width: 35%;
+                    }
                 }
             }
         }
@@ -1097,6 +1251,10 @@
             position: absolute;
             bottom: 5%;
             left: 3%;
+
+            @media screen and (max-width:480px) {
+                bottom: 2%;
+            }
     
             p{
                 color: $sideMenu_color;

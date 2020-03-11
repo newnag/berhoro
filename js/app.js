@@ -216,46 +216,127 @@ function choice_ber(that){
     //let className = $(that).parent().parent().attr('class'); // เก็บชื่อ class
     let img_slug = $(that).find('img').attr('src'); // เก็บลิ้งกรอบพื้นหลัง
     let text = $(that).find('label').text(); // เก็บข้อความในกรอบที่กด
-    $(that).addClass('select');
+    
 
-    if(!$('.gem-1').hasClass('cast')){
-        $('.gem-1').find('img').attr('src',img_slug);
-        $('.gem-1').find('label').text(text);
-        $('.gem-1').addClass('cast');
-    }
-    else if(!$('.gem-2').hasClass('cast')){
-        $('.gem-2').find('img').attr('src',img_slug);
-        $('.gem-2').find('label').text(text);
-        $('.gem-2').addClass('cast');
-    }
-    else if(!$('.gem-3').hasClass('cast')){
-        $('.gem-3').find('img').attr('src',img_slug);
-        $('.gem-3').find('label').text(text);
-        $('.gem-3').addClass('cast');
-    }
-    else if(!$('.gem-4').hasClass('cast')){
-        $('.gem-4').find('img').attr('src',img_slug);
-        $('.gem-4').find('label').text(text);
-        $('.gem-4').addClass('cast');
-    }
-    else if(!$('.gem-5').hasClass('cast')){
-        $('.gem-5').find('img').attr('src',img_slug);
-        $('.gem-5').find('label').text(text);
-        $('.gem-5').addClass('cast');
+    if($(that).hasClass('select')){
+        $(that).removeClass('select');
+        $('.box-magic figure div:contains('+text+')').removeClass('cast');
+        $('.box-magic figure div:contains('+text+')').find('figure img').attr('src',"");
+        $('.box-magic figure div:contains('+text+')').find('figure label').text("");
     }
     else{
-        Swal.fire(
-            'เกิดข้อผิดพลาด',
-            'ท่านได้เลือกความหมายครบทั้ง 5 จำนวนแล้ว',
-            'warning'
-          )
+        $(that).addClass('select');
+
+        if(!$('.gem-1').hasClass('cast')){
+            $('.gem-1').find('img').attr('src',img_slug);
+            $('.gem-1').find('label').text(text);
+            $('.gem-1').addClass('cast');
+        }
+        else if(!$('.gem-2').hasClass('cast')){
+            $('.gem-2').find('img').attr('src',img_slug);
+            $('.gem-2').find('label').text(text);
+            $('.gem-2').addClass('cast');
+        }
+        else if(!$('.gem-3').hasClass('cast')){
+            $('.gem-3').find('img').attr('src',img_slug);
+            $('.gem-3').find('label').text(text);
+            $('.gem-3').addClass('cast');
+        }
+        else if(!$('.gem-4').hasClass('cast')){
+            $('.gem-4').find('img').attr('src',img_slug);
+            $('.gem-4').find('label').text(text);
+            $('.gem-4').addClass('cast');
+        }
+        else if(!$('.gem-5').hasClass('cast')){
+            $('.gem-5').find('img').attr('src',img_slug);
+            $('.gem-5').find('label').text(text);
+            $('.gem-5').addClass('cast');
+        }
+        else{
+            Swal.fire(
+                'เกิดข้อผิดพลาด',
+                'ท่านได้เลือกความหมายครบทั้ง 5 จำนวนแล้ว',
+                'warning'
+              )
+        }
     }
 }
+// ฟังก์ชั่นเลือกความหมายขึ้นวงแหวนเวทแบบมือถือ
+function choice_mobile(that){
+    let img_slug = $(that).find('img').attr('src'); // เก็บลิ้งกรอบพื้นหลัง
+    let text = $(that).find('label').text(); // เก็บข้อความในกรอบที่กด
+    
+
+    // เช็คสำหรับกดความหมายซ้ำ
+    if($(that).hasClass('select')){
+        $(that).removeClass('select');
+        $('.magic-mobile div:contains('+text+')').removeClass('cast');
+        $('.magic-mobile div:contains('+text+')').find('img.gem-select').attr('src',""); // ลบรูปด้านบน
+        $('.magic-mobile div:contains('+text+')').find('label.gem-select').text(""); // ลบข้อความด้านบน
+    }
+    else{
+        $(that).addClass('select');
+
+        if(!$('.gem1-mobile').hasClass('cast')){
+            $('.gem1-mobile').find('img.gem-select').attr('src',img_slug);
+            $('.gem1-mobile').find('label.gem-select').text(text);
+            $('.gem1-mobile').addClass('cast');
+        }
+        else if(!$('.gem2-mobile').hasClass('cast')){
+            $('.gem2-mobile').find('img.gem-select').attr('src',img_slug);
+            $('.gem2-mobile').find('label.gem-select').text(text);
+            $('.gem2-mobile').addClass('cast');
+        }
+        else if(!$('.gem3-mobile').hasClass('cast')){
+            $('.gem3-mobile').find('img.gem-select').attr('src',img_slug);
+            $('.gem3-mobile').find('label.gem-select').text(text);
+            $('.gem3-mobile').addClass('cast');
+        }
+        else if(!$('.gem4-mobile').hasClass('cast')){
+            $('.gem4-mobile').find('img.gem-select').attr('src',img_slug);
+            $('.gem4-mobile').find('label.gem-select').text(text);
+            $('.gem4-mobile').addClass('cast');
+        }
+        else if(!$('.gem5-mobile').hasClass('cast')){
+            $('.gem5-mobile').find('img.gem-select').attr('src',img_slug);
+            $('.gem5-mobile').find('label.gem-select').text(text);
+            $('.gem5-mobile').addClass('cast');
+        }
+        else{
+            Swal.fire(
+                'เกิดข้อผิดพลาด',
+                'ท่านได้เลือกความหมายครบทั้ง 5 จำนวนแล้ว',
+                'warning'
+              )
+        }
+    }
+}
+
 $('.ber-mean-page .choice .selector figure').click(function(){
-    choice_ber(this);
+    if($(window).width() < 1366){
+        choice_mobile(this);
+    }
+    else{
+        choice_ber(this);
+    }
 });
 
 // กดเอาความหมายเบอร์ออก
 $('.box-search .box-magic figure div').click(function(){
-    
+    let ele = $(this).find('figure label').text();
+    let ele_choice = $('.choice .selector').find('figure[data-name="'+ele+'"]');
+    $(ele_choice).removeClass('select');
+
+    $(this).removeClass('cast');
+    $(this).find('figure img').attr('src',"");
+    $(this).find('figure label').text("");
+});
+$('.box-search .box-magic .magic-mobile div').click(function(){
+    let ele = $(this).find('label.gem-select').text();
+    let ele_choice = $('.choice .selector').find('figure[data-name="'+ele+'"]');
+    $(ele_choice).removeClass('select');
+
+    $(this).find('img.gem-select').attr('src',"");
+    $(this).find('label.gem-select').text("");
+    $(this).removeClass('cast'); 
 });

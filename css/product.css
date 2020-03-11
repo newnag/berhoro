@@ -1374,11 +1374,6 @@
 }
 
 .ber-mean-page {
-  background: url(/img/ring/BGring.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 700px;
-  border-radius: 30px;
   margin: 6% 0;
 }
 
@@ -1389,12 +1384,37 @@
       grid-template-columns: repeat(2, 48%);
   grid-gap: 2%;
   position: relative;
-  height: 100%;
   padding: 5%;
+  background: url(/img/ring/BGring.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  height: 700px;
+}
+
+@media screen and (max-width: 769px) {
+  .ber-mean-page .box-search {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
+    background: linear-gradient(#c5a04f, #8e5415);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .ber-mean-page .box-search {
+    height: 980px;
+  }
 }
 
 .ber-mean-page .box-search .box-magic figure {
   position: relative;
+}
+
+@media screen and (max-width: 1366px) {
+  .ber-mean-page .box-search .box-magic figure {
+    display: none;
+  }
 }
 
 .ber-mean-page .box-search .box-magic figure img {
@@ -1427,6 +1447,13 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: .8rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .box-magic figure .gem-1 figure label, .ber-mean-page .box-search .box-magic figure .gem-2 figure label, .ber-mean-page .box-search .box-magic figure .gem-3 figure label, .ber-mean-page .box-search .box-magic figure .gem-4 figure label, .ber-mean-page .box-search .box-magic figure .gem-5 figure label {
+    font-size: .6rem;
+  }
 }
 
 .ber-mean-page .box-search .box-magic figure .gem-1 {
@@ -1464,6 +1491,142 @@
   width: 14%;
 }
 
+.ber-mean-page .box-search .box-magic .magic-mobile {
+  width: 100%;
+  position: relative;
+  padding-top: 15%;
+}
+
+@media screen and (min-width: 1367px) {
+  .ber-mean-page .box-search .box-magic .magic-mobile {
+    display: none;
+  }
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile img {
+  width: 100%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem1-mobile {
+  position: absolute;
+  top: 1%;
+  left: 35%;
+  width: 30%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem1-mobile img.gem-select {
+  position: absolute;
+  top: 13%;
+  left: 18%;
+  width: 64%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem1-mobile label.gem-select {
+  font-size: .6rem;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem2-mobile {
+  position: absolute;
+  top: 30%;
+  left: -9%;
+  width: 30%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem2-mobile img.gem-select {
+  position: absolute;
+  top: 12.6%;
+  left: 18%;
+  width: 64%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem2-mobile label.gem-select {
+  font-size: .6rem;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem3-mobile {
+  position: absolute;
+  top: 76%;
+  left: 7%;
+  width: 30%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem3-mobile img.gem-select {
+  position: absolute;
+  top: 12%;
+  left: 18%;
+  width: 64%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem3-mobile label.gem-select {
+  font-size: .6rem;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem4-mobile {
+  position: absolute;
+  top: 76%;
+  right: 7%;
+  width: 30%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem4-mobile img.gem-select {
+  position: absolute;
+  top: 12.6%;
+  left: 17.6%;
+  width: 64%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem4-mobile label.gem-select {
+  font-size: .6rem;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem5-mobile {
+  position: absolute;
+  top: 30%;
+  right: -9%;
+  width: 30%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem5-mobile img.gem-select {
+  position: absolute;
+  top: 13%;
+  left: 18%;
+  width: 64%;
+}
+
+.ber-mean-page .box-search .box-magic .magic-mobile .gem5-mobile label.gem-select {
+  font-size: .6rem;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+
 .ber-mean-page .box-search .select-data {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1493,6 +1656,12 @@
   padding: 0 3%;
 }
 
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .select-data select {
+    width: 60%;
+  }
+}
+
 .ber-mean-page .box-search .select-data select:focus {
   outline: none;
 }
@@ -1513,10 +1682,22 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .select-data .button-group button {
+    width: 35%;
+  }
+}
+
 .ber-mean-page .box-search .ps {
   position: absolute;
   bottom: 5%;
   left: 3%;
+}
+
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .ps {
+    bottom: 2%;
+  }
 }
 
 .ber-mean-page .box-search .ps p {
@@ -1548,6 +1729,13 @@
   grid-row-gap: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .ber-mean-page .choice .speak .selector {
+    -ms-grid-columns: (17%)[5];
+        grid-template-columns: repeat(5, 17%);
+  }
+}
+
 .ber-mean-page .choice .speak .selector figure {
   position: relative;
 }
@@ -1576,6 +1764,12 @@
   padding: 0 15%;
   font-size: .8rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1366px) {
+  .ber-mean-page .choice .speak .selector figure label {
+    font-size: .6rem;
+  }
 }
 
 .ber-mean-page .choice .speak .selector .select img {
@@ -1611,6 +1805,13 @@
   grid-row-gap: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .ber-mean-page .choice .mind .selector {
+    -ms-grid-columns: (17%)[5];
+        grid-template-columns: repeat(5, 17%);
+  }
+}
+
 .ber-mean-page .choice .mind .selector figure {
   position: relative;
 }
@@ -1639,6 +1840,12 @@
   padding: 0 15%;
   font-size: .8rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1366px) {
+  .ber-mean-page .choice .mind .selector figure label {
+    font-size: .6rem;
+  }
 }
 
 .ber-mean-page .choice .mind .selector .select img {
@@ -1674,6 +1881,13 @@
   grid-row-gap: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .ber-mean-page .choice .money .selector {
+    -ms-grid-columns: (17%)[5];
+        grid-template-columns: repeat(5, 17%);
+  }
+}
+
 .ber-mean-page .choice .money .selector figure {
   position: relative;
 }
@@ -1702,6 +1916,12 @@
   padding: 0 15%;
   font-size: .8rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1366px) {
+  .ber-mean-page .choice .money .selector figure label {
+    font-size: .6rem;
+  }
 }
 
 .ber-mean-page .choice .money .selector .select img {
@@ -1737,6 +1957,13 @@
   grid-row-gap: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .ber-mean-page .choice .job .selector {
+    -ms-grid-columns: (17%)[5];
+        grid-template-columns: repeat(5, 17%);
+  }
+}
+
 .ber-mean-page .choice .job .selector figure {
   position: relative;
 }
@@ -1765,6 +1992,12 @@
   padding: 0 15%;
   font-size: .8rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1366px) {
+  .ber-mean-page .choice .job .selector figure label {
+    font-size: .6rem;
+  }
 }
 
 .ber-mean-page .choice .job .selector .select img {
@@ -1800,6 +2033,13 @@
   grid-row-gap: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .ber-mean-page .choice .luck .selector {
+    -ms-grid-columns: (17%)[5];
+        grid-template-columns: repeat(5, 17%);
+  }
+}
+
 .ber-mean-page .choice .luck .selector figure {
   position: relative;
 }
@@ -1828,6 +2068,12 @@
   padding: 0 15%;
   font-size: .8rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1366px) {
+  .ber-mean-page .choice .luck .selector figure label {
+    font-size: .6rem;
+  }
 }
 
 .ber-mean-page .choice .luck .selector .select img {
@@ -1863,6 +2109,13 @@
   grid-row-gap: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .ber-mean-page .choice .love .selector {
+    -ms-grid-columns: (17%)[5];
+        grid-template-columns: repeat(5, 17%);
+  }
+}
+
 .ber-mean-page .choice .love .selector figure {
   position: relative;
 }
@@ -1891,6 +2144,12 @@
   padding: 0 15%;
   font-size: .8rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1366px) {
+  .ber-mean-page .choice .love .selector figure label {
+    font-size: .6rem;
+  }
 }
 
 .ber-mean-page .choice .love .selector .select img {
@@ -1926,6 +2185,13 @@
   grid-row-gap: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .ber-mean-page .choice .property .selector {
+    -ms-grid-columns: (17%)[5];
+        grid-template-columns: repeat(5, 17%);
+  }
+}
+
 .ber-mean-page .choice .property .selector figure {
   position: relative;
 }
@@ -1954,6 +2220,12 @@
   padding: 0 15%;
   font-size: .8rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1366px) {
+  .ber-mean-page .choice .property .selector figure label {
+    font-size: .6rem;
+  }
 }
 
 .ber-mean-page .choice .property .selector .select img {
