@@ -16,11 +16,12 @@
             <div class="left">
                 <div class="ber"><span>0897644358</span></div>
                 <span>ค่าความมงคล</span>
-                <div class="score"><span>1000</span><span>คะแนน</span></div>
+                <div class="score" data-score="468"><span></span><span>คะแนน</span></div>
+
             </div>
             <div class="right">
                 <div class="grade"><span>ดีเยี่ยม</span></div>
-                <div class="rank"><span>A+</span></div>
+                <div class="rank"><span></span></div>
             </div>
         </div>
         <div class="graph">
@@ -33,59 +34,59 @@
 
             <div class="grahp-data">
                 <div class="head-ber">
-                    <figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure>
+                    <figure><img src="img/icon/ture move h-02.png" alt=""></figure>
                     <h2>0897644358</h2>
                 </div>
                 <div class="data">
                     <div class="range">
-                        <span>1000</span>
+                        <span>400</span>
                         <span>0</span>
                     </div>
                     <div class="gradegraph">
                         <div class="candy">
-                            <div class="aplus" data-grade="800"></div>
+                            <div class="graphrate aplus" data-min="900" data-max="1000"></div>
                         </div>
                         <span>A+</span>
                     </div>
                     <div class="gradegraph">
                         <div class="candy">
-                            <div class="a" data-grade=""></div>
+                            <div class="graphrate a" data-min="800" data-max="899"></div>
                         </div>
                         <span>A</span>
                     </div>
                     <div class="gradegraph">
                         <div class="candy">
-                            <div class="bplus" data-grade=""></div>
+                            <div class="graphrate bplus" data-min="700" data-max="799"></div>
                         </div>
                         <span>B+</span>
                     </div>
                     <div class="gradegraph">
                         <div class="candy">
-                            <div class="b" data-grade=""></div>
+                            <div class="graphrate b" data-min="600" data-max="699"></div>
                         </div>
                         <span>B</span>
                     </div>
                     <div class="gradegraph">
                         <div class="candy">
-                            <div class="cplus" data-grade=""></div>
+                            <div class="graphrate cplus" data-min="500" data-max="599"></div>
                         </div>
                         <span>C+</span>
                     </div>
                     <div class="gradegraph">
                         <div class="candy">
-                            <div class="c" data-grade=""></div>
+                            <div class="graphrate c" data-min="400" data-max="499"></div>
                         </div>
                         <span>C</span>
                     </div>
                     <div class="gradegraph">
                         <div class="candy">
-                            <div class="d" data-grade=""></div>
+                            <div class="graphrate d" data-min="350" data-max="399"></div>
                         </div>
                         <span>D</span>
                     </div>
                     <div class="gradegraph">
                         <div class="candy">
-                            <div class="f" data-grade=""></div>
+                            <div class="graphrate f" data-min="0" data-max="349"></div>
                         </div>
                         <span>F</span>
                     </div>

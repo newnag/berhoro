@@ -2,6 +2,12 @@
   margin: 5% 0;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .fortube-ber {
+    grid-area: content;
+  }
+}
+
 .fortube-ber .fortune-box {
   background: url(/img/BG-fortune.png);
   background-repeat: no-repeat;
@@ -153,7 +159,7 @@
   margin: 5% 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .fortube-ber .result-graph {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -181,7 +187,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .fortube-ber .result-graph .result .left .ber span {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -203,7 +209,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .fortube-ber .result-graph .result .left .score {
-    margin-top: 15%;
+    margin-top: 6%;
   }
 }
 
@@ -225,7 +231,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .fortube-ber .result-graph .result .left .score span:nth-child(1) {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -247,7 +253,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .fortube-ber .result-graph .result .left .score span:nth-child(2) {
-    font-size: 1rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -288,10 +294,16 @@
   font-size: 4rem;
 }
 
+@media screen and (max-width: 480px) {
+  .fortube-ber .result-graph .result .right .rank {
+    margin-top: 12%;
+  }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .fortube-ber .result-graph .result .right .rank {
-    font-size: 3rem;
-    margin-top: 25%;
+    font-size: 5rem;
+    margin-top: 20%;
   }
 }
 
@@ -320,24 +332,12 @@
   position: absolute;
   top: 5%;
   left: 5%;
-  width: 20%;
+  width: 40%;
 }
 
 @media screen and (max-width: 480px) {
   .fortube-ber .result-graph .graph .select-data {
     width: 45%;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .fortube-ber .result-graph .graph .select-data {
-    width: 40%;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .fortube-ber .result-graph .graph .select-data {
-    width: 40%;
   }
 }
 
@@ -1377,33 +1377,33 @@
   margin: 6% 0;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .ber-mean-page {
+    grid-area: content;
+  }
+}
+
 .ber-mean-page .box-search {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (48%)[2];
       grid-template-columns: repeat(2, 48%);
   grid-gap: 2%;
+  grid-row-gap: 20px;
   position: relative;
   padding: 5%;
   background: url(/img/ring/BGring.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 30px;
-  height: 700px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .ber-mean-page .box-search {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
     background: linear-gradient(#c5a04f, #8e5415);
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .ber-mean-page .box-search {
-    height: 980px;
   }
 }
 
@@ -1688,21 +1688,33 @@
   }
 }
 
-.ber-mean-page .box-search .ps {
-  position: absolute;
-  bottom: 5%;
-  left: 3%;
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .ber-mean-page .box-search .select-data .button-group button {
+    width: 30%;
+  }
 }
 
-@media screen and (max-width: 480px) {
-  .ber-mean-page .box-search .ps {
-    bottom: 2%;
+@media screen and (min-width: 1024px) {
+  .ber-mean-page .box-search .select-data .button-group button {
+    width: 35%;
   }
+}
+
+.ber-mean-page .box-search .ps {
+  position: absolute;
+  bottom: 1%;
+  left: 3%;
 }
 
 .ber-mean-page .box-search .ps p {
   color: #fffdea;
   font-size: .8rem;
+}
+
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .ps p {
+    font-size: .6rem;
+  }
 }
 
 .ber-mean-page .choice .speak .head-text {
@@ -1733,6 +1745,13 @@
   .ber-mean-page .choice .speak .selector {
     -ms-grid-columns: (17%)[5];
         grid-template-columns: repeat(5, 17%);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ber-mean-page .choice .speak .selector {
+    -ms-grid-columns: (13.8%)[6];
+        grid-template-columns: repeat(6, 13.8%);
   }
 }
 
@@ -1812,6 +1831,13 @@
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ber-mean-page .choice .mind .selector {
+    -ms-grid-columns: (13.8%)[6];
+        grid-template-columns: repeat(6, 13.8%);
+  }
+}
+
 .ber-mean-page .choice .mind .selector figure {
   position: relative;
 }
@@ -1885,6 +1911,13 @@
   .ber-mean-page .choice .money .selector {
     -ms-grid-columns: (17%)[5];
         grid-template-columns: repeat(5, 17%);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ber-mean-page .choice .money .selector {
+    -ms-grid-columns: (13.8%)[6];
+        grid-template-columns: repeat(6, 13.8%);
   }
 }
 
@@ -1964,6 +1997,13 @@
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ber-mean-page .choice .job .selector {
+    -ms-grid-columns: (13.8%)[6];
+        grid-template-columns: repeat(6, 13.8%);
+  }
+}
+
 .ber-mean-page .choice .job .selector figure {
   position: relative;
 }
@@ -2037,6 +2077,13 @@
   .ber-mean-page .choice .luck .selector {
     -ms-grid-columns: (17%)[5];
         grid-template-columns: repeat(5, 17%);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ber-mean-page .choice .luck .selector {
+    -ms-grid-columns: (13.8%)[6];
+        grid-template-columns: repeat(6, 13.8%);
   }
 }
 
@@ -2116,6 +2163,13 @@
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ber-mean-page .choice .love .selector {
+    -ms-grid-columns: (13.8%)[6];
+        grid-template-columns: repeat(6, 13.8%);
+  }
+}
+
 .ber-mean-page .choice .love .selector figure {
   position: relative;
 }
@@ -2189,6 +2243,13 @@
   .ber-mean-page .choice .property .selector {
     -ms-grid-columns: (17%)[5];
         grid-template-columns: repeat(5, 17%);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ber-mean-page .choice .property .selector {
+    -ms-grid-columns: (13.8%)[6];
+        grid-template-columns: repeat(6, 13.8%);
   }
 }
 

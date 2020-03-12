@@ -137,11 +137,88 @@ $('.graph .select-data button').click(function(){
 
 // ------------ แปลงคะแนนเบอร์มาเป็นความสูงกราฟ ---------- //
 if($('.graph .grahp-data').is(":visible")){
-    let score = $('.grahp-data .data .gradegraph .candy .aplus').attr('data-grade');
-    console.log(score);
-    let sum = (75/1000)*score;
-    console.log(sum);
-    $('.grahp-data .data .gradegraph .candy .aplus').css("height",sum);
+    let score = $('.result .left .score').attr('data-score');
+    calcGraph(score);  
+    displayScore(score);
+}
+
+function calcGraph(score){
+    let Class = "";
+    let rank = "";
+    let ele = $('.graphrate');
+
+    // $.each(ele, function(key,value) {
+    //     console.log(value.dataset.min);
+    // });
+
+    let aplus = ele[0].dataset.min;
+    let a = ele[1].dataset.min;
+    let bplus = ele[2].dataset.min;
+    let b = ele[3].dataset.min;
+    let cplus = ele[4].dataset.min;
+    let c = ele[5].dataset.min;
+    let d = ele[6].dataset.min;
+    let f = ele[7].dataset.min;
+   
+    if(score > aplus){
+        rank = "A+"
+        Class = "aplus";
+        Min = aplus;
+    }
+    else if(score >= a){
+        console.log("A");
+        rank = "A"
+        Class = "a";
+        Min = a;
+    }
+    else if(score >= bplus){
+        console.log("B+");
+        rank = "B+"
+        Class = "bplus";
+        Min = bplus;
+    }
+    else if(score >= b){
+        console.log("B");
+        rank = "B"
+        Class = "b";
+        Min = b;
+    }
+    else if(score >= cplus){
+        console.log("C+");
+        rank = "C+"
+        Class = "cplus";
+        Min = cplus;
+    }
+    else if(score >= c){
+        console.log("C");
+        rank = "C"
+        Class = "c";
+        Min = c;
+    }
+    else if(score >= d){
+        console.log("D");
+        rank = "D"
+        Class = "d";
+        Min = d;
+    }
+    else{
+        console.log("F");
+        rank = "F"
+        Class = "f";
+        Min = f;
+    }
+
+    let Max = $('.grahp-data .data .graphrate.'+Class+'').data('max');
+    let max_lenght = Max-Min;
+    score = score-Min;
+    let sum = (((score/max_lenght)*100)/100)*75; //สูตรคำนวนความสูงของกราฟ
+    $('.grahp-data .data .gradegraph .candy .'+Class+'').css("height",sum);
+    $('.fortube-ber .right .rank span').text(rank); // เปลี่ยนแรงค์
+}
+
+// ------------------ ดึงคะแนนเบอร์ในหน้ากราฟ เข้าตัวแสดงผล ---------------- //
+function displayScore(score){
+    $('.fortube-ber .result-graph .result .score span:nth-child(1)').text(score);
 }
 
 // ------------------ กดสั่งซื้อแล้วขึ้นขอบคุณ ------------------- //
@@ -210,7 +287,7 @@ function num_in_cart(number_item_cart){
     $('.num-shop-cart span').text(number_item_cart);
 }
 
-// ----------------------------- test กดเลือกความหมายเบอร์ ------------------------ //
+// ----------------------------- กดเลือกความหมายเบอร์ ------------------------ //
 // ฟังก์ชั่นกดความหมายขึ้นวงแหวนเวท
 function choice_ber(that){
     //let className = $(that).parent().parent().attr('class'); // เก็บชื่อ class
@@ -340,3 +417,4 @@ $('.box-search .box-magic .magic-mobile div').click(function(){
     $(this).find('label.gem-select').text("");
     $(this).removeClass('cast'); 
 });
+

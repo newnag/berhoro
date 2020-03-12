@@ -151,6 +151,9 @@ $background_menu: #c19a4b;
         @media screen and (max-width:480px) {
             grid-template-columns: repeat(5,17%);
         }
+        @media screen and (min-width:481px) and (max-width:768px) {
+            grid-template-columns: repeat(6,13.8%);
+        }
 
         figure{
             position: relative;
