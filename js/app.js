@@ -142,6 +142,7 @@ if($('.graph .grahp-data').is(":visible")){
     displayScore(score);
 }
 
+// ฟังก์ชั่นคำนวนกราฟ
 function calcGraph(score){
     let Class = "";
     let rank = "";
@@ -151,75 +152,106 @@ function calcGraph(score){
     //     console.log(value.dataset.min);
     // });
 
-    let aplus = ele[0].dataset.min;
-    let a = ele[1].dataset.min;
-    let bplus = ele[2].dataset.min;
-    let b = ele[3].dataset.min;
-    let cplus = ele[4].dataset.min;
-    let c = ele[5].dataset.min;
-    let d = ele[6].dataset.min;
-    let f = ele[7].dataset.min;
+    let aplus_min = ele[0].dataset.min;
+    let a_min = ele[1].dataset.min;
+    let bplus_min = ele[2].dataset.min;
+    let b_min = ele[3].dataset.min;
+    let cplus_min = ele[4].dataset.min;
+    let c_min = ele[5].dataset.min;
+    let d_min = ele[6].dataset.min;
+    let f_min = ele[7].dataset.min;
+
+    let aplus_max = ele[0].dataset.max;
+    let a_max = ele[1].dataset.max;
+    let bplus_max = ele[2].dataset.max;
+    let b_max = ele[3].dataset.max;
+    let cplus_max = ele[4].dataset.max;
+    let c_max = ele[5].dataset.max;
+    let d_max = ele[6].dataset.max;
+    let f_max = ele[7].dataset.max;
    
-    if(score > aplus){
+    if(score > aplus_min){
         rank = "A+"
         Class = "aplus";
-        Min = aplus;
+        Min = aplus_min;
+        Max = aplus_max;
     }
-    else if(score >= a){
+    else if(score >= a_min){
         console.log("A");
         rank = "A"
         Class = "a";
-        Min = a;
+        Min = a_min;
+        Max = a_max;
     }
-    else if(score >= bplus){
+    else if(score >= bplus_min){
         console.log("B+");
         rank = "B+"
         Class = "bplus";
-        Min = bplus;
+        Min = bplus_min;
+        Max = bplus_max;
     }
-    else if(score >= b){
+    else if(score >= b_min){
         console.log("B");
         rank = "B"
         Class = "b";
-        Min = b;
+        Min = b_min;
+        Max = b_max;
     }
-    else if(score >= cplus){
+    else if(score >= cplus_min){
         console.log("C+");
         rank = "C+"
         Class = "cplus";
-        Min = cplus;
+        Min = cplus_min;
+        Max = cplus_max;
     }
-    else if(score >= c){
+    else if(score >= c_min){
         console.log("C");
         rank = "C"
         Class = "c";
-        Min = c;
+        Min = c_min;
+        Max = c_max;
     }
-    else if(score >= d){
+    else if(score >= d_min){
         console.log("D");
         rank = "D"
         Class = "d";
-        Min = d;
+        Min = d_min;
+        Max = d_max;
     }
     else{
         console.log("F");
         rank = "F"
         Class = "f";
-        Min = f;
+        Min = f_min;
+        Max = f_max;
     }
 
-    let Max = $('.grahp-data .data .graphrate.'+Class+'').data('max');
     let max_lenght = Max-Min;
     score = score-Min;
     let sum = (((score/max_lenght)*100)/100)*75; //สูตรคำนวนความสูงของกราฟ
     $('.grahp-data .data .gradegraph .candy .'+Class+'').css("height",sum);
     $('.fortube-ber .right .rank span').text(rank); // เปลี่ยนแรงค์
+    $('.grahp-data .data .range span:nth-child(1)').text(Max);
+    $('.grahp-data .data .range span:nth-child(2)').text(Min);
 }
 
 // ------------------ ดึงคะแนนเบอร์ในหน้ากราฟ เข้าตัวแสดงผล ---------------- //
 function displayScore(score){
     $('.fortube-ber .result-graph .result .score span:nth-child(1)').text(score);
 }
+
+// ----------------------- ล้างข้อมูลความหมายเบอร์ ----------------------- //
+$('.box-search .select-data .button-group .reset').click(function(){
+    $(this).parent().prev().val("");
+    $('.box-magic figure div figure img').attr('src',"");
+    $('.box-magic figure div figure label').text("");
+    $('.box-magic figure div').removeClass('cast');
+    $('.choice div .selector figure').removeClass('select');
+
+    $('.box-magic .magic-mobile div').removeClass('cast');
+    $('.box-magic .magic-mobile div img.gem-select').attr('src',"");
+    $('.box-magic .magic-mobile div label.gem-select').text("");
+});
 
 // ------------------ กดสั่งซื้อแล้วขึ้นขอบคุณ ------------------- //
 $('.checkout-box .address-box .button-checkout .buy').click(function(){

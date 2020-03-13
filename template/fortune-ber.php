@@ -108,16 +108,20 @@
 
         <div class="box">
             <div class="head-detail">
-                <h3>คู่เลข
-                <div class="no0">089</div>
-                <div class="no1 pair">7</div>
-                <div class="no2 pair">6</div>
-                <div class="no3">4</div>
-                <div class="no4">4</div>
-                <div class="no5">3</div>
-                <div class="no6">5</div>
-                <div class="no7">8</div>
-                : พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</h3>
+                <h3>
+                    <div class="kuunum">คู่เลข
+                        <div class="no0">089</div>
+                        <div class="no1 pair">7</div>
+                        <div class="no2 pair">6</div>
+                        <div class="no3">4</div>
+                        <div class="no4">4</div>
+                        <div class="no5">3</div>
+                        <div class="no6">5</div>
+                        <div class="no7">8</div>
+                    </div>
+                    <div>: พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</div>
+                
+                </h3>
             </div>
 
             <div class="detail">
@@ -129,16 +133,20 @@
 
         <div class="box">
             <div class="head-detail">
-                <h3>คู่เลข
-                <div class="no0">089</div>
-                <div class="no1 ">7</div>
-                <div class="no2 pair">6</div>
-                <div class="no3 pair">4</div>
-                <div class="no4">4</div>
-                <div class="no5">3</div>
-                <div class="no6">5</div>
-                <div class="no7">8</div>
-                : พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</h3>
+                <h3>
+                    <div class="kuunum">คู่เลข
+                        <div class="no0">089</div>
+                        <div class="no1 pair">7</div>
+                        <div class="no2 pair">6</div>
+                        <div class="no3">4</div>
+                        <div class="no4">4</div>
+                        <div class="no5">3</div>
+                        <div class="no6">5</div>
+                        <div class="no7">8</div>
+                    </div>
+                    <div>: พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</div>
+                
+                </h3>
             </div>
 
             <div class="detail">
@@ -150,16 +158,20 @@
 
         <div class="box">
             <div class="head-detail">
-                <h3>คู่เลข
-                <div class="no0">089</div>
-                <div class="no1 ">7</div>
-                <div class="no2 ">6</div>
-                <div class="no3 pair">4</div>
-                <div class="no4 pair">4</div>
-                <div class="no5">3</div>
-                <div class="no6">5</div>
-                <div class="no7">8</div>
-                : พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</h3>
+                <h3>
+                    <div class="kuunum">คู่เลข
+                        <div class="no0">089</div>
+                        <div class="no1 pair">7</div>
+                        <div class="no2 pair">6</div>
+                        <div class="no3">4</div>
+                        <div class="no4">4</div>
+                        <div class="no5">3</div>
+                        <div class="no6">5</div>
+                        <div class="no7">8</div>
+                    </div>
+                    <div>: พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</div>
+                
+                </h3>
             </div>
 
             <div class="detail">
@@ -171,16 +183,20 @@
 
         <div class="box">
             <div class="head-detail">
-                <h3>คู่เลข
-                <div class="no0">089</div>
-                <div class="no1 ">7</div>
-                <div class="no2 ">6</div>
-                <div class="no3">4</div>
-                <div class="no4 pair">4</div>
-                <div class="no5 pair">3</div>
-                <div class="no6">5</div>
-                <div class="no7">8</div>
-                : พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</h3>
+                <h3>
+                    <div class="kuunum">คู่เลข
+                        <div class="no0">089</div>
+                        <div class="no1 pair">7</div>
+                        <div class="no2 pair">6</div>
+                        <div class="no3">4</div>
+                        <div class="no4">4</div>
+                        <div class="no5">3</div>
+                        <div class="no6">5</div>
+                        <div class="no7">8</div>
+                    </div>
+                    <div>: พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</div>
+                
+                </h3>
             </div>
 
             <div class="detail">
@@ -192,37 +208,20 @@
 
         <div class="box">
             <div class="head-detail">
-                <h3>คู่เลข
-                <div class="no0">089</div>
-                <div class="no1 ">7</div>
-                <div class="no2 ">6</div>
-                <div class="no3">4</div>
-                <div class="no4">4</div>
-                <div class="no5 pair">3</div>
-                <div class="no6 pair">5</div>
-                <div class="no7">8</div>
-                : พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</h3>
-            </div>
-
-            <div class="detail">
-                <p>
-                มีวิสัยทัศน์ในการวางแผนระยะยาว รอบคอบ มุ่งมั่นในการหารายได้ให้ดีขึ้น ศึกษาข้อมูลลู่ทางในการทำมาหากินอยู่เสมอ ชอบการลงทุน เป็นคนระมัดระวังตัว คิดคำนวณสิ่งต่างๆว่าคุ้มค่าหรือไม่ ไม่เสียรู้ใคร วางแผนพัฒนาชีวิตเป็นขั้นตอน ไม่ประมาท เป็นห่วงด้านการเงิน ห่วงสมบัติ อยากรวย แต่งงานช้าไม่รวยไม่มั่นคงไม่แต่ง มุ่งมั่น ขยันในการพัฒนาตนเอง เหมาะกับงานบริหาร นักลงทุน ฝ่ายจัดซื้อ นโยบาย การวางแผน งานโครงการใหญ่ระยะยาว
-                </p>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="head-detail">
-                <h3>คู่เลข
-                <div class="no0">089</div>
-                <div class="no1 ">7</div>
-                <div class="no2 ">6</div>
-                <div class="no3">4</div>
-                <div class="no4">4</div>
-                <div class="no5">3</div>
-                <div class="no6 pair">5</div>
-                <div class="no7 pair">8</div>
-                : พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</h3>
+                <h3>
+                    <div class="kuunum">คู่เลข
+                        <div class="no0">089</div>
+                        <div class="no1 pair">7</div>
+                        <div class="no2 pair">6</div>
+                        <div class="no3">4</div>
+                        <div class="no4">4</div>
+                        <div class="no5">3</div>
+                        <div class="no6">5</div>
+                        <div class="no7">8</div>
+                    </div>
+                    <div>: พลังแห่งความสำเร็จ สมบูรณ์พูลสุข</div>
+                
+                </h3>
             </div>
 
             <div class="detail">

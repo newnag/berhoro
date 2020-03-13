@@ -86,7 +86,7 @@
                 <option value="">100001-1000000</option>
             </select>
             <div class="button-group">
-                <button>ล้างข้อมูล</button>
+                <button class="reset">ล้างข้อมูล</button>
                 <button>ค้นหา</button>
             </div>
         </div>
