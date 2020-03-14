@@ -73,6 +73,7 @@ nav{
         }
 
         .nav-menu{
+            position: relative;
             @media screen and (max-width:1024px) {
                 display: none;
                 position: fixed;
@@ -120,7 +121,10 @@ nav{
                     @media screen and (max-width:1024px) {
                         display: none;
                     }
+                    
                 }
+
+                
             }
             .cart{
                 position: relative;
@@ -135,7 +139,7 @@ nav{
                     border-radius: 20px;
                     width: 80%;
                     text-align: center;
-                }
+                }  
             }
             .buttonX{
                 margin-top: 10%;
@@ -182,6 +186,67 @@ nav{
                         border-radius: 50%;
                         padding: 3% 4%;
                         z-index: 7;
+                    }
+                }
+            }
+            .menu-cart{
+                &:hover .cart-hover{
+                    display: block;
+                }
+            }
+            .cart-hover{
+                display: none;
+                position: absolute;
+                top: 25px;
+                right: 0;
+                width: 40%;
+                ul{
+                    .head-hover{
+                        background: $background_menu;
+                        color: #fff;
+                        padding: 2%;
+                        text-align: center;
+                    }
+                    .list-item{
+                        height: 300px;
+                        overflow-y: scroll;
+                        background: #fff;
+
+                        &::-webkit-scrollbar {
+                            width: 5px;
+                        }
+                        &::-webkit-scrollbar-track {
+                            background: $background_main;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                            background: linear-gradient(#c5a04f,#8e5415);
+                        }
+                        &::-webkit-scrollbar-thumb:hover {
+                            background: $background_menu;
+                        }
+
+                        li{
+                            display: flex;
+                            flex-direction: column;
+                            background: #fff;
+                            padding: 3% 5%;
+                            border-bottom: 1px solid lightgray;
+                            .top{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                img{
+                                    max-width: 20%;
+                                }
+                                i{
+                                    cursor: pointer;
+                                }
+                            }
+                            .bottom{
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                        }
                     }
                 }
             }
@@ -686,7 +751,7 @@ nav{
 
                         span{
                             height: unset!important;
-                            width: 70%;
+                            width: 100%!important;
                             overflow: hidden;
                             display: -webkit-box;
                             -webkit-line-clamp: 2;

@@ -934,6 +934,12 @@
   color: #000;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .cart-page {
+    grid-area: content;
+  }
+}
+
 .cart-page .head-text {
   text-align: center;
   margin: 6% 0;
@@ -957,7 +963,7 @@
   grid-gap: 3%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .cart-page .cart-box {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;

@@ -79,6 +79,10 @@ nav .topnav .logo-nav figure img {
   max-width: 100%;
 }
 
+nav .topnav .nav-menu {
+  position: relative;
+}
+
 @media screen and (max-width: 1024px) {
   nav .topnav .nav-menu {
     display: none;
@@ -219,6 +223,90 @@ nav .topnav .nav-menu .cate-mobile .cateMobile .hide-button {
   border-radius: 50%;
   padding: 3% 4%;
   z-index: 7;
+}
+
+nav .topnav .nav-menu .menu-cart:hover .cart-hover {
+  display: block;
+}
+
+nav .topnav .nav-menu .cart-hover {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 40%;
+}
+
+nav .topnav .nav-menu .cart-hover ul .head-hover {
+  background: #c19a4b;
+  color: #fff;
+  padding: 2%;
+  text-align: center;
+}
+
+nav .topnav .nav-menu .cart-hover ul .list-item {
+  height: 300px;
+  overflow-y: scroll;
+  background: #fff;
+}
+
+nav .topnav .nav-menu .cart-hover ul .list-item::-webkit-scrollbar {
+  width: 5px;
+}
+
+nav .topnav .nav-menu .cart-hover ul .list-item::-webkit-scrollbar-track {
+  background: #f3f3f3;
+}
+
+nav .topnav .nav-menu .cart-hover ul .list-item::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
+  background: linear-gradient(#c5a04f, #8e5415);
+}
+
+nav .topnav .nav-menu .cart-hover ul .list-item::-webkit-scrollbar-thumb:hover {
+  background: #c19a4b;
+}
+
+nav .topnav .nav-menu .cart-hover ul .list-item li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  padding: 3% 5%;
+  border-bottom: 1px solid lightgray;
+}
+
+nav .topnav .nav-menu .cart-hover ul .list-item li .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .topnav .nav-menu .cart-hover ul .list-item li .top img {
+  max-width: 20%;
+}
+
+nav .topnav .nav-menu .cart-hover ul .list-item li .top i {
+  cursor: pointer;
+}
+
+nav .topnav .nav-menu .cart-hover ul .list-item li .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav .topnav .group-mobile-menu {
@@ -1013,7 +1101,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 
 .content .side-menu .last-release .menu a .num-ems span {
   height: unset !important;
-  width: 70%;
+  width: 100% !important;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;

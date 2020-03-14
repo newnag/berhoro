@@ -254,21 +254,44 @@ $('.box-search .select-data .button-group .reset').click(function(){
 });
 
 // ------------------ กดสั่งซื้อแล้วขึ้นขอบคุณ ------------------- //
+function isValidEmailAddress(emailAddress) {
+    var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+    return pattern.test(emailAddress);
+}
+
+// ทำการเช็คกรองข้อมูลหน้าสั่งซื้อ
 $('.checkout-box .address-box .button-checkout .buy').click(function(){
-    if($('.input-zone input').val() && $('.adddress').val()){
+    // กรอกข้อมูลไม่ครบ
+    if(!$('.input-zone input').val() && !$('.adddress').val()){
+        Swal.fire({
+            icon: 'warning',
+            title: 'เกิดข้อผิดพลาด',
+            text: 'กรุณากรอกข้อมูลให้ครบทุกช่อง',
+        })
+    }
+    // เบอร์โทรไม่ได้เป็นเลข
+    else if(!$.isNumeric($('.input-zone input[type=tel]').val())){
+        Swal.fire({
+            icon: 'warning',
+            title: 'เกิดข้อผิดพลาด',
+            text: 'กรุณากรอกเบอร์โทรให้เป็นตัวเลข',
+        })
+    }
+    // กรองอีเมล์เป็นรูปแบบอีเมล์
+    else if(!isValidEmailAddress($('.input-zone input[type=email]').val())){
+        Swal.fire({
+            icon: 'warning',
+            title: 'เกิดข้อผิดพลาด',
+            text: 'กรุณากรอกที่อยู่อีเมล์ให้ถูกต้อง',
+        })
+    }
+    else{
         $('.box-loading').fadeIn();
         setTimeout(() => {
             $('.box-loading').fadeOut();
             $('.cart-box').hide();
             $('.thank-you').show();
         }, 2000);
-    }
-    else{
-        Swal.fire({
-            icon: 'warning',
-            title: 'เกิดข้อผิดพลาด',
-            text: 'กรุณากรอกข้อมูลให้ครบทุกช่อง',
-          })
     }
 });
 
@@ -450,3 +473,12 @@ $('.box-search .box-magic .magic-mobile div').click(function(){
     $(this).removeClass('cast'); 
 });
 
+// -------------------- ล้างข้อมูลหน้าสั่งซื้อ -------------------- //
+$('.checkout-box .address-box .button-checkout .reset').click(function(){
+    $('.address-box input').val("");
+});
+
+// -------------------- ลบสินค้าในหน้าสั่งซื้อ ------------------- //
+$('.cart-page .cart-box .cart-list .list-item .box .detail .icon i').click(function(){
+    $(this).closest('.box').fadeOut();
+});
