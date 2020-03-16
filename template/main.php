@@ -166,132 +166,6 @@
             </div>
         </div>
 
-        <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
-            <div class="number">
-                <a href="detail-ber"><span>099999999</span></a>
-                <span class="sum-num">ผลรวม 48</span>
-            </div>
-            <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
-                <div class="price"><span>9000000.-</span></div>
-                <div class="icon">
-                    <i class="fas fa-shopping-basket shop"></i>
-                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 12.jpg" alt=""></figure></div>
-            <div class="number">
-                <a href="detail-ber"><span>099999999</span></a>
-                <span class="sum-num">ผลรวม 48</span>
-            </div>
-            <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
-                <div class="price"><span>9000000.-</span></div>
-                <div class="icon">
-                    <i class="fas fa-shopping-basket shop"></i>
-                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
-            <div class="number">
-                <a href="detail-ber"><span>099999999</span></a>
-                <span class="sum-num">ผลรวม 48</span>
-            </div>
-            <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
-                <div class="price"><span>9000000.-</span></div>
-                <div class="icon">
-                    <i class="fas fa-shopping-basket shop"></i>
-                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
-            <div class="number">
-                <a href="detail-ber"><span>099999999</span></a>
-                <span class="sum-num">ผลรวม 48</span>
-            </div>
-            <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
-                <div class="price"><span>9000000.-</span></div>
-                <div class="icon">
-                    <i class="fas fa-shopping-basket shop"></i>
-                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
-            <div class="number">
-                <a href="detail-ber"><span>099999999</span></a>
-                <span class="sum-num">ผลรวม 48</span>
-            </div>
-            <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
-                <div class="price"><span>9000000.-</span></div>
-                <div class="icon">
-                    <i class="fas fa-shopping-basket shop"></i>
-                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 12.jpg" alt=""></figure></div>
-            <div class="number">
-                <a href="detail-ber"><span>099999999</span></a>
-                <span class="sum-num">ผลรวม 48</span>
-            </div>
-            <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
-                <div class="price"><span>9000000.-</span></div>
-                <div class="icon">
-                    <i class="fas fa-shopping-basket shop"></i>
-                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
-            <div class="number">
-                <a href="detail-ber"><span>099999999</span></a>
-                <span class="sum-num">ผลรวม 48</span>
-            </div>
-            <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
-                <div class="price"><span>9000000.-</span></div>
-                <div class="icon">
-                    <i class="fas fa-shopping-basket shop"></i>
-                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
-                </div>
-            </div>
-        </div>
-
         <?php for($i=1;$i<=84;$i++): ?>
             <div class="box">
                 <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
@@ -305,8 +179,8 @@
                     <div class="icon">
                         <i class="fas fa-shopping-basket shop"></i>
                         <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                        <i class="fab fa-line line"></i>
-                        <i class="fas fa-mobile-alt tel"></i>
+                        <a href="https://line.me/ti/p/~@berdedd" target="_blank"><i class="fab fa-line line"></i></a>
+                        <a href="tel:0632895555"><i class="fas fa-mobile-alt tel"></i></a>
                     </div>
                 </div>
             </div>
