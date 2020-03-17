@@ -57,11 +57,11 @@
                 width: 45%;
             }
             @media screen and (min-width:1025px) {
-                width: 50%;
+                width: 45%;
             }
 
             .network,.grade{
-                text-align: center;
+                text-align: end;
                 width: 50%;
 
                 select{
@@ -74,6 +74,10 @@
 
                     &:focus{
                         outline: none;
+                    }
+
+                    option{
+                        color: #000;
                     }
 
                 }
@@ -246,6 +250,12 @@
                     }
                     i{
                         cursor: pointer;
+
+                        &:hover{
+                            transform: scale(1.1);
+                            color: #d00808;
+                            transition: all .2s;
+                        }
                     }
                     .unselect{
                         display: none;

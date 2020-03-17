@@ -3,54 +3,54 @@
 <title>BerHoRo</title>
 
 <link href="https://fonts.googleapis.com/css?family=Sarabun:400,500,500i,600,700,800&display=swap&subset=thai" rel="stylesheet">
-<link rel="stylesheet" href="css/berstyle.min.css?v=<?=date('his'); ?>">
+<link rel="stylesheet" href="css/berstyle.min.css?v=<?=date('Ymdhis'); ?>">
 
 <?php
     switch($slug){
         case '' :
-            echo'<link rel="stylesheet" href="css/main.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/main.min.css?v='.date('Ymdhis').'">';
             break;
         case 'home' :
-            echo'<link rel="stylesheet" href="css/main.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/main.min.css?v='.date('Ymdhis').'">';
             break;
         case 'about' :
-            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('Ymdhis').'">';
             break;
         case 'contact' :
-            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('Ymdhis').'">';
             break;
         case 'howtobuy' :
-            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('Ymdhis').'">';
             break;
         case 'article' :
-            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('Ymdhis').'">';
             break;
         case 'article-detail' :
-            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('Ymdhis').'">';
             break;
         case 'fortune-ber' :
-            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('Ymdhis').'">';
             break;
         case 'detail-ber' :
-            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('Ymdhis').'">';
             break;
         case 'sum-ber' :
-            echo'<link rel="stylesheet" href="css/main.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/main.min.css?v='.date('Ymdhis').'">';
             break;
         case 'cate-ber' :
-            echo'<link rel="stylesheet" href="css/main.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/main.min.css?v='.date('Ymdhis').'">';
             break;
         case 'last-releast' :
-            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('Ymdhis').'">';
             break;
         case 'cart' :
-            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('Ymdhis').'">';
             break;
         case 'review' :
-            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/content.min.css?v='.date('Ymdhis').'">';
             break;
         case 'ber-mean' :
-            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('his').'">';
+            echo'<link rel="stylesheet" href="css/product.min.css?v='.date('Ymdhis').'">';
             break;
     }
 ?>

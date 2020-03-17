@@ -96,12 +96,12 @@
 
 @media screen and (min-width: 1025px) {
   .main-content .head-text .right, .sumber-content .head-text .right {
-    width: 50%;
+    width: 45%;
   }
 }
 
 .main-content .head-text .right .network, .main-content .head-text .right .grade, .sumber-content .head-text .right .network, .sumber-content .head-text .right .grade {
-  text-align: center;
+  text-align: end;
   width: 50%;
 }
 
@@ -117,6 +117,10 @@
 
 .main-content .head-text .right .network select:focus, .main-content .head-text .right .grade select:focus, .sumber-content .head-text .right .network select:focus, .sumber-content .head-text .right .grade select:focus {
   outline: none;
+}
+
+.main-content .head-text .right .network select option, .main-content .head-text .right .grade select option, .sumber-content .head-text .right .network select option, .sumber-content .head-text .right .grade select option {
+  color: #000;
 }
 
 .main-content .sum-head-text, .sumber-content .sum-head-text {
@@ -360,6 +364,14 @@
 
 .main-content .grid-content .box .detail .icon i, .sumber-content .grid-content .box .detail .icon i {
   cursor: pointer;
+}
+
+.main-content .grid-content .box .detail .icon i:hover, .sumber-content .grid-content .box .detail .icon i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #d00808;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .main-content .grid-content .box .detail .icon .unselect, .sumber-content .grid-content .box .detail .icon .unselect {

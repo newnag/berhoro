@@ -198,7 +198,7 @@ nav .topnav .nav-menu .buttonX i {
 
 nav .topnav .nav-menu .cate-mobile .cateMobile {
   position: absolute;
-  width: 60%;
+  width: 70%;
   height: 100%;
   top: 0;
   left: -100%;
@@ -209,12 +209,17 @@ nav .topnav .nav-menu .cate-mobile .cateMobile {
   transition: left .5s;
 }
 
+nav .topnav .nav-menu .cate-mobile .cateMobile li {
+  text-align: left;
+}
+
 nav .topnav .nav-menu .cate-mobile .cateMobile li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1rem;
 }
 
@@ -511,6 +516,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 .search-box h2 {
   text-align: center;
   color: #fff;
+  padding: 2% 0;
 }
 
 .search-box .box {
@@ -827,7 +833,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 }
 
 .search-box .box .right-box .favorite-num .favorite .button-num button:hover, .search-box .box .right-box .favorite-num .kirai .button-num button:hover {
-  background-color: #8d611e;
+  background-color: #d64209;
 }
 
 .search-box .box .right-box .favorite-num .favorite .button-num .active-button, .search-box .box .right-box .favorite-num .kirai .button-num .active-button {
@@ -1056,7 +1062,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 }
 
 .search-box .button-form button:hover {
-  background: #c19a4b;
+  background: #d64209;
   color: #fff;
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -1758,6 +1764,15 @@ nav .topnav .group-mobile-menu .hamberger i {
   border: unset;
   cursor: pointer;
   font-size: .8rem;
+  height: 40px;
+  width: 70px;
+}
+
+.review .review-box .head-text a button:hover {
+  color: #fff;
+  background-color: #d64209;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .review .review-box .slide-review {

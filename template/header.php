@@ -8,14 +8,7 @@
                 <li class="cate-mobile">
                     <a href="#">เมนูหมวดหมู่เบอร์</a>
                     <ul class="cateMobile">
-                        <?php for($i=1;$i<=10;$i++): ?>
-                            <li>
-                                <a href="">
-                                    <span>เบอร์มงคลมาใหม่</span>
-                                    <span>200</span>
-                                </a>
-                            </li>
-                        <?php endfor; ?>
+                        <?=$header['category']['navleft']?>
                         <div class="hide-button"><i class="fas fa-angle-double-left"></i></div>
                     </ul>
                 </li>
