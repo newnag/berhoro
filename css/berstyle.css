@@ -192,7 +192,7 @@ nav .topnav .nav-menu .buttonX i {
 
 nav .topnav .nav-menu .cate-mobile .cateMobile {
   position: absolute;
-  width: 70%;
+  width: 60%;
   height: 100%;
   top: 0;
   left: -100%;
@@ -203,17 +203,12 @@ nav .topnav .nav-menu .cate-mobile .cateMobile {
   transition: left .5s;
 }
 
-nav .topnav .nav-menu .cate-mobile .cateMobile li {
-  text-align: left;
-}
-
 nav .topnav .nav-menu .cate-mobile .cateMobile li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-size: 1rem;
 }
 
@@ -667,7 +662,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 }
 
 .search-box .box .right-box .favorite-num .favorite .button-num button:hover, .search-box .box .right-box .favorite-num .kirai .button-num button:hover {
-  background-color: #d64209;
+  background-color: #8d611e;
 }
 
 .search-box .box .right-box .favorite-num .favorite .button-num .active-button, .search-box .box .right-box .favorite-num .kirai .button-num .active-button {
@@ -850,7 +845,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 }
 
 .search-box .button-form button:hover {
-  background: #d64209;
+  background: #c19a4b;
   color: #fff;
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -1466,15 +1461,6 @@ nav .topnav .group-mobile-menu .hamberger i {
   border: unset;
   cursor: pointer;
   font-size: .8rem;
-  height: 40px;
-  width: 70px;
-}
-
-.review .review-box .head-text a button:hover {
-  color: #fff;
-  background-color: #d64209;
-  -webkit-transition: all .3s;
-  transition: all .3s;
 }
 
 .review .review-box .slide-review {

@@ -42,7 +42,6 @@
             align-items: center;
             width: 50%;
 
-<<<<<<< HEAD
             // @media screen and (min-width:481px) and (max-width:768px) {
             //     width: 55%;
             // }
@@ -50,19 +49,17 @@
                 width: 45%;
             }
             @media screen and (min-width:1025px) {
-                width: 45%;
+                width: 50%;
             }
 
             .network,.grade{
-                text-align: end;
-=======
             @media screen and (min-width:481px) {
                 width: 35%;
             }
 
             .network,.grade{
                 margin-left: 3%;
->>>>>>> parent of 1c25a83... 16/03/2020
+                text-align: center;
                 width: 50%;
 
                 select{
@@ -75,14 +72,10 @@
                     &:focus{
                         outline: none;
                     }
-<<<<<<< HEAD
 
                     option{
                         color: #000;
                     }
-
-=======
->>>>>>> parent of 1c25a83... 16/03/2020
                 }
             }
         }
@@ -240,12 +233,6 @@
                     
                     i{
                         cursor: pointer;
-
-                        &:hover{
-                            transform: scale(1.1);
-                            color: #d00808;
-                            transition: all .2s;
-                        }
                     }
                     .unselect{
                         display: none;
@@ -262,4 +249,5 @@
     .pagination{
         @include pagination();
     }
+}
 }

@@ -9,21 +9,24 @@
 <head>
     <?php include('template/css.php') ?>
 </head>
-<body> 
-    <?php include('template/header.php'); ?> 
+<body>
+
+    <?php include('template/header.php'); ?>
+
     <section>
         <div class="container content">
             <!-- เมนูข้าง -->
-            <?php include('template/sidebar.php'); ?> 
+            <?php include('template/sidebar.php'); ?>
+
             <!-- ส่วนเนื้อหา -->
              <?php
                 switch($slug){
-                    case '2' :
-                    default:  
-                        #home      
-                      
-                        include('template/main.php'); 
-                        break; 
+                    case '' :
+                        include('template/main.php');
+                        break;
+                    case 'home' :
+                        include('template/main.php');
+                        break;
                     case 'about' :
                         include('template/about.php');
                         break;

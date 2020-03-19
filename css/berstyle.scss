@@ -159,7 +159,7 @@ nav{
 
                 .cateMobile{
                     position: absolute;
-                    width: 70%;
+                    width: 60%;
                     height: 100%;
                     top: 0;
                     left: -100%;
@@ -169,11 +169,10 @@ nav{
                     transition: left .5s;
 
                     li{
-                        text-align: left;
-
+                    
                         a{
                             display: flex;
-                            justify-content: space-between;
+                            justify-content: space-around;
                             font-size: 1rem;
                         }
                     }
@@ -503,7 +502,7 @@ nav{
                             }
 
                             &:hover{
-                                background-color: #d64209;
+                                background-color: #8d611e;
                             }
                         }
                         .active-button{
@@ -675,7 +674,7 @@ nav{
             @include button-round();
             
             &:hover{
-                background: #d64209;
+                background: $background_menu;
                 color: #fff;
                 transition: all .2s;
             }
@@ -924,14 +923,6 @@ nav{
                     border: unset;
                     cursor: pointer;
                     font-size: .8rem;
-                    height: 40px;
-                    width: 70px;
-
-                    &:hover{
-                        color: #fff;
-                        background-color: #d64209;
-                        transition: all .3s;
-                    }
                 }
             }
         }
