@@ -23,13 +23,13 @@
     <div class="grid-content">
         
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-11.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-A+" src="img/grade/Artboard – 25.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-A+" src="img/grade/Artboard25.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -41,13 +41,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-11.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard24.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -59,13 +59,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-11.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-B+" src="img/grade/Artboard – 23.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-B+" src="img/grade/Artboard23.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -77,13 +77,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-11.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-B" src="img/grade/Artboard – 22.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-B" src="img/grade/Artboard22.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -95,13 +95,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 12.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-12.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-C+" src="img/grade/Artboard – 21.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-C+" src="img/grade/Artboard21.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -113,13 +113,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 12.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-12.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-C" src="img/grade/Artboard – 20.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-C" src="img/grade/Artboard20.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -131,13 +131,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-13.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-D" src="img/grade/Artboard – 19.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-D" src="img/grade/Artboard19.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -149,13 +149,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-11.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-F" src="img/grade/Artboard – 27.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-F" src="img/grade/Artboard27.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -167,13 +167,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 11.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-11.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard24.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -185,13 +185,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 12.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-12.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard24.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -203,13 +203,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-13.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard24.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -221,49 +221,13 @@
         </div>
 
         <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
+            <div class="logo"><figure><img src="img/logo/Artboard-13.jpg" alt=""></figure></div>
             <div class="number">
                 <a href="detail-ber"><span>099999999</span></a>
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
-                <div class="price"><span>9000000.-</span></div>
-                <div class="icon">
-                    <i class="fas fa-shopping-basket shop"></i>
-                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
-            <div class="number">
-                <a href="detail-ber"><span>099999999</span></a>
-                <span class="sum-num">ผลรวม 48</span>
-            </div>
-            <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
-                <div class="price"><span>9000000.-</span></div>
-                <div class="icon">
-                    <i class="fas fa-shopping-basket shop"></i>
-                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="logo"><figure><img src="img/logo/Artboard – 12.jpg" alt=""></figure></div>
-            <div class="number">
-                <a href="detail-ber"><span>099999999</span></a>
-                <span class="sum-num">ผลรวม 48</span>
-            </div>
-            <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard24.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -281,7 +245,43 @@
                 <span class="sum-num">ผลรวม 48</span>
             </div>
             <div class="detail">
-                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard24.jpg" alt=""></figure></div>
+                <div class="price"><span>9000000.-</span></div>
+                <div class="icon">
+                    <i class="fas fa-shopping-basket shop"></i>
+                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
+                    <i class="fab fa-line line"></i>
+                    <i class="fas fa-mobile-alt tel"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="logo"><figure><img src="img/logo/Artboard-12.jpg" alt=""></figure></div>
+            <div class="number">
+                <a href="detail-ber"><span>099999999</span></a>
+                <span class="sum-num">ผลรวม 48</span>
+            </div>
+            <div class="detail">
+                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard24.jpg" alt=""></figure></div>
+                <div class="price"><span>9000000.-</span></div>
+                <div class="icon">
+                    <i class="fas fa-shopping-basket shop"></i>
+                    <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
+                    <i class="fab fa-line line"></i>
+                    <i class="fas fa-mobile-alt tel"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="logo"><figure><img src="img/logo/Artboard-13.jpg" alt=""></figure></div>
+            <div class="number">
+                <a href="detail-ber"><span>099999999</span></a>
+                <span class="sum-num">ผลรวม 48</span>
+            </div>
+            <div class="detail">
+                <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard24.jpg" alt=""></figure></div>
                 <div class="price"><span>9000000.-</span></div>
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
@@ -294,13 +294,13 @@
 
         <?php for($i=1;$i<=84;$i++): ?>
             <div class="box">
-                <div class="logo"><figure><img src="img/logo/Artboard – 13.jpg" alt=""></figure></div>
+                <div class="logo"><figure><img src="img/logo/Artboard-13.jpg" alt=""></figure></div>
                 <div class="number">
                     <a href="detail-ber"><span>099999999</span></a>
                     <span class="sum-num">ผลรวม 48</span>
                 </div>
                 <div class="detail">
-                    <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard – 24.jpg" alt=""></figure></div>
+                    <div class="rank"><figure><img class="grade-A" src="img/grade/Artboard24.jpg" alt=""></figure></div>
                     <div class="price"><span>9000000.-</span></div>
                     <div class="icon">
                         <i class="fas fa-shopping-basket shop"></i>

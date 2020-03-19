@@ -295,14 +295,13 @@ nav{
     @media screen and (min-width:1025px) {
        width: 100%;
        height: 100%;
-       padding: 1% 0;
        border-radius: 25px;
     } 
 
     h2{
         text-align: center;
         color: #fff;
-        padding: 2% 0;
+        padding: 1% 0;
     }
 
     .box{
@@ -502,13 +501,10 @@ nav{
                             &:focus{
                                 outline: none;
                             }
-<<<<<<< HEAD
 
                             &:hover{
                                 background-color: #d64209;
                             }
-=======
->>>>>>> parent of 1c25a83... 16/03/2020
                         }
                         .active-button{
                             background: $background_main;
@@ -678,14 +674,11 @@ nav{
 
             @include button-round();
             
-<<<<<<< HEAD
             &:hover{
                 background: #d64209;
                 color: #fff;
                 transition: all .2s;
             }
-=======
->>>>>>> parent of 1c25a83... 16/03/2020
         }
     }
 }

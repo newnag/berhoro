@@ -95,7 +95,7 @@
     </nav>
 
     <div class="slider owl-carousel">
-        <figure><img src="img/Artboard–30.jpg" alt=""></figure>
+        <figure><img src="img/slider.jpg" alt=""></figure>
     </div>
 
     <!-- ค้นหาเบอร์ -->

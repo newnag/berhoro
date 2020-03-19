@@ -361,7 +361,6 @@ nav .topnav .group-mobile-menu .hamberger i {
   .search-box {
     width: 100%;
     height: 100%;
-    padding: 1% 0;
     border-radius: 25px;
   }
 }
@@ -369,7 +368,7 @@ nav .topnav .group-mobile-menu .hamberger i {
 .search-box h2 {
   text-align: center;
   color: #fff;
-  padding: 2% 0;
+  padding: 1% 0;
 }
 
 .search-box .box {
@@ -667,13 +666,10 @@ nav .topnav .group-mobile-menu .hamberger i {
   outline: none;
 }
 
-<<<<<<< HEAD
 .search-box .box .right-box .favorite-num .favorite .button-num button:hover, .search-box .box .right-box .favorite-num .kirai .button-num button:hover {
   background-color: #d64209;
 }
 
-=======
->>>>>>> parent of 1c25a83... 16/03/2020
 .search-box .box .right-box .favorite-num .favorite .button-num .active-button, .search-box .box .right-box .favorite-num .kirai .button-num .active-button {
   background: #f3f3f3;
   color: #733f05;
@@ -853,7 +849,6 @@ nav .topnav .group-mobile-menu .hamberger i {
   outline: none;
 }
 
-<<<<<<< HEAD
 .search-box .button-form button:hover {
   background: #d64209;
   color: #fff;
@@ -861,8 +856,6 @@ nav .topnav .group-mobile-menu .hamberger i {
   transition: all .2s;
 }
 
-=======
->>>>>>> parent of 1c25a83... 16/03/2020
 .content {
   display: -ms-grid;
   display: grid;

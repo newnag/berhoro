@@ -137,7 +137,6 @@ $('.graph .select-data button').click(function(){
 
 // ------------ แปลงคะแนนเบอร์มาเป็นความสูงกราฟ ---------- //
 if($('.graph .grahp-data').is(":visible")){
-<<<<<<< HEAD
     let score = $('.result .left .score').attr('data-score');
     calcGraph(score);  
     displayScore(score);
@@ -239,13 +238,6 @@ function calcGraph(score){
 // ------------------ ดึงคะแนนเบอร์ในหน้ากราฟ เข้าตัวแสดงผล ---------------- //
 function displayScore(score){
     $('.fortube-ber .result-graph .result .score span:nth-child(1)').text(score);
-=======
-    let score = $('.grahp-data .data .gradegraph .candy .aplus').attr('data-grade');
-    console.log(score);
-    let sum = (75/1000)*score;
-    console.log(sum);
-    $('.grahp-data .data .gradegraph .candy .aplus').css("height",sum);
->>>>>>> parent of 37ba109... 12/03/2020
 }
 
 // ----------------------- ล้างข้อมูลความหมายเบอร์ ----------------------- //
@@ -479,7 +471,6 @@ $('.box-search .box-magic .magic-mobile div').click(function(){
     $(this).find('img.gem-select').attr('src',"");
     $(this).find('label.gem-select').text("");
     $(this).removeClass('cast'); 
-<<<<<<< HEAD
 });
 
 // -------------------- ล้างข้อมูลหน้าสั่งซื้อ -------------------- //
@@ -490,6 +481,4 @@ $('.checkout-box .address-box .button-checkout .reset').click(function(){
 // -------------------- ลบสินค้าในหน้าสั่งซื้อ ------------------- //
 $('.cart-page .cart-box .cart-list .list-item .box .detail .icon i').click(function(){
     $(this).closest('.box').fadeOut();
-=======
->>>>>>> parent of 37ba109... 12/03/2020
 });
