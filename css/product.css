@@ -107,7 +107,7 @@
   padding: 2%;
   border: unset;
   border-radius: 20px;
-  background: #fff;
+  background: #f3f3f3;
   color: #c19a4b;
   margin: 0 5%;
   font-size: 1rem;
@@ -128,13 +128,6 @@
   .fortube-ber .fortune-box .box .input button {
     width: 25%;
   }
-}
-
-.fortube-ber .fortune-box .box .input button:hover {
-  background-color: #c19a4b;
-  color: #fff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
 }
 
 .fortube-ber .fortune-box .box-ber {
@@ -179,10 +172,10 @@
 .fortube-ber .result-graph {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33% 65%;
-      grid-template-columns: 33% 65%;
-  grid-gap: 2%;
-  margin: 3% 0;
+  -ms-grid-columns: 30% 65%;
+      grid-template-columns: 30% 65%;
+  grid-gap: 5%;
+  margin: 5% 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -649,15 +642,6 @@
   background: linear-gradient(#fa9a46, #cb6002);
 }
 
-.fortube-ber .button button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-filter: drop-shadow(2px 4px 6px black);
-          filter: drop-shadow(2px 4px 6px black);
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
 .fortube-ber .head-text-fortune {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -684,7 +668,7 @@
 
 .fortube-ber .head-text-fortune .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -725,59 +709,6 @@
 
 .fortube-ber .head-text-fortune .manual span {
   margin: 0 5%;
-}
-
-.fortube-ber .head-text-fortune .manual-box {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #000000bf;
-  z-index: 5;
-}
-
-.fortube-ber .head-text-fortune .manual-box .zone {
-  position: absolute;
-  width: 60%;
-  height: 50%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.fortube-ber .head-text-fortune .manual-box .zone .box {
-  position: relative;
-  background: #fff;
-  padding: 5%;
-}
-
-.fortube-ber .head-text-fortune .manual-box .zone .box figure img {
-  max-width: 100%;
-}
-
-.fortube-ber .head-text-fortune .manual-box .zone .box .text-zone {
-  background: #c6a150;
-  margin: -1% 1%;
-}
-
-.fortube-ber .head-text-fortune .manual-box .zone .box .text-zone p {
-  color: #fff;
-  padding: 2%;
-}
-
-.fortube-ber .head-text-fortune .manual-box .zone .box .close-button {
-  position: absolute;
-  top: -10%;
-  right: -10%;
-  cursor: pointer;
-}
-
-.fortube-ber .head-text-fortune .manual-box .zone .box .close-button i {
-  font-size: 24px;
-  color: #94773b;
 }
 
 @media screen and (max-width: 480px) {
@@ -876,7 +807,7 @@
 
 .last-releast-content .head-releast .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -1011,7 +942,7 @@
 
 .cart-page .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -1380,7 +1311,7 @@
 
 .cart-page .howtobuy .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -1574,9 +1505,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 10px;
+  font-size: .8rem;
   cursor: pointer;
-  padding: 0 10%;
 }
 
 @media screen and (max-width: 480px) {
@@ -1653,12 +1583,11 @@
 .ber-mean-page .box-search .box-magic .magic-mobile .gem1-mobile label.gem-select {
   font-size: .6rem;
   position: absolute;
-  top: 27%;
+  top: 25%;
   left: 30%;
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 100%;
   color: #fff;
-  text-align: center;
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem2-mobile {
@@ -1678,12 +1607,11 @@
 .ber-mean-page .box-search .box-magic .magic-mobile .gem2-mobile label.gem-select {
   font-size: .6rem;
   position: absolute;
-  top: 27%;
+  top: 25%;
   left: 30%;
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 100%;
   color: #fff;
-  text-align: center;
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem3-mobile {
@@ -1703,12 +1631,11 @@
 .ber-mean-page .box-search .box-magic .magic-mobile .gem3-mobile label.gem-select {
   font-size: .6rem;
   position: absolute;
-  top: 27%;
+  top: 25%;
   left: 30%;
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 100%;
   color: #fff;
-  text-align: center;
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem4-mobile {
@@ -1728,12 +1655,11 @@
 .ber-mean-page .box-search .box-magic .magic-mobile .gem4-mobile label.gem-select {
   font-size: .6rem;
   position: absolute;
-  top: 27%;
+  top: 25%;
   left: 30%;
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 100%;
   color: #fff;
-  text-align: center;
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem5-mobile {
@@ -1753,12 +1679,11 @@
 .ber-mean-page .box-search .box-magic .magic-mobile .gem5-mobile label.gem-select {
   font-size: .6rem;
   position: absolute;
-  top: 27%;
+  top: 25%;
   left: 30%;
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 100%;
   color: #fff;
-  text-align: center;
 }
 
 .ber-mean-page .box-search .select-data {
@@ -1812,8 +1737,7 @@
   border: unset;
   border-radius: 20px;
   color: #c19a4b;
-  background: #fff;
-  margin: 0 2%;
+  margin: 0 5%;
   cursor: pointer;
 }
 
@@ -1831,15 +1755,8 @@
 
 @media screen and (min-width: 1024px) {
   .ber-mean-page .box-search .select-data .button-group button {
-    width: 40%;
+    width: 35%;
   }
-}
-
-.ber-mean-page .box-search .select-data .button-group button:hover {
-  background-color: #c19a4b;
-  color: #fff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
 }
 
 .ber-mean-page .box-search .ps {
@@ -1861,7 +1778,7 @@
 
 .ber-mean-page .choice .speak .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -1933,105 +1850,6 @@
   }
 }
 
-.ber-mean-page .choice .speak .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-}
-
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
 .ber-mean-page .choice .speak .selector .select img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
@@ -2043,7 +1861,7 @@
 
 .ber-mean-page .choice .mind .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2115,58 +1933,6 @@
   }
 }
 
-.ber-mean-page .choice .mind .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
 .ber-mean-page .choice .mind .selector .select img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
@@ -2178,7 +1944,7 @@
 
 .ber-mean-page .choice .money .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2250,58 +2016,6 @@
   }
 }
 
-.ber-mean-page .choice .money .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
 .ber-mean-page .choice .money .selector .select img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
@@ -2313,7 +2027,7 @@
 
 .ber-mean-page .choice .job .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2385,58 +2099,6 @@
   }
 }
 
-.ber-mean-page .choice .job .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
 .ber-mean-page .choice .job .selector .select img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
@@ -2448,7 +2110,7 @@
 
 .ber-mean-page .choice .luck .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2520,58 +2182,6 @@
   }
 }
 
-.ber-mean-page .choice .luck .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
 .ber-mean-page .choice .luck .selector .select img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
@@ -2583,7 +2193,7 @@
 
 .ber-mean-page .choice .love .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2655,58 +2265,6 @@
   }
 }
 
-.ber-mean-page .choice .love .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
 .ber-mean-page .choice .love .selector .select img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
@@ -2718,7 +2276,7 @@
 
 .ber-mean-page .choice .property .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 6% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2787,58 +2345,6 @@
 @media screen and (max-width: 1366px) {
   .ber-mean-page .choice .property .selector figure label {
     font-size: .6rem;
-  }
-}
-
-.ber-mean-page .choice .property .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 

@@ -1,7 +1,7 @@
 @import 'variable';
 
 .main-content,.sumber-content{ 
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width:767px) {
         grid-area: content;
     }
 
@@ -9,28 +9,19 @@
         display: flex;
         justify-content: space-between;
         margin: 5% 0;
-        flex-direction: column;
 
-        @media screen and (min-width:769px) {
-            margin: 3% 0;
-            flex-direction: unset;
+        @media screen and (min-width:481px) {
+            margin: 1% 0;
         }
 
         .left{
             display: flex;
+            justify-content: space-between;
+            flex-direction: column;
 
-            @media screen and (max-width:768px) {
-                margin-bottom: 5%;
-                justify-content: space-between;
-            }
-            @media screen and (min-width:769px) and (max-width:1024px) {
+            @media screen and (min-width:481px) {
                 flex-direction: unset;
-                width: 35%;
-                align-items: center;
-            }
-            @media screen and (min-width:1025px) {
-                width: 40%;
-                justify-content: start;
+                width: 25%;
             }
 
             span{
@@ -43,13 +34,15 @@
             }
             span:nth-child(2){
                 color: #d00808;
-                margin-left: 3%;
             }
         }
         .right{
             display: flex;
-            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+            width: 50%;
 
+<<<<<<< HEAD
             // @media screen and (min-width:481px) and (max-width:768px) {
             //     width: 55%;
             // }
@@ -62,6 +55,14 @@
 
             .network,.grade{
                 text-align: end;
+=======
+            @media screen and (min-width:481px) {
+                width: 35%;
+            }
+
+            .network,.grade{
+                margin-left: 3%;
+>>>>>>> parent of 1c25a83... 16/03/2020
                 width: 50%;
 
                 select{
@@ -69,17 +70,19 @@
                     border: unset;
                     border-radius: 5px;
                     color: #fff;
-                    height: 40px;
-                    padding: 0 5%;
+                    padding: 6%;
 
                     &:focus{
                         outline: none;
                     }
+<<<<<<< HEAD
 
                     option{
                         color: #000;
                     }
 
+=======
+>>>>>>> parent of 1c25a83... 16/03/2020
                 }
             }
         }
@@ -180,9 +183,6 @@
                         max-width: 100%;
                     }
                 }
-                .select{
-                    filter: grayscale(1);
-                }
             }
 
             .number{
@@ -224,9 +224,6 @@
                             max-width: 100%;
                         }
                     }
-                    .select{
-                        filter: grayscale(1);
-                    }
                 }
 
                 .price{
@@ -235,19 +232,12 @@
                     text-align: end;
                 }
 
-                
                 .icon{
                     color: gray;
                     font-size: 1.2rem;
                     display: flex;
                     justify-content: space-evenly;
                     
-                    a{
-                        color: gray;
-                        font-size: 1.2rem;
-                        display: flex;
-                        justify-content: space-evenly;
-                    }
                     i{
                         cursor: pointer;
 

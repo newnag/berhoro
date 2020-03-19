@@ -154,28 +154,28 @@ $SLUG = $Helper->get_slug();
 
                 <div class="slide-review owl-carousel">
                     <figure>
-                        <img src="img/review5.jpg" alt="">
+                        <img src="img/review1.jpg" alt="">
                         <div class="hover-img">
                             <i class="fas fa-eye"></i>
                             <span>view</span>
                         </div>
                     </figure>
                     <figure>
-                        <img src="img/review6.jpg" alt="">
+                        <img src="img/review2.jpg" alt="">
                         <div class="hover-img">
                             <i class="fas fa-eye"></i>
                             <span>view</span>
                         </div>
                     </figure>
                     <figure>
-                        <img src="img/review7.jpg" alt="">
+                        <img src="img/review3.jpg" alt="">
                         <div class="hover-img">
                             <i class="fas fa-eye"></i>
                             <span>view</span>
                         </div>
                     </figure>
                     <figure>
-                        <img src="img/review6.jpg" alt="">
+                        <img src="img/review4.jpg" alt="">
                         <div class="hover-img">
                             <i class="fas fa-eye"></i>
                             <span>view</span>

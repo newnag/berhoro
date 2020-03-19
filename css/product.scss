@@ -72,7 +72,7 @@
                     padding: 2%;
                     border: unset;
                     border-radius: 20px;
-                    background: #fff;
+                    background: $background_main;
                     color: $background_menu;
                     margin: 0 5%;
                     font-size: 1rem;
@@ -86,12 +86,6 @@
                     }
                     @media screen and (min-width:481px) and (max-width:1024px){
                         width: 25%;
-                    }
-
-                    &:hover{
-                        background-color: $background_menu;
-                        color: #fff;
-                        transition: all .2s;
                     }
                 }
             }
@@ -125,9 +119,9 @@
 
     .result-graph{
         display: grid;
-        grid-template-columns: 33% 65%;
-        grid-gap: 2%;
-        margin: 3% 0;
+        grid-template-columns: 30% 65%;
+        grid-gap: 5%;
+        margin: 5% 0;
 
         @media screen and (max-width:768px){
             grid-template-columns: 100%;
@@ -443,14 +437,6 @@
         .cart{
             background: linear-gradient(#fa9a46,#cb6002);
         }
-
-        button{
-            &:hover{
-                transform: scale(1.1);
-                filter: drop-shadow(2px 4px 6px black);
-                transition: all .2s;
-            }
-        }
     }
 
     .head-text-fortune{
@@ -485,57 +471,6 @@
 
             span{
                 margin: 0 5%;
-            }
-        }
-        .manual-box{
-            display: none;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: #000000bf;
-            z-index: 5;
-
-            .zone{
-                position: absolute;
-                width: 60%;
-                height: 50%;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-
-                .box{
-                    position: relative;
-                    background: #fff;
-                    padding: 5%;
-    
-                    figure{
-                        img{
-                            max-width: 100%;
-                        }
-                    }
-                    .text-zone{
-                        background: #c6a150;
-                        margin: -1% 1%;
-    
-                        p{
-                            color: #fff;
-                            padding: 2%;
-                        }
-                    }
-                    .close-button{
-                        position: absolute;
-                        top: -10%;
-                        right: -10%;
-                        cursor: pointer;
-
-                        i{
-                            font-size: 24px;
-                            color: #94773b;
-                        }
-                    }
-                }
             }
         }
     }
@@ -1127,9 +1062,8 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            font-size: 10px;
+                            font-size: .8rem;
                             cursor: pointer;
-                            padding: 0 10%;
 
                             @media screen and (max-width:480px) {
                                 font-size: .6rem;
@@ -1197,12 +1131,11 @@
                     label.gem-select{
                         font-size: .6rem;
                         position: absolute;
-                        top: 27%;
+                        top: 25%;
                         left: 30%;
-                        width: 40%;
-                        height: 40%;
+                        width: 50%;
+                        height: 100%;
                         color: #fff;
-                        text-align: center;
                     }
                 }
 
@@ -1221,12 +1154,11 @@
                     label.gem-select{
                         font-size: .6rem;
                         position: absolute;
-                        top: 27%;
+                        top: 25%;
                         left: 30%;
-                        width: 40%;
-                        height: 40%;
+                        width: 50%;
+                        height: 100%;
                         color: #fff;
-                        text-align: center;
                     }
                 }
 
@@ -1245,12 +1177,11 @@
                     label.gem-select{
                         font-size: .6rem;
                         position: absolute;
-                        top: 27%;
+                        top: 25%;
                         left: 30%;
-                        width: 40%;
-                        height: 40%;
+                        width: 50%;
+                        height: 100%;
                         color: #fff;
-                        text-align: center;
                     }
                 }
 
@@ -1269,12 +1200,11 @@
                     label.gem-select{
                         font-size: .6rem;
                         position: absolute;
-                        top: 27%;
+                        top: 25%;
                         left: 30%;
-                        width: 40%;
-                        height: 40%;
+                        width: 50%;
+                        height: 100%;
                         color: #fff;
-                        text-align: center;
                     }
                 }
 
@@ -1293,12 +1223,11 @@
                     label.gem-select{
                         font-size: .6rem;
                         position: absolute;
-                        top: 27%;
+                        top: 25%;
                         left: 30%;
-                        width: 40%;
-                        height: 40%;
+                        width: 50%;
+                        height: 100%;
                         color: #fff;
-                        text-align: center;
                     }
                 }
             }
@@ -1340,8 +1269,7 @@
                     border: unset;
                     border-radius: 20px;
                     color: $background_menu;
-                    background: #fff;
-                    margin: 0 2%;
+                    margin: 0 5%;
                     cursor: pointer;
 
                     @media screen and (max-width:480px) {
@@ -1351,13 +1279,7 @@
                         width: 30%;
                     }
                     @media screen and (min-width:1024px){
-                        width: 40%;
-                    }
-
-                    &:hover{
-                        background-color: $background_menu;
-                        color: #fff;
-                        transition: all .2s;
+                        width: 35%;
                     }
                 }
             }
