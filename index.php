@@ -1,87 +1,11 @@
 <?php
-session_start();
-require_once 'config/config.php';
-require_once 'classes/FrontEnd.php';
-require_once 'classes/helper.php';
-$Helper = new Helper();
-#ฟังก์ชั่นดึงข้อมูล Slug
-$SLUG = $Helper->get_slug();  
-?> 
+    $url = explode('/',$_SERVER['REQUEST_URI']);
+    $slug = urldecode($url[1]);
+    //echo $slug;
+?>
+
 <!DOCTYPE html>
 <html lang="en"> 
-<?php
-
-    /**
-     *  อ่านค่า URI จาก URL และ ทำการ Explode / ให้เป็น Array
-     */
-    $uri_full = urldecode($_SERVER['REQUEST_URI']);
-    $uri_array = explode("/", $uri_full);
-    $pageView = "";
-    $head['title'] = "";  
-
-    /**
-     * เช็คดู Uri Level 1 จะเก็บไว้ในตัวแปร $pageView
-     */
-    $uri_level_1 = trim($uri_array[1]);
-    if ($uri_level_1 == "" || $uri_level_1 == "home" || $uri_level_1 == "หน้าหลัก") {
-    $pageView = "home";
-    $head['title'] = $pageView;
-    } else {
-    $match = preg_match("/\?+/", $uri_level_1);
-    if ($match > 0) { #ถ้ามี Query String
-        $src_page = $_GET['page'];
-        $param_slug = explode('?', $uri_level_1);
-        $pageView = $param_slug[0];
-    } else {
-        $pageView = $uri_level_1;
-    }
-    $head['title'] = $uri_level_1;
-    }
-    /**
-     * เช็คดู Uri Level 2 ว่ามีหรือไม่ ถ้ามีก็จะเก็บไว้ในตัวแปร $uri_array[2]
-     */
-    if (isset($uri_array[2]) && !empty($uri_array[2])) {
-    $match = preg_match("/\?+/", $uri_array[2]);
-    if ($match > 0) { //ถ้ามี Query String
-        // $uri_level_2 = explode("/", $_GET['url'])[1];
-        $uri_level_2 = explode('?', $uri_array[2])[0];
-    } else {
-        $uri_level_2 = trim($uri_array[2]);
-    }
-    $head['title'] = $uri_level_2;
-    }
-    /**
-     * เช็คดู Uri Level 3 ว่ามีหรือไม่ ถ้ามีก็จะเก็บไว้ในตัวแปร $uri_array[3]
-     */
-    if (isset($uri_array[3]) && !empty($uri_array[3])) {
-    $match = preg_match("/\?+/", $uri_array[3]);
-    if ($match > 0) { //ถ้ามี Query String
-        // $uri_level_3 = explode("/", $_GET['url'])[1];
-        $uri_level_3 = explode('?', $uri_array[3])[0];
-    } else {
-        $uri_level_3 = trim($uri_array[3]);
-    }
-    $head['title'] = $uri_level_3;
-    }
-    /**
-     * เช็คดู Uri Level 4 ว่ามีหรือไม่ ถ้ามีก็จะเก็บไว้ในตัวแปร $uri_array[4]
-     */
-    if (isset($uri_array[4]) && !empty($uri_array[4])) {
-    $match = preg_match("/\?+/", $uri_array[4]);
-    if ($match > 0) { //ถ้ามี Query String
-        // $uri_level_4 = explode("/", $_GET['url'])[1];
-        $uri_level_4 = explode('?', $uri_array[4])[0];
-    } else {
-        $uri_level_4 = trim($uri_array[4]);
-    }
-        $head['title'] = $uri_level_4;
-    } 
-    $iconweb = $Helper->get_icon_fab_logo(14);
-    $catePage = $Helper->getCateIdByURL($pageView); 
-    
-    $header['category'] = $Helper->get_header_all_category();  
-    $header['sumber'] = $Helper->get_header_all_sumber(); 
-?> 
 <head>
     <?php include('template/css.php') ?>
 </head>
@@ -212,7 +136,6 @@ $SLUG = $Helper->get_slug();
                 </div>
             </div>
         </div>
- 
 
     </section>
 
