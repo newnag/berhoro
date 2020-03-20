@@ -37,6 +37,9 @@ $('.improve-luck .luck-box div').click(function(){
 $('.ber-goodluck .goodluck-box div').click(function(){
     $(this).toggleClass('active');
 });
+$('.ber-goodluck .goodluck-box .recomment-num').click(function(){
+    $(this).find('div').toggleClass('active');
+});
 
 // -----------------กดสลับค้นหาอย่างละเอียด---------------- //
 $('.open-more-filter').click(function(){
@@ -137,8 +140,8 @@ $('.graph .select-data button').click(function(){
 
 // ------------ แปลงคะแนนเบอร์มาเป็นความสูงกราฟ ---------- //
 if($('.graph .grahp-data').is(":visible")){
-    let score = $('.result .left .score').attr('data-score');
-    calcGraph(score);  
+    let score = parseInt($('.result .left .score').attr('data-score'));
+    calcGraph(score);
     displayScore(score);
 }
 
@@ -171,6 +174,7 @@ function calcGraph(score){
     let f_max = ele[7].dataset.max;
    
     if(score > aplus_min){
+        console.log("A+");
         rank = "A+"
         Class = "aplus";
         Min = aplus_min;
@@ -229,6 +233,11 @@ function calcGraph(score){
     let max_lenght = Max-Min;
     score = score-Min;
     let sum = (((score/max_lenght)*100)/100)*75; //สูตรคำนวนความสูงของกราฟ
+    // กรณีถ้า sum = 0 ค่าpx จะไม่ขึ้น
+    if(sum == 0){
+        sum = 5;
+    }
+
     $('.grahp-data .data .gradegraph .candy .'+Class+'').css("height",sum);
     $('.fortube-ber .right .rank span').text(rank); // เปลี่ยนแรงค์
     $('.grahp-data .data .range span:nth-child(1)').text(Max);
@@ -261,6 +270,8 @@ function isValidEmailAddress(emailAddress) {
 
 // ทำการเช็คกรองข้อมูลหน้าสั่งซื้อ
 $('.checkout-box .address-box .button-checkout .buy').click(function(){
+    let tel = $('.input-zone input[type=tel]').val();
+    console.log(tel.length);
     // กรอกข้อมูลไม่ครบ
     if(!$('.input-zone input').val() && !$('.adddress').val()){
         Swal.fire({
@@ -275,6 +286,14 @@ $('.checkout-box .address-box .button-checkout .buy').click(function(){
             icon: 'warning',
             title: 'เกิดข้อผิดพลาด',
             text: 'กรุณากรอกเบอร์โทรให้เป็นตัวเลข',
+        })
+    }
+    // เบอร์โทรไม่ได้10ตัว
+    else if( tel.length =! 10){
+        Swal.fire({
+            icon: 'warning',
+            title: 'เกิดข้อผิดพลาด',
+            text: 'กรอกให้ครบ10',
         })
     }
     // กรองอีเมล์เป็นรูปแบบอีเมล์
@@ -297,6 +316,7 @@ $('.checkout-box .address-box .button-checkout .buy').click(function(){
 
 // ----------------- กดเบอร์เข้าตระกร้า ------------------- //
 var number_item_cart = 0;
+// กดเบอร์หน้าแรก
 $('.main-content .grid-content .box .detail .icon .shop').click(function(){
 
     let timerInterval
@@ -323,6 +343,8 @@ $('.main-content .grid-content .box .detail .icon .shop').click(function(){
         }).then(() => {
             $(this).closest('.detail').prev().children('a').addClass('select');
             $(this).closest('.icon').prev().addClass('select');
+            $(this).closest('.detail').prev().prev().find('figure').addClass('select');
+            $(this).closest('.icon').prev().prev().find('figure').addClass('select');
             $(this).hide();
             $(this).next().show();
             number_item_cart++;
@@ -334,6 +356,54 @@ $('.main-content .grid-content .box .detail .icon .unselect').click(function(){
     $(this).prev().show();
     $(this).closest('.detail').prev().children('a').removeClass('select');
     $(this).closest('.icon').prev().removeClass('select');
+    $(this).closest('.detail').prev().prev().find('figure').removeClass('select');
+    $(this).closest('.icon').prev().prev().find('figure').removeClass('select');
+    number_item_cart--;
+    num_in_cart(number_item_cart);
+});
+
+// กดเบอร์หน้าหมวดหมู่
+$('.sumber-content .grid-content .box .detail .icon .shop').click(function(){
+
+    let timerInterval
+    Swal.fire({
+        title: '<i class="fas fa-shopping-basket shop"></i>',
+        html: 'กำลังนำเข้าสู่ตระกร้า',
+        timer: 800,
+        timerProgressBar: false,
+        onBeforeOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+            const content = Swal.getContent()
+            if (content) {
+                const b = content.querySelector('b')
+                if (b) {
+                b.textContent = Swal.getTimerLeft()
+                }
+            }
+            }, 100)
+        },
+            onClose: () => {
+                clearInterval(timerInterval)
+            }
+        }).then(() => {
+            $(this).closest('.detail').prev().children('a').addClass('select');
+            $(this).closest('.icon').prev().addClass('select');
+            $(this).closest('.detail').prev().prev().find('figure').addClass('select');
+            $(this).closest('.icon').prev().prev().find('figure').addClass('select');
+            $(this).hide();
+            $(this).next().show();
+            number_item_cart++;
+            num_in_cart(number_item_cart);
+    });
+});
+$('.sumber-content .grid-content .box .detail .icon .unselect').click(function(){
+    $(this).hide();
+    $(this).prev().show();
+    $(this).closest('.detail').prev().children('a').removeClass('select');
+    $(this).closest('.icon').prev().removeClass('select');
+    $(this).closest('.detail').prev().prev().find('figure').removeClass('select');
+    $(this).closest('.icon').prev().prev().find('figure').removeClass('select');
     number_item_cart--;
     num_in_cart(number_item_cart);
 });
@@ -342,7 +412,12 @@ function num_in_cart(number_item_cart){
     $('.num-shop-cart span').text(number_item_cart);
 }
 
-// ----------------------------- test กดเลือกความหมายเบอร์ ------------------------ //
+// ----------------------------- กดดูหน้าจอย่อยสินค้ามือถือ -------------------------- //
+$('.group-mobile-menu .cart-mobile').click(function(){
+    $(this).children('.cart-hover').toggle();
+});
+
+// ----------------------------- กดเลือกความหมายเบอร์ ------------------------ //
 // ฟังก์ชั่นกดความหมายขึ้นวงแหวนเวท
 function choice_ber(that){
     //let className = $(that).parent().parent().attr('class'); // เก็บชื่อ class
@@ -357,32 +432,36 @@ function choice_ber(that){
         $('.box-magic figure div:contains('+text+')').find('figure label').text("");
     }
     else{
-        $(that).addClass('select');
 
         if(!$('.gem-1').hasClass('cast')){
             $('.gem-1').find('img').attr('src',img_slug);
             $('.gem-1').find('label').text(text);
             $('.gem-1').addClass('cast');
+            $(that).addClass('select');
         }
         else if(!$('.gem-2').hasClass('cast')){
             $('.gem-2').find('img').attr('src',img_slug);
             $('.gem-2').find('label').text(text);
             $('.gem-2').addClass('cast');
+            $(that).addClass('select');
         }
         else if(!$('.gem-3').hasClass('cast')){
             $('.gem-3').find('img').attr('src',img_slug);
             $('.gem-3').find('label').text(text);
             $('.gem-3').addClass('cast');
+            $(that).addClass('select');
         }
         else if(!$('.gem-4').hasClass('cast')){
             $('.gem-4').find('img').attr('src',img_slug);
             $('.gem-4').find('label').text(text);
             $('.gem-4').addClass('cast');
+            $(that).addClass('select');
         }
         else if(!$('.gem-5').hasClass('cast')){
             $('.gem-5').find('img').attr('src',img_slug);
             $('.gem-5').find('label').text(text);
             $('.gem-5').addClass('cast');
+            $(that).addClass('select');
         }
         else{
             Swal.fire(
@@ -407,32 +486,36 @@ function choice_mobile(that){
         $('.magic-mobile div:contains('+text+')').find('label.gem-select').text(""); // ลบข้อความด้านบน
     }
     else{
-        $(that).addClass('select');
 
         if(!$('.gem1-mobile').hasClass('cast')){
             $('.gem1-mobile').find('img.gem-select').attr('src',img_slug);
             $('.gem1-mobile').find('label.gem-select').text(text);
             $('.gem1-mobile').addClass('cast');
+            $(that).addClass('select');
         }
         else if(!$('.gem2-mobile').hasClass('cast')){
             $('.gem2-mobile').find('img.gem-select').attr('src',img_slug);
             $('.gem2-mobile').find('label.gem-select').text(text);
             $('.gem2-mobile').addClass('cast');
+            $(that).addClass('select');
         }
         else if(!$('.gem3-mobile').hasClass('cast')){
             $('.gem3-mobile').find('img.gem-select').attr('src',img_slug);
             $('.gem3-mobile').find('label.gem-select').text(text);
             $('.gem3-mobile').addClass('cast');
+            $(that).addClass('select');
         }
         else if(!$('.gem4-mobile').hasClass('cast')){
             $('.gem4-mobile').find('img.gem-select').attr('src',img_slug);
             $('.gem4-mobile').find('label.gem-select').text(text);
             $('.gem4-mobile').addClass('cast');
+            $(that).addClass('select');
         }
         else if(!$('.gem5-mobile').hasClass('cast')){
             $('.gem5-mobile').find('img.gem-select').attr('src',img_slug);
             $('.gem5-mobile').find('label.gem-select').text(text);
             $('.gem5-mobile').addClass('cast');
+            $(that).addClass('select');
         }
         else{
             Swal.fire(
@@ -481,4 +564,19 @@ $('.checkout-box .address-box .button-checkout .reset').click(function(){
 // -------------------- ลบสินค้าในหน้าสั่งซื้อ ------------------- //
 $('.cart-page .cart-box .cart-list .list-item .box .detail .icon i').click(function(){
     $(this).closest('.box').fadeOut();
+});
+
+// ----------------- ลบรายการในหน้าตระกร้าเล็ก ----------------- //
+$('.menu-cart .cart-hover .list-item li .top i').click(function(){
+    $(this).closest('li').fadeOut();
+});
+
+// -------------------- เปิดดูคู่มือเบอร์ ------------------------ //
+// เปิดคู่มือ
+$('.fortube-ber .head-text-fortune .manual').click(function(){
+    $(this).next().fadeIn();
+});
+// ปิดคู่มือ
+$('.manual-box .box .close-button').click(function(){
+    $(this).closest('.manual-box').fadeOut();
 });

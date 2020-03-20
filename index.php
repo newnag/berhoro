@@ -1,11 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <?php
     $url = explode('/',$_SERVER['REQUEST_URI']);
     $slug = urldecode($url[1]);
-    //echo $slug;
 ?>
 
-<!DOCTYPE html>
-<html lang="en"> 
 <head>
     <?php include('template/css.php') ?>
 </head>
@@ -102,7 +102,7 @@
                         </div>
                     </figure>
                     <figure>
-                        <img src="img/review5.jpg" alt="">
+                        <img src="img/review6.jpg" alt="">
                         <div class="hover-img">
                             <i class="fas fa-eye"></i>
                             <span>view</span>
@@ -139,6 +139,7 @@
                 </div>
             </div>
         </div>
+ 
 
     </section>
 

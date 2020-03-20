@@ -1,7 +1,7 @@
 @import 'variable';
 
 .main-content,.sumber-content{ 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1024px) {
         grid-area: content;
     }
 
@@ -9,19 +9,28 @@
         display: flex;
         justify-content: space-between;
         margin: 5% 0;
+        flex-direction: column;
 
-        @media screen and (min-width:481px) {
-            margin: 1% 0;
+        @media screen and (min-width:769px) {
+            margin: 3% 0;
+            flex-direction: unset;
         }
 
         .left{
             display: flex;
-            justify-content: space-between;
-            flex-direction: column;
 
-            @media screen and (min-width:481px) {
+            @media screen and (max-width:768px) {
+                margin-bottom: 5%;
+                justify-content: space-between;
+            }
+            @media screen and (min-width:769px) and (max-width:1024px) {
                 flex-direction: unset;
-                width: 25%;
+                width: 35%;
+                align-items: center;
+            }
+            @media screen and (min-width:1025px) {
+                width: 40%;
+                justify-content: start;
             }
 
             span{
@@ -34,13 +43,12 @@
             }
             span:nth-child(2){
                 color: #d00808;
+                margin-left: 3%;
             }
         }
         .right{
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            width: 50%;
+            width: 100%;
 
             // @media screen and (min-width:481px) and (max-width:768px) {
             //     width: 55%;
@@ -49,17 +57,11 @@
                 width: 45%;
             }
             @media screen and (min-width:1025px) {
-                width: 50%;
+                width: 45%;
             }
 
             .network,.grade{
-            @media screen and (min-width:481px) {
-                width: 35%;
-            }
-
-            .network,.grade{
-                margin-left: 3%;
-                text-align: center;
+                text-align: end;
                 width: 50%;
 
                 select{
@@ -67,7 +69,8 @@
                     border: unset;
                     border-radius: 5px;
                     color: #fff;
-                    padding: 6%;
+                    height: 40px;
+                    padding: 0 5%;
 
                     &:focus{
                         outline: none;
@@ -76,6 +79,7 @@
                     option{
                         color: #000;
                     }
+
                 }
             }
         }
@@ -176,6 +180,9 @@
                         max-width: 100%;
                     }
                 }
+                .select{
+                    filter: grayscale(1);
+                }
             }
 
             .number{
@@ -217,6 +224,9 @@
                             max-width: 100%;
                         }
                     }
+                    .select{
+                        filter: grayscale(1);
+                    }
                 }
 
                 .price{
@@ -225,14 +235,27 @@
                     text-align: end;
                 }
 
+                
                 .icon{
                     color: gray;
                     font-size: 1.2rem;
                     display: flex;
                     justify-content: space-evenly;
                     
+                    a{
+                        color: gray;
+                        font-size: 1.2rem;
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
                     i{
                         cursor: pointer;
+
+                        &:hover{
+                            transform: scale(1.1);
+                            color: #d00808;
+                            transition: all .2s;
+                        }
                     }
                     .unselect{
                         display: none;
@@ -249,5 +272,4 @@
     .pagination{
         @include pagination();
     }
-}
 }

@@ -144,7 +144,7 @@
             <h2>ชำระผ่านบัตรเครดิต</h2>
         </div>
 
-        <figure><a href=""><img src="img/Artboard-14.jpg" alt=""></a></figure>
+        <figure><a href=""><img src="img/Artboard–14.jpg" alt=""></a></figure>
     </div>
 
     <!-- จัดส่งล่าสุด -->
@@ -392,10 +392,10 @@
 
     <!-- บทความนโยบายประกันสินค้า -->
     <div class="provicy">
-        <a href=""><figure><img src="img/Artboard15.jpg" alt=""></figure></a>
-        <a href=""><figure><img src="img/Artboard16.jpg" alt=""></figure></a>
-        <a href=""><figure><img src="img/Artboard17.jpg" alt=""></figure></a>
-        <a href=""><figure><img src="img/Artboard18.jpg" alt=""></figure></a>
+        <a href=""><figure><img src="img/Artboard – 15.jpg" alt=""></figure></a>
+        <a href=""><figure><img src="img/Artboard – 16.jpg" alt=""></figure></a>
+        <a href=""><figure><img src="img/Artboard – 17.jpg" alt=""></figure></a>
+        <a href=""><figure><img src="img/Artboard – 18.jpg" alt=""></figure></a>
     </div>
     
 </div>

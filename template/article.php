@@ -6,7 +6,7 @@
     <!-- กล่องบทความ -->
     <div class="box-article">
         <div class="item">
-            <figure><img src="img/test4.jpg" alt=""></figure>
+            <figure><img src="img/test3.jpg" alt=""></figure>
             <div class="head">
                 <a href="article-detail"><h2>Now Available ON STREAM - KATAkana Kami : A WAY OF THE SAMURAI Strory, 10% OFF!</h2></a>
                 <div class="author"><span>BiaBooster</span></div>
@@ -16,7 +16,7 @@
         </div>
 
         <div class="item">
-            <figure><img src="img/test4.jpg" alt=""></figure>
+            <figure><img src="img/test3.jpg" alt=""></figure>
             <div class="head">
                 <a href="article-detail"><h2>Now Available ON STREAM - KATAkana Kami : A WAY OF THE SAMURAI Strory, 10% OFF!</h2></a>
                 <div class="author"><span>BiaBooster</span></div>
@@ -26,7 +26,7 @@
         </div>
 
         <div class="item">
-            <figure><img src="img/test4.jpg" alt=""></figure>
+            <figure><img src="img/test3.jpg" alt=""></figure>
             <div class="head">
                 <a href="article-detail"><h2>Now Available ON STREAM - KATAkana Kami : A WAY OF THE SAMURAI Strory, 10% OFF!</h2></a>
                 <div class="author"><span>BiaBooster</span></div>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="item">
-            <figure><img src="img/test4.jpg" alt=""></figure>
+            <figure><img src="img/test3.jpg" alt=""></figure>
             <div class="head">
                 <a href="article-detail"><h2>Now Available ON STREAM - KATAkana Kami : A WAY OF THE SAMURAI Strory, 10% OFF!</h2></a>
                 <div class="author"><span>BiaBooster</span></div>
@@ -46,7 +46,7 @@
         </div>
 
         <div class="item">
-            <figure><img src="img/test4.jpg" alt=""></figure>
+            <figure><img src="img/test3.jpg" alt=""></figure>
             <div class="head">
                 <a href="article-detail"><h2>Now Available ON STREAM - KATAkana Kami : A WAY OF THE SAMURAI Strory, 10% OFF!</h2></a>
                 <div class="author"><span>BiaBooster</span></div>

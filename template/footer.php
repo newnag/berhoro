@@ -5,8 +5,8 @@
     </div>
 
     <div class="certificate">
-        <figure><img src="img/logo/Artboard28.jpg" alt=""></figure>
-        <figure><img src="img/logo/Artboard29.jpg" alt=""></figure>
+        <figure><img src="img/logo/Artboard – 28.jpg" alt=""></figure>
+        <figure><img src="img/logo/Artboard – 29.jpg" alt=""></figure>
     </div>
 
     <div class="contact-footer">
