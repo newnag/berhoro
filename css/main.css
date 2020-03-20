@@ -105,6 +105,12 @@
   width: 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .main-content .head-text .right .network, .main-content .head-text .right .grade, .sumber-content .head-text .right .network, .sumber-content .head-text .right .grade {
+    text-align: center;
+  }
+}
+
 .main-content .head-text .right .network select, .main-content .head-text .right .grade select, .sumber-content .head-text .right .network select, .sumber-content .head-text .right .grade select {
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);

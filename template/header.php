@@ -1,7 +1,12 @@
 <header>
     <nav>
         <div class="topnav">
-            <div class="logo-nav"><figure><a href="/home"><img src="img/logo/logo.png" alt=""></a></figure></div>
+            <div class="logo-nav"><figure>
+                <a href="/home">
+                    <img src="img/logo/logo2.png" alt="">
+                    <span>พลังแห่งตัวเลข เบอร์มงคลแห่งชีวิต</span>
+                </a></figure>
+            </div>
 
             <!-- เมนูปกติ -->
             <ul class="nav-menu">
@@ -259,11 +264,9 @@
                             <input type="tel" data-position="9" class="search-box-num" maxlength="1" placeholder="-">
                         </div>
 
-                        <span class="open-more-filter">ค้นหาแบบละเอียด</span>
-
                         <div class="more-filter">
                             <div class="cate-num">
-                                <select name="" id="">
+                                <select name="" id="cate_num">
                                     <option value="">หมวดหมู่ เบอร์</option>
                                     <option value="">เบอร์ดี1</option>
                                     <option value="">เบอร์ดี2</option>
@@ -303,9 +306,9 @@
 
                             <div class="range-price">
                                 <label>ช่วงราคา</label>
-                                <input type="tel" class="low" placeholder="9,999,999" maxlength="7">
+                                <input type="tel" class="low" placeholder="999" maxlength="7">
                                 <div class="keed"></div>
-                                <input type="tel" class="high" placeholder="9,999,999" maxlength="7">
+                                <input type="tel" class="high" placeholder="999,999" maxlength="7">
                                 <label>บาท</label>
                             </div>
                         </div>

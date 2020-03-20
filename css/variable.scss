@@ -6,7 +6,7 @@ $background_menu: #c19a4b;
 
 // Property ใช้บ่อย //
 @mixin input-round {
-    height: 3rem;
+    height: 50px;
     border-radius: 20px;
     border: unset;
     padding: 0 3%;
@@ -18,7 +18,7 @@ $background_menu: #c19a4b;
 }
 
 @mixin button-round {
-    height: 3rem;
+    height: 48px;
     border-radius: 20px;
     border: unset;
     font-size: 1rem;
@@ -33,11 +33,17 @@ $background_menu: #c19a4b;
 }
 
 @mixin select-round {
-    height: 3rem;
+    height: 48px;
     border-radius: 20px;
+    text-align-last: center;
+    //padding-left: 35%;
 
     &:focus{
         outline: none;
+    }
+
+    @supports (-webkit-touch-callout: none) {
+        text-indent: 35%;
     }
 }
 

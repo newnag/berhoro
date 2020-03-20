@@ -34,8 +34,8 @@
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
                     <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
+                    <a href="https://line.me/ti/p/~@berdedd" target="_blank"><i class="fab fa-line line"></i></a>
+                    <a href="tel:0632895555"><i class="fas fa-mobile-alt tel"></i></a>
                 </div>
             </div>
         </div>
@@ -52,8 +52,8 @@
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
                     <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
+                    <a href="https://line.me/ti/p/~@berdedd" target="_blank"><i class="fab fa-line line"></i></a>
+                    <a href="tel:0632895555"><i class="fas fa-mobile-alt tel"></i></a>
                 </div>
             </div>
         </div>
@@ -70,8 +70,8 @@
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
                     <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
+                    <a href="https://line.me/ti/p/~@berdedd" target="_blank"><i class="fab fa-line line"></i></a>
+                    <a href="tel:0632895555"><i class="fas fa-mobile-alt tel"></i></a>
                 </div>
             </div>
         </div>
@@ -88,8 +88,8 @@
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
                     <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
+                    <a href="https://line.me/ti/p/~@berdedd" target="_blank"><i class="fab fa-line line"></i></a>
+                    <a href="tel:0632895555"><i class="fas fa-mobile-alt tel"></i></a>
                 </div>
             </div>
         </div>
@@ -106,8 +106,8 @@
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
                     <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
+                    <a href="https://line.me/ti/p/~@berdedd" target="_blank"><i class="fab fa-line line"></i></a>
+                    <a href="tel:0632895555"><i class="fas fa-mobile-alt tel"></i></a>
                 </div>
             </div>
         </div>
@@ -124,8 +124,8 @@
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
                     <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
+                    <a href="https://line.me/ti/p/~@berdedd" target="_blank"><i class="fab fa-line line"></i></a>
+                    <a href="tel:0632895555"><i class="fas fa-mobile-alt tel"></i></a>
                 </div>
             </div>
         </div>
@@ -142,8 +142,8 @@
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
                     <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
+                    <a href="https://line.me/ti/p/~@berdedd" target="_blank"><i class="fab fa-line line"></i></a>
+                    <a href="tel:0632895555"><i class="fas fa-mobile-alt tel"></i></a>
                 </div>
             </div>
         </div>
@@ -160,8 +160,8 @@
                 <div class="icon">
                     <i class="fas fa-shopping-basket shop"></i>
                     <i class="fas fa-eraser unselect" title="กดเพื่อคืนเบอร์"></i>
-                    <i class="fab fa-line line"></i>
-                    <i class="fas fa-mobile-alt tel"></i>
+                    <a href="https://line.me/ti/p/~@berdedd" target="_blank"><i class="fab fa-line line"></i></a>
+                    <a href="tel:0632895555"><i class="fas fa-mobile-alt tel"></i></a>
                 </div>
             </div>
         </div>

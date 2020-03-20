@@ -81,8 +81,12 @@
   }
 }
 
-.fortube-ber .fortune-box .box .input input {
-  width: 55%;
+.fortube-ber .fortune-box .box .input .input-fortune {
+  position: relative;
+}
+
+.fortube-ber .fortune-box .box .input .input-fortune input {
+  width: 90%;
   padding: 2%;
   border-radius: 20px;
   border: unset;
@@ -91,46 +95,42 @@
 }
 
 @media screen and (max-width: 480px) {
-  .fortube-ber .fortune-box .box .input input {
+  .fortube-ber .fortune-box .box .input .input-fortune input {
     margin: 0 3%;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .fortube-ber .fortune-box .box .input input {
-    width: 50%;
-  }
-}
-
-.fortube-ber .fortune-box .box .input button {
+.fortube-ber .fortune-box .box .input .input-fortune button {
+  position: absolute;
+  top: 14%;
+  right: 3%;
   width: 15%;
-  padding: 2%;
   border: unset;
   border-radius: 20px;
-  background: #fff;
-  color: #c19a4b;
+  background: #c19a4b;
+  color: #000;
   margin: 0 5%;
   font-size: 1rem;
   -webkit-box-shadow: 0px 5px 20px #0000009e;
           box-shadow: 0px 5px 20px #0000009e;
   cursor: pointer;
-  height: 50px;
+  height: 35px;
 }
 
 @media screen and (max-width: 480px) {
-  .fortube-ber .fortune-box .box .input button {
+  .fortube-ber .fortune-box .box .input .input-fortune button {
     margin: 0 3%;
-    width: 30%;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .fortube-ber .fortune-box .box .input button {
     width: 25%;
   }
 }
 
-.fortube-ber .fortune-box .box .input button:hover {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .fortube-ber .fortune-box .box .input .input-fortune button {
+    width: 25%;
+  }
+}
+
+.fortube-ber .fortune-box .box .input .input-fortune button:hover {
   background-color: #c19a4b;
   color: #fff;
   -webkit-transition: all .2s;
@@ -483,8 +483,8 @@
 .fortube-ber .result-graph .graph .grahp-data .data {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (11.11%)[9];
-      grid-template-columns: repeat(9, 11.11%);
+  -ms-grid-columns: (14.28%)[7];
+      grid-template-columns: repeat(7, 14.28%);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1788,6 +1788,7 @@
   height: 50px;
   border-radius: 20px;
   padding: 0 3%;
+  text-align-last: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -1798,6 +1799,12 @@
 
 .ber-mean-page .box-search .select-data select:focus {
   outline: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .ber-mean-page .box-search .select-data select {
+    padding: 0 10%;
+  }
 }
 
 .ber-mean-page .box-search .select-data .button-group {

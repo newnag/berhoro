@@ -4,8 +4,10 @@
             <h1>ทำนายเบอร์</h1>
             <div class="input">
                 <form action="#">
-                    <input type="tel" maxlength="10" placeholder="ทำนายเบอร์">
-                    <button type="submit">ทำนาย</button>
+                    <div class="input-fortune">
+                        <input type="tel" maxlength="10" placeholder="ทำนายเบอร์">
+                        <button type="submit">ทำนาย</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -16,7 +18,7 @@
             <div class="left">
                 <div class="ber"><span>0897644358</span></div>
                 <span>ค่าความมงคล</span>
-                <div class="score" data-score="986"><span></span><span>คะแนน</span></div>
+                <div class="score" data-score="950"><span></span><span>คะแนน</span></div>
             </div>
             <div class="right">
                 <div class="grade"><span>ดีเยี่ยม</span></div>
@@ -49,28 +51,28 @@
                     </div>
                     <div class="gradegraph">
                         <div class="candy">
-                            <div class="graphrate a" data-min="851" data-max="900"></div>
+                            <div class="graphrate a" data-min="801" data-max="900"></div>
                         </div>
                         <span>A</span>
                     </div>
-                    <div class="gradegraph">
+                    <!-- <div class="gradegraph">
                         <div class="candy">
                             <div class="graphrate bplus" data-min="801" data-max="850"></div>
                         </div>
                         <span>B+</span>
-                    </div>
+                    </div> -->
                     <div class="gradegraph">
                         <div class="candy">
-                            <div class="graphrate b" data-min="751" data-max="800"></div>
+                            <div class="graphrate b" data-min="701" data-max="800"></div>
                         </div>
                         <span>B</span>
                     </div>
-                    <div class="gradegraph">
+                    <!-- <div class="gradegraph">
                         <div class="candy">
                             <div class="graphrate cplus" data-min="701" data-max="750"></div>
                         </div>
                         <span>C+</span>
-                    </div>
+                    </div> -->
                     <div class="gradegraph">
                         <div class="candy">
                             <div class="graphrate c" data-min="601" data-max="700"></div>

@@ -52,48 +52,54 @@
                     width: 70%;
                 }
 
-                input{
-                    width: 55%;
-                    padding: 2%;
-                    border-radius: 20px;
-                    border: unset;
-                    margin: 0 5%;
-                    height: 50px;
+                .input-fortune{
+                    position: relative;
 
-                    @media screen and (max-width:480px){
-                        margin: 0 3%;
+                    input{
+                        width: 90%;
+                        padding: 2%;
+                        border-radius: 20px;
+                        border: unset;
+                        margin: 0 5%;
+                        height: 50px;
+    
+                        @media screen and (max-width:480px){
+                            margin: 0 3%;
+                        }
+                        @media screen and (min-width:481px) and (max-width:1024px){
+                            //width: 50%;
+                        }
                     }
-                    @media screen and (min-width:481px) and (max-width:1024px){
-                        width: 50%;
+                    button{
+                        position: absolute;
+                        top: 14%;
+                        right: 3%;
+                        width: 15%;
+                        border: unset;
+                        border-radius: 20px;
+                        background: $background_menu;
+                        color: $main_color;
+                        margin: 0 5%;
+                        font-size: 1rem;
+                        box-shadow: 0px 5px 20px #0000009e;
+                        cursor: pointer;
+                        height: 35px;
+    
+                        @media screen and (max-width:480px){
+                            margin: 0 3%;
+                            width: 25%;
+                        }
+                        @media screen and (min-width:481px) and (max-width:1024px){
+                            width: 25%;
+                        }
+    
+                        &:hover{
+                            background-color: $background_menu;
+                            color: #fff;
+                            transition: all .2s;
+                        }
                     }
-                }
-                button{
-                    width: 15%;
-                    padding: 2%;
-                    border: unset;
-                    border-radius: 20px;
-                    background: #fff;
-                    color: $background_menu;
-                    margin: 0 5%;
-                    font-size: 1rem;
-                    box-shadow: 0px 5px 20px #0000009e;
-                    cursor: pointer;
-                    height: 50px;
-
-                    @media screen and (max-width:480px){
-                        margin: 0 3%;
-                        width: 30%;
-                    }
-                    @media screen and (min-width:481px) and (max-width:1024px){
-                        width: 25%;
-                    }
-
-                    &:hover{
-                        background-color: $background_menu;
-                        color: #fff;
-                        transition: all .2s;
-                    }
-                }
+                } 
             }
         }
 
@@ -331,7 +337,7 @@
                 }
                 .data{
                     display: grid;
-                    grid-template-columns: repeat(9,11.11%);
+                    grid-template-columns: repeat(7,14.28%);
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -1320,6 +1326,7 @@
                 height: 50px;
                 border-radius: 20px;
                 padding: 0 3%;
+                text-align-last: center;
 
                 @media screen and (max-width:480px) {
                     width: 60%;
@@ -1327,6 +1334,10 @@
 
                 &:focus{
                     outline: none;
+                }
+
+                @supports (-webkit-touch-callout: none) {
+                    padding: 0 10%;
                 }
             }
             .button-group{

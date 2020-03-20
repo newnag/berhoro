@@ -64,6 +64,10 @@
                 text-align: end;
                 width: 50%;
 
+                @media screen and (max-width:768px) {
+                    text-align: center;
+                }
+
                 select{
                     background: linear-gradient(#c5a04f,#8e5415);
                     border: unset;

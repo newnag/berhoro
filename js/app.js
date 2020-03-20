@@ -157,21 +157,17 @@ function calcGraph(score){
 
     let aplus_min = ele[0].dataset.min;
     let a_min = ele[1].dataset.min;
-    let bplus_min = ele[2].dataset.min;
-    let b_min = ele[3].dataset.min;
-    let cplus_min = ele[4].dataset.min;
-    let c_min = ele[5].dataset.min;
-    let d_min = ele[6].dataset.min;
-    let f_min = ele[7].dataset.min;
+    let b_min = ele[2].dataset.min;
+    let c_min = ele[3].dataset.min;
+    let d_min = ele[4].dataset.min;
+    let f_min = ele[5].dataset.min;
 
     let aplus_max = ele[0].dataset.max;
     let a_max = ele[1].dataset.max;
-    let bplus_max = ele[2].dataset.max;
-    let b_max = ele[3].dataset.max;
-    let cplus_max = ele[4].dataset.max;
-    let c_max = ele[5].dataset.max;
-    let d_max = ele[6].dataset.max;
-    let f_max = ele[7].dataset.max;
+    let b_max = ele[2].dataset.max;
+    let c_max = ele[3].dataset.max;
+    let d_max = ele[4].dataset.max;
+    let f_max = ele[5].dataset.max;
    
     if(score > aplus_min){
         console.log("A+");
@@ -187,13 +183,13 @@ function calcGraph(score){
         Min = a_min;
         Max = a_max;
     }
-    else if(score >= bplus_min){
-        console.log("B+");
-        rank = "B+"
-        Class = "bplus";
-        Min = bplus_min;
-        Max = bplus_max;
-    }
+    // else if(score >= bplus_min){
+    //     console.log("B+");
+    //     rank = "B+"
+    //     Class = "bplus";
+    //     Min = bplus_min;
+    //     Max = bplus_max;
+    // }
     else if(score >= b_min){
         console.log("B");
         rank = "B"
@@ -201,13 +197,13 @@ function calcGraph(score){
         Min = b_min;
         Max = b_max;
     }
-    else if(score >= cplus_min){
-        console.log("C+");
-        rank = "C+"
-        Class = "cplus";
-        Min = cplus_min;
-        Max = cplus_max;
-    }
+    // else if(score >= cplus_min){
+    //     console.log("C+");
+    //     rank = "C+"
+    //     Class = "cplus";
+    //     Min = cplus_min;
+    //     Max = cplus_max;
+    // }
     else if(score >= c_min){
         console.log("C");
         rank = "C"
