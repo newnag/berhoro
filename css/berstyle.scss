@@ -204,10 +204,11 @@ nav{
                     transition: left .5s;
 
                     li{
-                    
+                        text-align: left;
+
                         a{
                             display: flex;
-                            justify-content: space-around;
+                            justify-content: space-between;
                             font-size: 1rem;
                         }
                     }

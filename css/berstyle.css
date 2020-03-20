@@ -252,12 +252,17 @@ nav .topnav .nav-menu .cate-mobile .cateMobile {
   transition: left .5s;
 }
 
+nav .topnav .nav-menu .cate-mobile .cateMobile li {
+  text-align: left;
+}
+
 nav .topnav .nav-menu .cate-mobile .cateMobile li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1rem;
 }
 
