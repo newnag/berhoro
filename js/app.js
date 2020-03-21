@@ -64,9 +64,11 @@ $('.nav-menu .buttonX').click(function(){
 // ----------------- ปุ่มหมวดหมู่เบอร์มือถือ ----------------- //
 $('.nav-menu .cate-mobile a').click(function(){
     $('.cateMobile').css("left","0");
+    $('.cateMobile .hide-button').show();
 });
 $('.nav-menu .cate-mobile .cateMobile .hide-button').click(function(){
     $(this).parent().css("left","-100%");
+    $(this).hide();
 });
 
 // ------------------ เลื่อนช่องค้นหาเบอร์ ----------------- //
@@ -141,15 +143,25 @@ $('.graph .select-data button').click(function(){
 // ------------ แปลงคะแนนเบอร์มาเป็นความสูงกราฟ ---------- //
 if($('.graph .grahp-data').is(":visible")){
     let score = parseInt($('.result .left .score').attr('data-score'));
-    calcGraph(score);
+    let width = $(window).width();
+    console.log(width);
+    calcGraph(score,width);
     displayScore(score);
 }
 
 // ฟังก์ชั่นคำนวนกราฟ
-function calcGraph(score){
+function calcGraph(score,width){
     let Class = "";
     let rank = "";
     let ele = $('.graphrate');
+    this.width = width;
+
+    if(this.width >1600){
+        this.width = 85;
+    }
+    else{
+        this.width = 75;
+    }
 
     // $.each(ele, function(key,value) {
     //     console.log(value.dataset.min);
@@ -228,7 +240,7 @@ function calcGraph(score){
 
     let max_lenght = Max-Min;
     score = score-Min;
-    let sum = (((score/max_lenght)*100)/100)*75; //สูตรคำนวนความสูงของกราฟ
+    let sum = (((score/max_lenght)*100)/100)*this.width; //สูตรคำนวนความสูงของกราฟ
     // กรณีถ้า sum = 0 ค่าpx จะไม่ขึ้น
     if(sum == 0){
         sum = 5;

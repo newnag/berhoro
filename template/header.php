@@ -10,13 +10,15 @@
 
             <!-- เมนูปกติ -->
             <ul class="nav-menu">
+                
+                <li><a href="home">หน้าแรก</a></li>
                 <li class="cate-mobile">
                     <a href="#">เมนูหมวดหมู่เบอร์</a>
                     <ul class="cateMobile">
                         <?php for($i=1;$i<=10;$i++): ?>
                             <li>
                                 <a href="">
-                                    <span>เบอร์มงคลมาใหม่</span>
+                                    <span>เบอร์มงคลเสริมสวย สปา น้ำ-อาหาร เครื่องประดับ เครื่องสำอาง ของสวยงาม เสื้อผ้า หน้าผม</span>
                                     <span>200</span>
                                 </a>
                             </li>
@@ -24,7 +26,6 @@
                         <div class="hide-button"><i class="fas fa-angle-double-left"></i></div>
                     </ul>
                 </li>
-                <li><a href="home">หน้าแรก</a></li>
                 <li><a href="fortune-ber">ทำนายเบอร์</a></li>
                 <li><a href="ber-mean">ค้นหาเบอร์จากความหมาย</a></li>
                 <li><a href="article">บทความ</a></li>
@@ -239,7 +240,7 @@
     <?php if($slug == "home" || $slug == ""): ?>
         <section>
             <div class="search-box">
-                <h2>ค้นหาเบอร์</h2>
+                <!-- <h2>ค้นหาเบอร์</h2> -->
 
                 <div class="box">
                     <div class="left-box">
@@ -300,8 +301,8 @@
                             </div>
 
                             <div class="search-some">
-                                <label>ค้นหาบางเลข</label>
-                                <input type="tel" maxlength="10">
+                                <label>ค้นหาตัวเลขที่ชอบ</label>
+                                <input type="tel" maxlength="10" placeholder="กรอกตัวเลขที่ชอบ เช่น 2456">
                             </div>
 
                             <div class="range-price">
@@ -319,6 +320,7 @@
                         <div class="favorite-num">
                             <div class="favorite">
                                 <label>ตัวเลขที่ชอบ</label>
+                                <div class="keed"></div>
                                 <div class="button-num">
                                     <button data-favnum="0">0</button>
                                     <button data-favnum="1">1</button>
@@ -333,8 +335,11 @@
                                 </div> 
                             </div>
 
+                            <div class="keed"></div>
+
                             <div class="kirai">
                                 <label>ตัวเลขที่ไม่ชอบ</label>
+                                <div class="keed"></div>
                                 <div class="button-num">
                                     <button data-favnum="0">0</button>
                                     <button data-favnum="1">1</button>

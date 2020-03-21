@@ -70,7 +70,7 @@ nav{
                 text-align: center;
 
                 @media screen and (max-width:480px) {
-                    width: 100%;
+                    width: 80%;
                 }
                 @media screen and (min-width:481px) and (max-width:768px) {
                     width: 50%;
@@ -86,13 +86,13 @@ nav{
                         max-width: 100%;
                     }
                     span{
-                        font-size: 12px;
+                        font-size: 10px;
                         background: -webkit-linear-gradient(#c5a04f, #8e5415);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
 
                         position: absolute;
-                        top: 6px;
+                        top: 8px;
                         left: 0px;
                         text-align: center;
                         width: 100%;
@@ -194,7 +194,7 @@ nav{
 
                 .cateMobile{
                     position: absolute;
-                    width: 60%;
+                    width: 90%;
                     height: 100%;
                     top: 0;
                     left: -100%;
@@ -202,6 +202,7 @@ nav{
                     border: 3px solid #c5a04f;
                     z-index: 6;
                     transition: left .5s;
+                    overflow-y: scroll;
 
                     li{
                         text-align: left;
@@ -210,12 +211,17 @@ nav{
                             display: flex;
                             justify-content: space-between;
                             font-size: 1rem;
+
+                            span:first-child{
+                                width: 80%;
+                            }
                         }
                     }
                     .hide-button{
-                        position: absolute;
+                        display: none;
+                        position: fixed;
                         top: 50%;
-                        left: 100%;
+                        left: 93%;
                         transform: translate(-50% ,-50%);
                         background: #fff;
                         border: 1px solid #000;
@@ -274,6 +280,7 @@ nav{
                                 align-items: center;
                                 img{
                                     max-width: 20%;
+                                    height: 20px;
                                 }
                                 i{
                                     cursor: pointer;
@@ -437,6 +444,7 @@ nav{
        width: 100%;
        height: 100%;
        border-radius: 25px;
+       padding: 2% 0;
     } 
 
     h2{
@@ -489,19 +497,22 @@ nav{
                     width: 100%;
                     height: 100%;
                     @include input-round();
+                    padding: 0 31%;
+                    font-size: 16px;
                 }
                 a{
-                    width: 90px;
+                    width: 80px;
                     position: absolute;
-                    top: 14%;
+                    top: 12%;
                     right: 3%;
 
                     button{
                         width: 100%;
                         @include button-round();
-                        height: 35px;
+                        height: 30px;
                         background: $background_menu;
                         color: #000;
+                        font-size: 14px;
 
                         &:hover{
                             background: $background_menu;
@@ -564,6 +575,10 @@ nav{
                             @include select-round();
                             width: 100%;
                             padding: 0 2%;
+
+                            @supports (-webkit-touch-callout: none) {
+                                text-indent: 32%;
+                            }
                         }
                     }
     
@@ -574,6 +589,10 @@ nav{
                             @include select-round();
                             width: 100%;
                             padding: 0 2%;
+
+                            @supports (-webkit-touch-callout: none) {
+                                text-indent: 30%;
+                            }
                         }
                     }
                 }
@@ -590,7 +609,12 @@ nav{
                     }
                     input{
                         @include input-round();
-                        width: 70%;
+                        width: 60%;
+                        text-align: center;
+
+                        &::placeholder {
+                            text-align: center;
+                        }
                     }
                 }
     
@@ -633,7 +657,7 @@ nav{
 
             .favorite-num{
                 .favorite,.kirai{
-                    margin-bottom: 5%;
+                    margin-bottom: 2%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -642,10 +666,16 @@ nav{
                         color: $background_main;
                     }
 
+                    .keed{
+                        border-right: 1px solid #fff;
+                        height: 20px;
+                    }
+
                     .button-num{
                         width: 60%;
                         display: flex;
                         justify-content: space-between;
+                        padding-top: 1%;
                         
                         button{
                             background: inherit;
@@ -669,6 +699,10 @@ nav{
                             color: #733f05;
                         }
                     }
+                }
+                .keed{
+                    border-bottom: 1px solid #fff;
+                    margin: 2% 0;
                 }
             }
 
@@ -1298,6 +1332,15 @@ footer{
         }
         .address{
             margin: 2% 0;
+        }
+        a{
+            p{
+                margin: 2% 0;
+            }
+
+            &:hover{
+                color: red;
+            }
         }
     }
 

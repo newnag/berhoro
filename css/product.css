@@ -2,7 +2,7 @@
   margin: 5% 0;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1365px) {
   .fortube-ber {
     grid-area: content;
   }
@@ -94,9 +94,26 @@
   height: 50px;
 }
 
+.fortube-ber .fortune-box .box .input .input-fortune input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.fortube-ber .fortune-box .box .input .input-fortune input:-ms-input-placeholder {
+  text-align: center;
+}
+
+.fortube-ber .fortune-box .box .input .input-fortune input::-ms-input-placeholder {
+  text-align: center;
+}
+
+.fortube-ber .fortune-box .box .input .input-fortune input::placeholder {
+  text-align: center;
+}
+
 @media screen and (max-width: 480px) {
   .fortube-ber .fortune-box .box .input .input-fortune input {
     margin: 0 3%;
+    padding-right: 20%;
   }
 }
 
@@ -354,6 +371,12 @@
   height: 150px;
 }
 
+@media screen and (min-width: 1601px) {
+  .fortube-ber .result-graph .graph {
+    height: 180px;
+  }
+}
+
 .fortube-ber .result-graph .graph .select-data {
   position: absolute;
   top: 5%;
@@ -396,6 +419,15 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+}
+
+.fortube-ber .result-graph .graph .network figure {
+  height: 84px;
+  width: 84px;
+}
+
+.fortube-ber .result-graph .graph .network figure img {
+  max-width: 100%;
 }
 
 .fortube-ber .result-graph .graph .grahp-data {
@@ -534,6 +566,12 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 1601px) {
+  .fortube-ber .result-graph .graph .grahp-data .data .gradegraph .candy {
+    height: 85px;
+  }
 }
 
 .fortube-ber .result-graph .graph .grahp-data .data .gradegraph .candy .aplus, .fortube-ber .result-graph .graph .grahp-data .data .gradegraph .candy .a, .fortube-ber .result-graph .graph .grahp-data .data .gradegraph .candy .bplus, .fortube-ber .result-graph .graph .grahp-data .data .gradegraph .candy .b, .fortube-ber .result-graph .graph .grahp-data .data .gradegraph .candy .cplus, .fortube-ber .result-graph .graph .grahp-data .data .gradegraph .candy .c, .fortube-ber .result-graph .graph .grahp-data .data .gradegraph .candy .d, .fortube-ber .result-graph .graph .grahp-data .data .gradegraph .candy .f {
@@ -850,7 +888,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1365px) {
   .last-releast-content {
     grid-area: content;
   }
@@ -1003,7 +1041,7 @@
   color: #000;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1365px) {
   .cart-page {
     grid-area: content;
   }
@@ -1088,6 +1126,11 @@
   padding: 4% 0;
   border-bottom: 1px solid gray;
   margin-right: 15px;
+}
+
+.cart-page .cart-box .cart-list .list-item .box .logo figure {
+  width: 84px;
+  height: 84px;
 }
 
 .cart-page .cart-box .cart-list .list-item .box .logo figure img {
@@ -1505,7 +1548,7 @@
   margin: 6% 0;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1365px) {
   .ber-mean-page {
     grid-area: content;
   }
@@ -1785,7 +1828,7 @@
 .ber-mean-page .box-search .select-data select {
   width: 40%;
   margin: 10% 0;
-  height: 50px;
+  height: 40px;
   border-radius: 20px;
   padding: 0 3%;
   text-align-last: center;
@@ -1814,7 +1857,7 @@
 
 .ber-mean-page .box-search .select-data .button-group button {
   width: 20%;
-  height: 50px;
+  height: 40px;
   font-size: 1rem;
   border: unset;
   border-radius: 20px;

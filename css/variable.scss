@@ -6,11 +6,12 @@ $background_menu: #c19a4b;
 
 // Property ใช้บ่อย //
 @mixin input-round {
-    height: 50px;
+    height: 40px;
     border-radius: 20px;
     border: unset;
     padding: 0 3%;
     -moz-appearance:textfield; // สำหรับปิดลูกศรช่องเลข เปิดดูด้วย Firefox
+    font-size: 14px;
 
     &:focus{
         outline: none;
@@ -18,13 +19,13 @@ $background_menu: #c19a4b;
 }
 
 @mixin button-round {
-    height: 48px;
+    height: 40px;
     border-radius: 20px;
     border: unset;
     font-size: 1rem;
     color: $price_color;
     background: #fff;
-    box-shadow: 0px 5px 20px #0000009e;
+    //box-shadow: 0px 5px 20px #0000009e;
     cursor: pointer;
 
     &:focus{
@@ -33,10 +34,10 @@ $background_menu: #c19a4b;
 }
 
 @mixin select-round {
-    height: 48px;
+    height: 40px;
     border-radius: 20px;
     text-align-last: center;
-    //padding-left: 35%;
+    font-size: 14px;
 
     &:focus{
         outline: none;

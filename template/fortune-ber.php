@@ -5,7 +5,7 @@
             <div class="input">
                 <form action="#">
                     <div class="input-fortune">
-                        <input type="tel" maxlength="10" placeholder="ทำนายเบอร์">
+                        <input type="tel" maxlength="10" placeholder="กรอกเบอร์โทรศัพท์">
                         <button type="submit">ทำนาย</button>
                     </div>
                 </form>
@@ -18,7 +18,7 @@
             <div class="left">
                 <div class="ber"><span>0897644358</span></div>
                 <span>ค่าความมงคล</span>
-                <div class="score" data-score="950"><span></span><span>คะแนน</span></div>
+                <div class="score" data-score="1000"><span></span><span>คะแนน</span></div>
             </div>
             <div class="right">
                 <div class="grade"><span>ดีเยี่ยม</span></div>

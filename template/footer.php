@@ -14,8 +14,9 @@
         <p class="address">
             99/444 กาญจนาภิเษก แขวงคันนายาว เขตขันนายาว กรุงเทพมหานคร 10230
         </p>
-        <p class="phone">Phone: 063289555</p>
-        <p class="line">Line ID: @berhoro</p>
+        <a href="tel:063289555"><p class="phone"><i class="fas fa-phone-volume"></i> 063289555</p></a>
+        <a href="https://line.me/ti/p/~@berdedd"><p class="line"><i class="fab fa-line"></i> @berhoro</p></a>
+        <a href="google"><p class="map"><i class="fas fa-map"></i> แผนที่บริษัท</p></a>
     </div>
 
     <div class="service">
