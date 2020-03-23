@@ -6,7 +6,7 @@
 
 .about-content .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -19,6 +19,19 @@
 
 .about-content .about {
   margin: 3% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .about-content .about h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-content .about p {
+    font-size: 14px;
+    margin: 1% 0;
+  }
 }
 
 .about-content .map {
@@ -45,7 +58,7 @@
 
 .contact .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -54,6 +67,17 @@
 
 .contact .head-text h1, .contact .head-text h2 {
   color: #fff;
+}
+
+.contact .ck {
+  margin: 3% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .contact .ck p {
+    font-size: 14px;
+    margin: 1% 0;
+  }
 }
 
 .contact .boxForm {
@@ -147,6 +171,14 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 1025px) {
+  .contact .boxForm form .button-contact button:hover {
+    background-color: #d64209;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+}
+
 .contact .map {
   margin: 5% 0;
 }
@@ -175,7 +207,7 @@
 
 .howtobuy .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -197,8 +229,8 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
   .howtobuy .payby {
-    -ms-grid-columns: 70% 30%;
-        grid-template-columns: 70% 30%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
 }
 
@@ -294,6 +326,17 @@
   border: 1px solid gray;
 }
 
+.howtobuy .ck {
+  margin: 3% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .howtobuy .ck p {
+    font-size: 14px;
+    margin: 1% 0;
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .article-content {
     grid-area: content;
@@ -302,7 +345,7 @@
 
 .article-content .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -399,7 +442,7 @@
 
 .article-detail .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -410,9 +453,20 @@
   color: #fff;
 }
 
+.article-detail .ck {
+  margin: 3% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .article-detail .ck p {
+    font-size: 14px;
+    margin: 1% 0;
+  }
+}
+
 .review-page .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;

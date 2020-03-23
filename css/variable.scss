@@ -38,6 +38,7 @@ $background_menu: #c19a4b;
     border-radius: 20px;
     text-align-last: center;
     font-size: 14px;
+    background: #fff;
 
     &:focus{
         outline: none;
@@ -55,6 +56,12 @@ $background_menu: #c19a4b;
     padding: 0 3%;
     margin: 3% 0;
 
+    h2{
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            font-size: 1.2rem;
+        }
+    }
+
     button{
         padding: 15%;
         border: unset;
@@ -64,10 +71,16 @@ $background_menu: #c19a4b;
         border-radius: 5px;
         font-size: 1rem;
         transition: all .2s;
+
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            padding: 10%;
+        }
         
         &:hover {
-            transform: scale(1.2);
-            transition: all .2s;
+            @media screen and (min-width:1025px) {
+                transform: scale(1.2);
+                transition: all .2s;
+            }
         }
     }
 }
@@ -111,12 +124,14 @@ $background_menu: #c19a4b;
                 }
 
                 &:hover{
-                    background: #fff;
-                    color: #000;
-                    border-radius: 5px;
-                    box-shadow: 0px 0px 15px #0000009e;
-                    padding: 3%;
-                    transition: all .3s;
+                    @media screen and (min-width:1025px) {
+                        background: #fff;
+                        color: #000;
+                        border-radius: 5px;
+                        box-shadow: 0px 0px 15px #0000009e;
+                        padding: 3%;
+                        transition: all .3s;
+                    }
                 }
             }
         }
@@ -125,7 +140,7 @@ $background_menu: #c19a4b;
 
 @mixin head_text_content {
     text-align: center;
-    margin: 3% 0;
+    margin: 1% 0;
     background: linear-gradient(#c5a04f,#8e5415);
     padding: 1%;
     border-radius: 10px 60px 10px 10px;
@@ -144,9 +159,11 @@ $background_menu: #c19a4b;
         color: gray;
 
         &:hover{
-            color: #000;
-            transform: scale(1.2);
-            transition: all .2s;
+            @media screen and (min-width:1025px) {
+                color: #000;
+                transform: scale(1.2);
+                transition: all .2s;
+            }
         }
     }
     .current{
@@ -173,6 +190,9 @@ $background_menu: #c19a4b;
         @media screen and (min-width:481px) and (max-width:768px) {
             grid-template-columns: repeat(6,13.8%);
         }
+        @media screen and (min-width:1025px) and (max-width:1366px) {
+            grid-template-columns: repeat(7,11.38%);
+        }
 
         figure{
             position: relative;
@@ -196,12 +216,14 @@ $background_menu: #c19a4b;
                 text-align: center;
 
                 @media screen and (max-width:1366px) {
-                    font-size: .6rem;
+                    font-size: 11px;
                 }
             }
 
             &:hover{
-                animation: shake 0.5s;
+                @media screen and (min-width:1025px) {
+                    animation: shake 0.5s;
+                } 
             }
 
             @keyframes shake {

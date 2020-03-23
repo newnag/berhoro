@@ -1,7 +1,7 @@
 <footer class="container" style="margin-bottom: 2%">
     <div class="logo">
         <figure><img src="img/logo/logo.png" alt=""></figure>
-        <a href="">http://www.berhoro.com</a>
+        <a href="">www.berhoro.com</a>
     </div>
 
     <div class="certificate">
@@ -14,9 +14,9 @@
         <p class="address">
             99/444 กาญจนาภิเษก แขวงคันนายาว เขตขันนายาว กรุงเทพมหานคร 10230
         </p>
-        <a href="tel:063289555"><p class="phone"><i class="fas fa-phone-volume"></i> 063289555</p></a>
+        <a href="tel:063289555"><p class="phone"><i class="fas fa-phone-alt"></i> 063289555</p></a>
         <a href="https://line.me/ti/p/~@berdedd"><p class="line"><i class="fab fa-line"></i> @berhoro</p></a>
-        <a href="google"><p class="map"><i class="fas fa-map"></i> แผนที่บริษัท</p></a>
+        <a href="google"><p class="map"><i class="fas fa-map-marked"></i> แผนที่บริษัท</p></a>
     </div>
 
     <div class="service">

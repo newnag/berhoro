@@ -1,9 +1,9 @@
 @import 'variable';
 
 .fortube-ber{
-    margin: 5% 0;
+    margin: 1% 0;
 
-    @media screen and (min-width:769px) and (max-width:1365px) {
+    @media screen and (min-width:481px) and (max-width:768px) {
         grid-area: content;
     }
 
@@ -62,10 +62,9 @@
                         border: unset;
                         margin: 0 5%;
                         height: 50px;
-
-                        &::placeholder{
-                            text-align: center;
-                        }
+                        text-align: center;
+                        font-size: 16px;
+                        
     
                         @media screen and (max-width:480px){
                             margin: 0 3%;
@@ -86,7 +85,7 @@
                         color: $main_color;
                         margin: 0 5%;
                         font-size: 1rem;
-                        box-shadow: 0px 5px 20px #0000009e;
+                        //box-shadow: 0px 5px 20px #0000009e;
                         cursor: pointer;
                         height: 35px;
     
@@ -99,9 +98,11 @@
                         }
     
                         &:hover{
-                            background-color: $background_menu;
-                            color: #fff;
-                            transition: all .2s;
+                            @media screen and (min-width:1025px) {
+                                background-color: $background_menu;
+                                color: #fff;
+                                transition: all .2s;
+                            }
                         }
                     }
                 } 
@@ -153,6 +154,9 @@
 
             .left{
                 color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
 
                 .ber{
                     span{
@@ -214,6 +218,9 @@
             }
             .right{
                 color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
 
                 .grade{
                     background: #fff;
@@ -474,9 +481,11 @@
 
         button{
             &:hover{
-                transform: scale(1.1);
-                filter: drop-shadow(2px 4px 6px black);
-                transition: all .2s;
+                @media screen and (min-width:1025px) {
+                    transform: scale(1.1);
+                    filter: drop-shadow(2px 4px 6px black);
+                    transition: all .2s;
+                }
             }
         }
     }
@@ -628,7 +637,7 @@
 }
 
 .last-releast-content{
-    @media screen and (min-width:768px) and (max-width:1365px) {
+    @media screen and (min-width:481px) and (max-width:768px) {
         grid-area: content;
     }
 
@@ -720,7 +729,7 @@
 }
 
 .cart-page{
-    @media screen and (min-width:769px) and (max-width:1365px) {
+    @media screen and (min-width:481px) and (max-width:768px) {
         grid-area: content;
     }
     .head-text{
@@ -1104,9 +1113,9 @@
 }
 
 .ber-mean-page{
-    margin: 6% 0;
+    margin: 1% 0;
 
-    @media screen and (min-width:769px) and (max-width:1365px) {
+    @media screen and (min-width:481px) and (max-width:768px) {
         grid-area: content;
     }
 
@@ -1125,6 +1134,7 @@
         @media screen and (max-width:768px) {
             grid-template-columns: 100%;
             background: linear-gradient(#c5a04f,#8e5415);
+            padding: 8% 5%;
         }
         
         .box-magic{
@@ -1225,7 +1235,7 @@
                         width: 64%;
                     }
                     label.gem-select{
-                        font-size: .6rem;
+                        font-size: 12px;
                         position: absolute;
                         top: 27%;
                         left: 30%;
@@ -1233,6 +1243,12 @@
                         height: 40%;
                         color: #fff;
                         text-align: center;
+
+                        @media screen and (max-width:480px) {
+                            width: 50%;
+                            top: 23%;
+                            left: 25%;
+                        }
                     }
                 }
 
@@ -1249,7 +1265,7 @@
                         width: 64%;
                     }
                     label.gem-select{
-                        font-size: .6rem;
+                        font-size: 12px;
                         position: absolute;
                         top: 27%;
                         left: 30%;
@@ -1257,6 +1273,12 @@
                         height: 40%;
                         color: #fff;
                         text-align: center;
+
+                        @media screen and (max-width:480px) {
+                            width: 50%;
+                            top: 23%;
+                            left: 25%;
+                        }
                     }
                 }
 
@@ -1273,7 +1295,7 @@
                         width: 64%;
                     }
                     label.gem-select{
-                        font-size: .6rem;
+                        font-size: 12px;
                         position: absolute;
                         top: 27%;
                         left: 30%;
@@ -1281,6 +1303,12 @@
                         height: 40%;
                         color: #fff;
                         text-align: center;
+
+                        @media screen and (max-width:480px) {
+                            width: 50%;
+                            top: 23%;
+                            left: 25%;
+                        }
                     }
                 }
 
@@ -1297,7 +1325,7 @@
                         width: 64%;
                     }
                     label.gem-select{
-                        font-size: .6rem;
+                        font-size: 12px;
                         position: absolute;
                         top: 27%;
                         left: 30%;
@@ -1305,6 +1333,12 @@
                         height: 40%;
                         color: #fff;
                         text-align: center;
+
+                        @media screen and (max-width:480px) {
+                            width: 50%;
+                            top: 23%;
+                            left: 25%;
+                        }
                     }
                 }
 
@@ -1321,7 +1355,7 @@
                         width: 64%;
                     }
                     label.gem-select{
-                        font-size: .6rem;
+                        font-size: 12px;
                         position: absolute;
                         top: 27%;
                         left: 30%;
@@ -1329,6 +1363,12 @@
                         height: 40%;
                         color: #fff;
                         text-align: center;
+
+                        @media screen and (max-width:480px) {
+                            width: 50%;
+                            top: 23%;
+                            left: 25%;
+                        }
                     }
                 }
             }
@@ -1390,9 +1430,11 @@
                     }
 
                     &:hover{
-                        background-color: $background_menu;
-                        color: #fff;
-                        transition: all .2s;
+                        @media screen and (min-width:1025px) {
+                            background-color: $background_menu;
+                            color: #fff;
+                            transition: all .2s;
+                        }
                     }
                 }
             }
@@ -1402,6 +1444,10 @@
             position: absolute;
             bottom: 1%;
             left: 3%;
+
+            @media screen and (max-width:480px) {
+                left: 6%;
+            }
     
             p{
                 color: $sideMenu_color;

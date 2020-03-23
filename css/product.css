@@ -1,8 +1,8 @@
 .fortube-ber {
-  margin: 5% 0;
+  margin: 1% 0;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1365px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .fortube-ber {
     grid-area: content;
   }
@@ -92,22 +92,8 @@
   border: unset;
   margin: 0 5%;
   height: 50px;
-}
-
-.fortube-ber .fortune-box .box .input .input-fortune input::-webkit-input-placeholder {
   text-align: center;
-}
-
-.fortube-ber .fortune-box .box .input .input-fortune input:-ms-input-placeholder {
-  text-align: center;
-}
-
-.fortube-ber .fortune-box .box .input .input-fortune input::-ms-input-placeholder {
-  text-align: center;
-}
-
-.fortube-ber .fortune-box .box .input .input-fortune input::placeholder {
-  text-align: center;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 480px) {
@@ -128,8 +114,6 @@
   color: #000;
   margin: 0 5%;
   font-size: 1rem;
-  -webkit-box-shadow: 0px 5px 20px #0000009e;
-          box-shadow: 0px 5px 20px #0000009e;
   cursor: pointer;
   height: 35px;
 }
@@ -147,11 +131,13 @@
   }
 }
 
-.fortube-ber .fortune-box .box .input .input-fortune button:hover {
-  background-color: #c19a4b;
-  color: #fff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+@media screen and (min-width: 1025px) {
+  .fortube-ber .fortune-box .box .input .input-fortune button:hover {
+    background-color: #c19a4b;
+    color: #fff;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
 }
 
 .fortube-ber .fortune-box .box-ber {
@@ -222,6 +208,15 @@
 
 .fortube-ber .result-graph .result .left {
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .fortube-ber .result-graph .result .left .ber span {
@@ -314,6 +309,15 @@
 
 .fortube-ber .result-graph .result .right {
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .fortube-ber .result-graph .result .right .grade {
@@ -687,13 +691,15 @@
   background: linear-gradient(#fa9a46, #cb6002);
 }
 
-.fortube-ber .button button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-filter: drop-shadow(2px 4px 6px black);
-          filter: drop-shadow(2px 4px 6px black);
-  -webkit-transition: all .2s;
-  transition: all .2s;
+@media screen and (min-width: 1025px) {
+  .fortube-ber .button button:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-filter: drop-shadow(2px 4px 6px black);
+            filter: drop-shadow(2px 4px 6px black);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
 }
 
 .fortube-ber .head-text-fortune {
@@ -722,7 +728,7 @@
 
 .fortube-ber .head-text-fortune .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -888,7 +894,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .last-releast-content {
     grid-area: content;
   }
@@ -914,7 +920,7 @@
 
 .last-releast-content .head-releast .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -1029,19 +1035,21 @@
   color: gray;
 }
 
-.last-releast-content .pagination a:hover {
-  color: #000;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all .2s;
-  transition: all .2s;
+@media screen and (min-width: 1025px) {
+  .last-releast-content .pagination a:hover {
+    color: #000;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
 }
 
 .last-releast-content .pagination .current {
   color: #000;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1365px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .cart-page {
     grid-area: content;
   }
@@ -1049,7 +1057,7 @@
 
 .cart-page .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -1423,7 +1431,7 @@
 
 .cart-page .howtobuy .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -1545,10 +1553,10 @@
 }
 
 .ber-mean-page {
-  margin: 6% 0;
+  margin: 1% 0;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1365px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .ber-mean-page {
     grid-area: content;
   }
@@ -1575,6 +1583,7 @@
         grid-template-columns: 100%;
     background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
     background: linear-gradient(#c5a04f, #8e5415);
+    padding: 8% 5%;
   }
 }
 
@@ -1694,7 +1703,7 @@
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem1-mobile label.gem-select {
-  font-size: .6rem;
+  font-size: 12px;
   position: absolute;
   top: 27%;
   left: 30%;
@@ -1702,6 +1711,14 @@
   height: 40%;
   color: #fff;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .box-magic .magic-mobile .gem1-mobile label.gem-select {
+    width: 50%;
+    top: 23%;
+    left: 25%;
+  }
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem2-mobile {
@@ -1719,7 +1736,7 @@
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem2-mobile label.gem-select {
-  font-size: .6rem;
+  font-size: 12px;
   position: absolute;
   top: 27%;
   left: 30%;
@@ -1727,6 +1744,14 @@
   height: 40%;
   color: #fff;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .box-magic .magic-mobile .gem2-mobile label.gem-select {
+    width: 50%;
+    top: 23%;
+    left: 25%;
+  }
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem3-mobile {
@@ -1744,7 +1769,7 @@
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem3-mobile label.gem-select {
-  font-size: .6rem;
+  font-size: 12px;
   position: absolute;
   top: 27%;
   left: 30%;
@@ -1752,6 +1777,14 @@
   height: 40%;
   color: #fff;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .box-magic .magic-mobile .gem3-mobile label.gem-select {
+    width: 50%;
+    top: 23%;
+    left: 25%;
+  }
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem4-mobile {
@@ -1769,7 +1802,7 @@
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem4-mobile label.gem-select {
-  font-size: .6rem;
+  font-size: 12px;
   position: absolute;
   top: 27%;
   left: 30%;
@@ -1777,6 +1810,14 @@
   height: 40%;
   color: #fff;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .box-magic .magic-mobile .gem4-mobile label.gem-select {
+    width: 50%;
+    top: 23%;
+    left: 25%;
+  }
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem5-mobile {
@@ -1794,7 +1835,7 @@
 }
 
 .ber-mean-page .box-search .box-magic .magic-mobile .gem5-mobile label.gem-select {
-  font-size: .6rem;
+  font-size: 12px;
   position: absolute;
   top: 27%;
   left: 30%;
@@ -1802,6 +1843,14 @@
   height: 40%;
   color: #fff;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .box-magic .magic-mobile .gem5-mobile label.gem-select {
+    width: 50%;
+    top: 23%;
+    left: 25%;
+  }
 }
 
 .ber-mean-page .box-search .select-data {
@@ -1885,17 +1934,25 @@
   }
 }
 
-.ber-mean-page .box-search .select-data .button-group button:hover {
-  background-color: #c19a4b;
-  color: #fff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+@media screen and (min-width: 1025px) {
+  .ber-mean-page .box-search .select-data .button-group button:hover {
+    background-color: #c19a4b;
+    color: #fff;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
 }
 
 .ber-mean-page .box-search .ps {
   position: absolute;
   bottom: 1%;
   left: 3%;
+}
+
+@media screen and (max-width: 480px) {
+  .ber-mean-page .box-search .ps {
+    left: 6%;
+  }
 }
 
 .ber-mean-page .box-search .ps p {
@@ -1911,7 +1968,7 @@
 
 .ber-mean-page .choice .speak .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -1947,6 +2004,13 @@
   }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .ber-mean-page .choice .speak .selector {
+    -ms-grid-columns: (11.38%)[7];
+        grid-template-columns: repeat(7, 11.38%);
+  }
+}
+
 .ber-mean-page .choice .speak .selector figure {
   position: relative;
 }
@@ -1979,13 +2043,15 @@
 
 @media screen and (max-width: 1366px) {
   .ber-mean-page .choice .speak .selector figure label {
-    font-size: .6rem;
+    font-size: 11px;
   }
 }
 
-.ber-mean-page .choice .speak .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
+@media screen and (min-width: 1025px) {
+  .ber-mean-page .choice .speak .selector figure:hover {
+    -webkit-animation: shake 0.5s;
+            animation: shake 0.5s;
+  }
 }
 
 @-webkit-keyframes shake {
@@ -2093,7 +2159,7 @@
 
 .ber-mean-page .choice .mind .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2129,6 +2195,13 @@
   }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .ber-mean-page .choice .mind .selector {
+    -ms-grid-columns: (11.38%)[7];
+        grid-template-columns: repeat(7, 11.38%);
+  }
+}
+
 .ber-mean-page .choice .mind .selector figure {
   position: relative;
 }
@@ -2161,13 +2234,15 @@
 
 @media screen and (max-width: 1366px) {
   .ber-mean-page .choice .mind .selector figure label {
-    font-size: .6rem;
+    font-size: 11px;
   }
 }
 
-.ber-mean-page .choice .mind .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
+@media screen and (min-width: 1025px) {
+  .ber-mean-page .choice .mind .selector figure:hover {
+    -webkit-animation: shake 0.5s;
+            animation: shake 0.5s;
+  }
 }
 
 @keyframes shake {
@@ -2228,7 +2303,7 @@
 
 .ber-mean-page .choice .money .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2264,6 +2339,13 @@
   }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .ber-mean-page .choice .money .selector {
+    -ms-grid-columns: (11.38%)[7];
+        grid-template-columns: repeat(7, 11.38%);
+  }
+}
+
 .ber-mean-page .choice .money .selector figure {
   position: relative;
 }
@@ -2296,13 +2378,15 @@
 
 @media screen and (max-width: 1366px) {
   .ber-mean-page .choice .money .selector figure label {
-    font-size: .6rem;
+    font-size: 11px;
   }
 }
 
-.ber-mean-page .choice .money .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
+@media screen and (min-width: 1025px) {
+  .ber-mean-page .choice .money .selector figure:hover {
+    -webkit-animation: shake 0.5s;
+            animation: shake 0.5s;
+  }
 }
 
 @keyframes shake {
@@ -2363,7 +2447,7 @@
 
 .ber-mean-page .choice .job .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2399,6 +2483,13 @@
   }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .ber-mean-page .choice .job .selector {
+    -ms-grid-columns: (11.38%)[7];
+        grid-template-columns: repeat(7, 11.38%);
+  }
+}
+
 .ber-mean-page .choice .job .selector figure {
   position: relative;
 }
@@ -2431,13 +2522,15 @@
 
 @media screen and (max-width: 1366px) {
   .ber-mean-page .choice .job .selector figure label {
-    font-size: .6rem;
+    font-size: 11px;
   }
 }
 
-.ber-mean-page .choice .job .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
+@media screen and (min-width: 1025px) {
+  .ber-mean-page .choice .job .selector figure:hover {
+    -webkit-animation: shake 0.5s;
+            animation: shake 0.5s;
+  }
 }
 
 @keyframes shake {
@@ -2498,7 +2591,7 @@
 
 .ber-mean-page .choice .luck .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2534,6 +2627,13 @@
   }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .ber-mean-page .choice .luck .selector {
+    -ms-grid-columns: (11.38%)[7];
+        grid-template-columns: repeat(7, 11.38%);
+  }
+}
+
 .ber-mean-page .choice .luck .selector figure {
   position: relative;
 }
@@ -2566,13 +2666,15 @@
 
 @media screen and (max-width: 1366px) {
   .ber-mean-page .choice .luck .selector figure label {
-    font-size: .6rem;
+    font-size: 11px;
   }
 }
 
-.ber-mean-page .choice .luck .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
+@media screen and (min-width: 1025px) {
+  .ber-mean-page .choice .luck .selector figure:hover {
+    -webkit-animation: shake 0.5s;
+            animation: shake 0.5s;
+  }
 }
 
 @keyframes shake {
@@ -2633,7 +2735,7 @@
 
 .ber-mean-page .choice .love .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2669,6 +2771,13 @@
   }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .ber-mean-page .choice .love .selector {
+    -ms-grid-columns: (11.38%)[7];
+        grid-template-columns: repeat(7, 11.38%);
+  }
+}
+
 .ber-mean-page .choice .love .selector figure {
   position: relative;
 }
@@ -2701,13 +2810,15 @@
 
 @media screen and (max-width: 1366px) {
   .ber-mean-page .choice .love .selector figure label {
-    font-size: .6rem;
+    font-size: 11px;
   }
 }
 
-.ber-mean-page .choice .love .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
+@media screen and (min-width: 1025px) {
+  .ber-mean-page .choice .love .selector figure:hover {
+    -webkit-animation: shake 0.5s;
+            animation: shake 0.5s;
+  }
 }
 
 @keyframes shake {
@@ -2768,7 +2879,7 @@
 
 .ber-mean-page .choice .property .head-text {
   text-align: center;
-  margin: 3% 0;
+  margin: 1% 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5a04f), to(#8e5415));
   background: linear-gradient(#c5a04f, #8e5415);
   padding: 1%;
@@ -2804,6 +2915,13 @@
   }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .ber-mean-page .choice .property .selector {
+    -ms-grid-columns: (11.38%)[7];
+        grid-template-columns: repeat(7, 11.38%);
+  }
+}
+
 .ber-mean-page .choice .property .selector figure {
   position: relative;
 }
@@ -2836,13 +2954,15 @@
 
 @media screen and (max-width: 1366px) {
   .ber-mean-page .choice .property .selector figure label {
-    font-size: .6rem;
+    font-size: 11px;
   }
 }
 
-.ber-mean-page .choice .property .selector figure:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
+@media screen and (min-width: 1025px) {
+  .ber-mean-page .choice .property .selector figure:hover {
+    -webkit-animation: shake 0.5s;
+            animation: shake 0.5s;
+  }
 }
 
 @keyframes shake {

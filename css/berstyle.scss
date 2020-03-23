@@ -61,7 +61,10 @@ nav{
             @media screen and (min-width:1025px) and (max-width:1365px) {
                 width: 30%;
             }
-            @media screen and (min-width:1366px) {
+            @media screen and (min-width:1366px) and (max-width:1600px) {
+                width: 40%;
+            }
+            @media screen and (min-width:1601px) {
                 width: 50%;
             }
             
@@ -77,6 +80,9 @@ nav{
                 }
                 @media screen and (min-width:769px) and (max-width:1024px) {
                     width: 35%;
+                }
+                @media screen and (min-width:1366px) and (max-width:1600px) {
+                    width: 30%;
                 }
 
                 a{
@@ -125,7 +131,17 @@ nav{
                     font-size: 1rem;
                 }
             }
-            @media screen and (min-width:1366px) {
+            @media screen and (min-width:1366px) and (max-width:1600px) {
+                width: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                a{
+                    font-size: 1rem;
+                }
+            }
+            @media screen and (min-width:1601px) {
                 width: 50%;
                 display: flex;
                 align-items: center;
@@ -148,8 +164,10 @@ nav{
                     }
 
                     &:hover {
-                        color: $background_menu;
-                        transition: all .2s;
+                        @media screen and (min-width:1025px) {
+                            color: $background_menu;
+                            transition: all .2s;
+                        } 
                     }
                 }
                 .cart{
@@ -203,6 +221,7 @@ nav{
                     z-index: 6;
                     transition: left .5s;
                     overflow-y: scroll;
+                    padding: 0 3%;
 
                     li{
                         text-align: left;
@@ -499,6 +518,10 @@ nav{
                     @include input-round();
                     padding: 0 31%;
                     font-size: 16px;
+
+                    @media screen and (max-width:480px) {
+                        padding: 0 26%;
+                    }
                 }
                 a{
                     width: 80px;
@@ -515,13 +538,34 @@ nav{
                         font-size: 14px;
 
                         &:hover{
-                            background: $background_menu;
-                            color: #fff;
-                            transition: all .2s;
+                            @media screen and (min-width:1025px) {
+                                background: $background_menu;
+                                color: #fff;
+                                transition: all .2s;
+                            }
                         }
                     }
                 }
                 
+            }
+
+            .keed-fortune{
+                border-bottom: 1px solid #fff;
+                width: 100%;
+                padding: 8px 0;
+
+                @media screen and (max-width:480px) {
+                    padding: unset;
+                }
+                @media screen and (min-width:769px) and (max-width:1024px) {
+                    padding: 6px 0;
+                }
+                @media screen and (min-width:1025px) and (max-width:1366px) {
+                    padding: 5px 0;
+                }
+                @media screen and (min-width:1367px) and (max-width:1600px) {
+                    padding: 6px 0;
+                }
             }
 
             .search-num{
@@ -656,6 +700,9 @@ nav{
             }
 
             .favorite-num{
+                border-bottom: 1px solid #fff;
+                margin-bottom: 5%;
+
                 .favorite,.kirai{
                     margin-bottom: 2%;
                     display: flex;
@@ -691,13 +738,20 @@ nav{
                             }
 
                             &:hover{
-                                background-color: #d64209;
+                                @media screen and (min-width:1025px) {
+                                    background-color: #d64209;
+                                }
                             }
                         }
                         .active-button{
                             background: $background_main;
                             color: #733f05;
                         }
+                    }
+                }
+                .favorite{
+                    .keed{
+                        margin-left: 17px;
                     }
                 }
                 .keed{
@@ -746,9 +800,11 @@ nav{
                         }
 
                         &:hover{
-                            filter: drop-shadow(2px 4px 6px black);
-                            transform: scale(1.1);
-                            transition: all .3s;
+                            @media screen and (min-width:1025px) {
+                                filter: drop-shadow(2px 4px 6px black);
+                                transform: scale(1.1);
+                                transition: all .3s;
+                            }
                         }
                     }
                     .active{
@@ -811,9 +867,11 @@ nav{
                         }
 
                         &:hover{
-                            filter: drop-shadow(2px 4px 6px black);
-                            transform: scale(1.1);
-                            transition: all .3s;
+                            @media screen and (min-width:1025px) {
+                                filter: drop-shadow(2px 4px 6px black);
+                                transform: scale(1.1);
+                                transition: all .3s;
+                            }
                         }
                     }
                     .active{
@@ -872,9 +930,11 @@ nav{
                         }
 
                         &:hover{
-                            filter: drop-shadow(2px 4px 6px black);
-                            transform: scale(1.1);
-                            transition: all .3s;
+                            @media screen and (min-width:1025px) {
+                                filter: drop-shadow(2px 4px 6px black);
+                                transform: scale(1.1);
+                                transition: all .3s;
+                            }
                         }
                     } 
                 }
@@ -897,9 +957,11 @@ nav{
             @include button-round();
             
             &:hover{
-                background: #d64209;
-                color: #fff;
-                transition: all .2s;
+                @media screen and (min-width:1025px) {
+                    background: #d64209;
+                    color: #fff;
+                    transition: all .2s;
+                }
             }
         }
     }
@@ -915,28 +977,30 @@ nav{
         width: 95%!important;
     }
     @media screen and (min-width:768px) and (max-width:1023px) {
-        grid-template-columns: 100%;
+        grid-template-columns: 27% 71%;
+        grid-gap: 2%;
+        grid-row-gap: 80px;
     }
-    @media screen and (min-width:1024px) and (max-width:1355px) {
-        grid-template-columns: 100%;
+    @media screen and (min-width:1024px) and (max-width:1365px) {
+        grid-template-columns: 27% 71%;
         grid-gap: 2%;
         grid-row-gap: 80px;
     }
     @media screen and (min-width:1366px){
-        grid-template-columns: 27% 71%;;
+        grid-template-columns: 27% 71%;
         grid-gap: 2%;
         grid-row-gap: 80px;
     }
 
     .side-menu{
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:768px) {
             grid-area: sidebar;
         }
 
         .menu-box{
             display: none;
 
-            @media screen and (min-width:1025px) {
+            @media screen and (min-width:769px) {
                 display: block;
             }
 
@@ -1033,6 +1097,14 @@ nav{
 
                     &:focus{
                         outline: none;
+                    }
+
+                    &:hover{
+                        @media screen and (min-width:1025px) {
+                            background-color: #d64209;
+                            color: #fff;
+                            transition: all .3s;
+                        }
                     }
 
                     @media screen and (min-width:481px) and (max-width:768px) {
@@ -1136,7 +1208,11 @@ nav{
             display: flex;
             justify-content: center;
             position: relative;
-            padding: 1% 0;
+            padding-top: 1%;
+
+            @media screen and (max-width:480px) {
+                padding-top: 3%;
+            }
 
             h2{
                 color: #fff;
@@ -1155,17 +1231,23 @@ nav{
                     height: 40px;
                     width: 70px;
 
+                    @media screen and (max-width:480px) {
+                        height: 30px;
+                    }
+
                     &:hover{
-                        color: #fff;
-                        background-color: #d64209;
-                        transition: all .3s;
+                        @media screen and (min-width:1025px) {
+                            color: #fff;
+                            background-color: #d64209;
+                            transition: all .3s;
+                        }
                     }
                 }
             }
         }
 
         .slide-review{
-            padding: 5% 2%;
+            padding: 2% 2% 5% 2%;
 
             figure{
                 height: 300px;
@@ -1358,7 +1440,9 @@ footer{
             margin: 4% 0;
             li{
                 a{
-
+                    &:hover{
+                        color: red;
+                    }
                 }
             }
         }

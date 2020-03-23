@@ -246,10 +246,12 @@
                     <div class="left-box">
                         <form action="" class="fortune-box-num" id="search">
                             <div class="fortune-num">
-                                <input type="tel" name="fortune-num" maxlength="10" placeholder="ทำนายเบอร์">
+                                <input type="tel" name="fortune-num" maxlength="10" placeholder="กรอกเบอร์โทรศัพท์">
                                 <a href=""><button type="submit">ทำนาย</button></a>
                             </div>
                         </form>
+
+                        <div class="keed-fortune"></div>
 
                         <div class="search-num">
                             <label>ค้นหาเบอร์</label>
@@ -335,7 +337,7 @@
                                 </div> 
                             </div>
 
-                            <div class="keed"></div>
+                            <!-- <div class="keed"></div> -->
 
                             <div class="kirai">
                                 <label>ตัวเลขที่ไม่ชอบ</label>

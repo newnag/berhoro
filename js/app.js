@@ -122,6 +122,8 @@ $('.search-box .button-form .reset').click(function(){
     $('.search-box .box .left-box .more-filter .sum-network select').val("");
     $('.search-box .box .left-box .more-filter .range-price input').val("");
     $('.search-box .box .right-box .favorite-num button').removeClass('active-button');
+    $('.improve-luck .luck-box div').removeClass("active");
+    $('.ber-goodluck .goodluck-box div').removeClass("active");
 });
 
 // ----------------- เลือกข้อมูลในกราฟ ------------------ //
@@ -588,3 +590,42 @@ $('.fortube-ber .head-text-fortune .manual').click(function(){
 $('.manual-box .box .close-button').click(function(){
     $(this).closest('.manual-box').fadeOut();
 });
+
+// --------------------- ลูกน้ำตัวเลข ----------------------- //
+$('.search-box .box .range-price input').keyup(function(event) {
+
+    // skip for arrow keys
+    if(event.which >= 37 && event.which <= 40) return;
+  
+    // format number
+    $(this).val(function(index, value) {
+      return value
+      .replace(/\D/g, "")
+      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+      ;
+    });
+});
+
+// -------------------- ดันภายใน select iphone ให้เป็นตรงกลาง ------------------ //
+if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+    function getTextWidth(txt) {
+        var $elm = $('<span class="tempforSize">'+txt+'</span>').prependTo("body");
+        var elmWidth = $elm.width();
+        $elm.remove();
+        return elmWidth;
+    }
+    function centerSelect($elm) {
+        var optionWidth = getTextWidth($elm.children(":selected").html())
+        var emptySpace =   $elm.width()- optionWidth;
+        $elm.css("text-indent", (emptySpace/2) - 10);// -10 for some browers to remove the right toggle control width
+    }
+
+       // on start 
+    $('.ber-mean-page .box-search .select-data select').each(function(){
+        centerSelect($(this));
+    });
+    // on change
+    $('.ber-mean-page .box-search .select-data select').on('change', function(){
+        centerSelect($(this));
+    });
+}
