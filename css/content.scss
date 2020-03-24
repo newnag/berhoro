@@ -76,6 +76,7 @@
                     border: 1px solid #000;
                     border-radius: 20px;
                     padding: 3%;
+                    text-align: center;
 
                     &::placeholder { 
                         color: #000;
@@ -89,10 +90,12 @@
                     width: 100%;
                     border: 1px solid #000;
                     border-radius: 20px;
-                    padding: 2%;
+                    padding: 1%;
+                    resize: none;
 
                     &::placeholder { 
                         color: #000;
+                        text-align: center;
                     }
                 }
             }

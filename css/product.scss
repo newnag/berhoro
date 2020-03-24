@@ -945,6 +945,7 @@
                     border-radius: 20px;
                     padding: 0 3%;
                     margin: 3% 0;
+                    text-align: center;
                }
 
                .button-checkout{
@@ -1121,7 +1122,7 @@
 
     .box-search{
         display: grid;
-        grid-template-columns: repeat(2,48%);
+        grid-template-columns: 60% 38%;
         grid-gap: 2%;
         grid-row-gap: 20px;
         position: relative;
@@ -1135,6 +1136,24 @@
             grid-template-columns: 100%;
             background: linear-gradient(#c5a04f,#8e5415);
             padding: 8% 5%;
+        }
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            grid-template-columns: 55% 43%;
+            padding: 7% 5%;
+        }
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            grid-template-columns: 60% 38%;
+        }
+
+        .head-for-mobile{
+            display: none;
+
+            @media screen and (max-width:480px) {
+                display: block;
+                text-align: center;
+                color: #fff;
+                font-size: 20px;
+            }
         }
         
         .box-magic{
@@ -1167,12 +1186,15 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            font-size: 10px;
+                            font-size: 14px;
                             cursor: pointer;
-                            padding: 0 10%;
+                            padding: 0 1%;
 
                             @media screen and (max-width:480px) {
                                 font-size: .6rem;
+                            }
+                            @media screen and (min-width:1367px) and (max-width:1600px) {
+                                font-size: 13px;
                             }
                         }
                     }
@@ -1224,9 +1246,15 @@
 
                 .gem1-mobile{
                     position: absolute;
-                    top: 1%;
-                    left: 35%;
-                    width: 30%;
+                    top: -4%;
+                    left: 30%;
+                    width: 40%;
+
+                    @media screen and (min-width:1025px) and (max-width:1366px) {
+                        top: 0%;
+                        left: 33%;
+                        width: 35%;
+                    }
 
                     img.gem-select{
                         position: absolute;
@@ -1240,23 +1268,37 @@
                         top: 27%;
                         left: 30%;
                         width: 40%;
-                        height: 40%;
+                        height: 50%;
                         color: #fff;
                         text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         @media screen and (max-width:480px) {
-                            width: 50%;
+                            width: 60%;
                             top: 23%;
-                            left: 25%;
+                            left: 21%;
+                        }
+                        @media screen and (min-width:1025px) and (max-width:1366px) {
+                            width: 59%;
+                            top: 23%;
+                            left: 21%;
                         }
                     }
                 }
 
                 .gem2-mobile{
                     position: absolute;
-                    top: 30%;
-                    left: -9%;
-                    width: 30%;
+                    top: 26%;
+                    left: -11%;
+                    width: 40%;
+
+                    @media screen and (min-width:1025px) and (max-width:1366px) {
+                        top: 31%;
+                        left: -12%;
+                        width: 35%;
+                    }
 
                     img.gem-select{
                         position: absolute;
@@ -1270,23 +1312,37 @@
                         top: 27%;
                         left: 30%;
                         width: 40%;
-                        height: 40%;
+                        height: 50%;
                         color: #fff;
                         text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         @media screen and (max-width:480px) {
-                            width: 50%;
+                            width: 60%;
                             top: 23%;
-                            left: 25%;
+                            left: 21%;
+                        }
+                        @media screen and (min-width:1025px) and (max-width:1366px) {
+                            width: 59%;
+                            top: 23%;
+                            left: 21%;
                         }
                     }
                 }
 
                 .gem3-mobile{
                     position: absolute;
-                    top: 76%;
-                    left: 7%;
-                    width: 30%;
+                    top: 73%;
+                    left: 0%;
+                    width: 40%;
+
+                    @media screen and (min-width:1025px) and (max-width:1366px) {
+                        top: 76%;
+                        left: 4%;
+                        width: 35%;                    
+                    }
 
                     img.gem-select{
                         position: absolute;
@@ -1300,23 +1356,37 @@
                         top: 27%;
                         left: 30%;
                         width: 40%;
-                        height: 40%;
+                        height: 50%;
                         color: #fff;
                         text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         @media screen and (max-width:480px) {
-                            width: 50%;
+                            width: 60%;
                             top: 23%;
-                            left: 25%;
+                            left: 20%;
+                        }
+                        @media screen and (min-width:1025px) and (max-width:1366px) {
+                            width: 59%;
+                            top: 23%;
+                            left: 21%;
                         }
                     }
                 }
 
                 .gem4-mobile{
                     position: absolute;
-                    top: 76%;
-                    right: 7%;
-                    width: 30%;
+                    top: 73%;
+                    right: 1%;
+                    width: 40%;
+
+                    @media screen and (min-width:1025px) and (max-width:1366px) {
+                        top: 76%;
+                        right: 4%;
+                        width: 35%;                 
+                    }
 
                     img.gem-select{
                         position: absolute;
@@ -1330,23 +1400,37 @@
                         top: 27%;
                         left: 30%;
                         width: 40%;
-                        height: 40%;
+                        height: 50%;
                         color: #fff;
                         text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         @media screen and (max-width:480px) {
-                            width: 50%;
+                            width: 60%;
                             top: 23%;
-                            left: 25%;
+                            left: 20%;
+                        }
+                        @media screen and (min-width:1025px) and (max-width:1366px) {
+                            width: 59%;
+                            top: 23%;
+                            left: 21%;
                         }
                     }
                 }
 
                 .gem5-mobile{
                     position: absolute;
-                    top: 30%;
-                    right: -9%;
-                    width: 30%;
+                    top: 26%;
+                    right: -11%;
+                    width: 40%;
+
+                    @media screen and (min-width:1025px) and (max-width:1366px) {
+                        top: 31%;
+                        right: -11%;
+                        width: 35%;             
+                    }
 
                     img.gem-select{
                         position: absolute;
@@ -1360,14 +1444,22 @@
                         top: 27%;
                         left: 30%;
                         width: 40%;
-                        height: 40%;
+                        height: 50%;
                         color: #fff;
                         text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         @media screen and (max-width:480px) {
-                            width: 50%;
+                            width: 60%;
                             top: 23%;
-                            left: 25%;
+                            left: 20%;
+                        }
+                        @media screen and (min-width:1025px) and (max-width:1366px) {
+                            width: 59%;
+                            top: 23%;
+                            left: 21%;
                         }
                     }
                 }
@@ -1382,7 +1474,14 @@
 
             h1{
                 color: $background_main;
-                font-size: 2rem;
+                font-size: 24px;
+
+                @media screen and (max-width:480px) {
+                    display: none;
+                }
+                @media screen and (min-width:769px) and (max-width:1024px) {
+                    font-size: 18px;
+                }
             }
             select{
                 width: 40%;
@@ -1399,9 +1498,22 @@
                 &:focus{
                     outline: none;
                 }
+            }
+            .input-search{
+                display: flex;
+                justify-content: space-between;
+                margin: 5% 7%;
 
-                @supports (-webkit-touch-callout: none) {
-                    padding: 0 10%;
+                input{
+                    @include input-round();
+                    width: 47%;
+                    text-align: center;
+                }
+                .keed{
+                    background-color: #fff;
+                    height: 1px;
+                    width: 3%;
+                    margin: auto 0;
                 }
             }
             .button-group{
@@ -1420,10 +1532,13 @@
                     cursor: pointer;
 
                     @media screen and (max-width:480px) {
-                        width: 35%;
+                        width: 40%;
+                    }
+                    @media screen and (min-width:481px) and (max-width:768px){
+                        width: 39%;
                     }
                     @media screen and (min-width:769px) and (max-width:1023px){
-                        width: 30%;
+                        width: 40%;
                     }
                     @media screen and (min-width:1024px){
                         width: 40%;

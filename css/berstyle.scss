@@ -48,6 +48,7 @@ nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 1%;
 
         @media screen and (min-width:1025px) {
             padding: 1% 5%;
@@ -76,7 +77,7 @@ nav{
                     width: 80%;
                 }
                 @media screen and (min-width:481px) and (max-width:768px) {
-                    width: 50%;
+                    width: 60%;
                 }
                 @media screen and (min-width:769px) and (max-width:1024px) {
                     width: 35%;
@@ -976,7 +977,7 @@ nav{
     @media screen and (max-width:480px) {
         width: 95%!important;
     }
-    @media screen and (min-width:768px) and (max-width:1023px) {
+    @media screen and (min-width:769px) and (max-width:1023px) {
         grid-template-columns: 27% 71%;
         grid-gap: 2%;
         grid-row-gap: 80px;
@@ -993,7 +994,7 @@ nav{
     }
 
     .side-menu{
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:769px) {
             grid-area: sidebar;
         }
 

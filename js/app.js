@@ -261,7 +261,7 @@ function displayScore(score){
 
 // ----------------------- ล้างข้อมูลความหมายเบอร์ ----------------------- //
 $('.box-search .select-data .button-group .reset').click(function(){
-    $(this).parent().prev().val("");
+    $(this).closest('.select-data').find('.input-search input').val("");
     $('.box-magic figure div figure img').attr('src',"");
     $('.box-magic figure div figure label').text("");
     $('.box-magic figure div').removeClass('cast');
@@ -593,6 +593,20 @@ $('.manual-box .box .close-button').click(function(){
 
 // --------------------- ลูกน้ำตัวเลข ----------------------- //
 $('.search-box .box .range-price input').keyup(function(event) {
+
+    // skip for arrow keys
+    if(event.which >= 37 && event.which <= 40) return;
+  
+    // format number
+    $(this).val(function(index, value) {
+      return value
+      .replace(/\D/g, "")
+      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+      ;
+    });
+});
+
+$('.ber-mean-page .box-search .select-data .input-search input').keyup(function(event)  {
 
     // skip for arrow keys
     if(event.which >= 37 && event.which <= 40) return;

@@ -391,6 +391,12 @@
   text-align: end;
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .main-content .grid-content .box .detail .price, .sumber-content .grid-content .box .detail .price {
+    font-size: 16px;
+  }
+}
+
 .main-content .grid-content .box .detail .icon, .sumber-content .grid-content .box .detail .icon {
   color: gray;
   font-size: 1.2rem;

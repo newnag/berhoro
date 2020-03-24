@@ -52,6 +52,7 @@ nav .topnav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 1%;
 }
 
 @media screen and (min-width: 1025px) {
@@ -98,7 +99,7 @@ nav .topnav .logo-nav figure {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   nav .topnav .logo-nav figure {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -672,7 +673,7 @@ nav .topnav .group-mobile-menu .hamberger i {
   border: unset;
   padding: 0 3%;
   -moz-appearance: textfield;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 31%;
   font-size: 16px;
 }
@@ -777,7 +778,7 @@ nav .topnav .group-mobile-menu .hamberger i {
   height: 40px;
   border-radius: 20px;
   text-align-last: center;
-  font-size: 14px;
+  font-size: 16px;
   background: #fff;
   width: 100%;
 }
@@ -810,7 +811,7 @@ nav .topnav .group-mobile-menu .hamberger i {
   height: 40px;
   border-radius: 20px;
   text-align-last: center;
-  font-size: 14px;
+  font-size: 16px;
   background: #fff;
   width: 100%;
   padding: 0 2%;
@@ -840,7 +841,7 @@ nav .topnav .group-mobile-menu .hamberger i {
   height: 40px;
   border-radius: 20px;
   text-align-last: center;
-  font-size: 14px;
+  font-size: 16px;
   background: #fff;
   width: 100%;
   padding: 0 2%;
@@ -885,7 +886,7 @@ nav .topnav .group-mobile-menu .hamberger i {
   border: unset;
   padding: 0 3%;
   -moz-appearance: textfield;
-  font-size: 14px;
+  font-size: 16px;
   width: 60%;
   text-align: center;
 }
@@ -941,7 +942,7 @@ nav .topnav .group-mobile-menu .hamberger i {
   border: unset;
   padding: 0 3%;
   -moz-appearance: textfield;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .search-box .box .left-box .more-filter .range-price input:focus {
@@ -1279,7 +1280,7 @@ nav .topnav .group-mobile-menu .hamberger i {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   .content {
     -ms-grid-columns: 27% 71%;
         grid-template-columns: 27% 71%;
@@ -1306,7 +1307,7 @@ nav .topnav .group-mobile-menu .hamberger i {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .content .side-menu {
     -ms-grid-row: 2;
     -ms-grid-column: 1;

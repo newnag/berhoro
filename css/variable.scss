@@ -11,7 +11,7 @@ $background_menu: #c19a4b;
     border: unset;
     padding: 0 3%;
     -moz-appearance:textfield; // สำหรับปิดลูกศรช่องเลข เปิดดูด้วย Firefox
-    font-size: 14px;
+    font-size: 16px;
 
     &:focus{
         outline: none;
@@ -37,7 +37,7 @@ $background_menu: #c19a4b;
     height: 40px;
     border-radius: 20px;
     text-align-last: center;
-    font-size: 14px;
+    font-size: 16px;
     background: #fff;
 
     &:focus{
@@ -185,10 +185,13 @@ $background_menu: #c19a4b;
         grid-row-gap: 20px;
 
         @media screen and (max-width:480px) {
-            grid-template-columns: repeat(5,17%);
+            grid-template-columns: repeat(4,22.5%);
         }
         @media screen and (min-width:481px) and (max-width:768px) {
-            grid-template-columns: repeat(6,13.8%);
+            grid-template-columns: repeat(5, 17.3%);
+        }
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            grid-template-columns: repeat(6, 13.91%);
         }
         @media screen and (min-width:1025px) and (max-width:1366px) {
             grid-template-columns: repeat(7,11.38%);
@@ -215,7 +218,13 @@ $background_menu: #c19a4b;
                 font-size: .8rem;
                 text-align: center;
 
-                @media screen and (max-width:1366px) {
+                @media screen and (max-width:480px) {
+                    font-size: 11px;
+                }
+                @media screen and (min-width:481px) and (max-width:768px) {
+                    font-size: 14px;
+                }
+                @media screen and (min-width:1025px) and (max-width:1366px) {
                     font-size: 11px;
                 }
             }

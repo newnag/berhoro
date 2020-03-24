@@ -21,7 +21,7 @@
             </div>
 
             <div class="detail">
-                <textarea name="" id="" cols="30" rows="10" placeholder="รายละเอียด"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="กรุณากรอกรายละเอียด"></textarea>
             </div>
 
             <div class="button-contact">

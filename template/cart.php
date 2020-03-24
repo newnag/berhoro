@@ -62,7 +62,7 @@
                     <input type="email" maxlength="32" placeholder="กรุณากรอก Email">
                 </div>
 
-                <input class="adddress" type="text" placeholder="ที่อยู่">
+                <input class="adddress" type="text" placeholder="กรุณากรอกที่อยู่">
 
                 <div class="button-checkout">
                     <a href="cate-ber"><button class="add-ber">เลือกเบอร์เพิ่ม</button></a>

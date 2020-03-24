@@ -105,6 +105,7 @@
   border: 1px solid #000;
   border-radius: 20px;
   padding: 3%;
+  text-align: center;
 }
 
 .contact .boxForm form .person-data input::-webkit-input-placeholder {
@@ -131,23 +132,28 @@
   width: 100%;
   border: 1px solid #000;
   border-radius: 20px;
-  padding: 2%;
+  padding: 1%;
+  resize: none;
 }
 
 .contact .boxForm form .detail textarea::-webkit-input-placeholder {
   color: #000;
+  text-align: center;
 }
 
 .contact .boxForm form .detail textarea:-ms-input-placeholder {
   color: #000;
+  text-align: center;
 }
 
 .contact .boxForm form .detail textarea::-ms-input-placeholder {
   color: #000;
+  text-align: center;
 }
 
 .contact .boxForm form .detail textarea::placeholder {
   color: #000;
+  text-align: center;
 }
 
 .contact .boxForm form .button-contact {

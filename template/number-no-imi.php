@@ -1,6 +1,8 @@
 <div class="ber-mean-page">
     <!-- กล่องดึงความหมาย -->
     <div class="box-search">
+        <h1 class="head-for-mobile">กรุณาเลือกราคาที่ต้องการ</h1>
+
         <div class="box-magic">
             <figure>
                 <img src="img/ring/ring.png" alt="">
@@ -77,14 +79,19 @@
         </div>
 
         <div class="select-data">
-            <h1>เลือกความหมาย</h1>
-            <select name="" id="">
+            <h1>กรุณาเลือกราคาที่ต้องการ</h1>
+            <!-- <select name="" id="">
                 <option value="">ช่วงราคา</option>
                 <option value="">0-1000</option>
                 <option value="">1001-10000</option>
                 <option value="">10001-100000</option>
                 <option value="">100001-1000000</option>
-            </select>
+            </select> -->
+            <div class="input-search">
+                <input type="tel" maxlength="7" placeholder="999">
+                <div class="keed"></div>
+                <input type="tel" maxlength="7" placeholder="999,999">
+            </div>
             <div class="button-group">
                 <button class="reset">ล้างข้อมูล</button>
                 <button>ค้นหา</button>
