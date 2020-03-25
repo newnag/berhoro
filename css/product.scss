@@ -299,6 +299,7 @@
                 height: 100%;
 
                 figure{
+                    margin: 0 auto;
                     height: 84px;
                     width: 84px;
 
@@ -1142,18 +1143,7 @@
             padding: 7% 5%;
         }
         @media screen and (min-width:769px) and (max-width:1024px) {
-            grid-template-columns: 60% 38%;
-        }
-
-        .head-for-mobile{
-            display: none;
-
-            @media screen and (max-width:480px) {
-                display: block;
-                text-align: center;
-                color: #fff;
-                font-size: 20px;
-            }
+            grid-template-columns: 65% 33%;
         }
         
         .box-magic{
@@ -1474,14 +1464,7 @@
 
             h1{
                 color: $background_main;
-                font-size: 24px;
-
-                @media screen and (max-width:480px) {
-                    display: none;
-                }
-                @media screen and (min-width:769px) and (max-width:1024px) {
-                    font-size: 18px;
-                }
+                font-size: 2rem;
             }
             select{
                 width: 40%;
@@ -1506,13 +1489,13 @@
 
                 input{
                     @include input-round();
-                    width: 47%;
+                    width: 40%;
                     text-align: center;
                 }
                 .keed{
                     background-color: #fff;
                     height: 1px;
-                    width: 3%;
+                    width: 5%;
                     margin: auto 0;
                 }
             }
@@ -1532,13 +1515,10 @@
                     cursor: pointer;
 
                     @media screen and (max-width:480px) {
-                        width: 40%;
-                    }
-                    @media screen and (min-width:481px) and (max-width:768px){
-                        width: 39%;
+                        width: 35%;
                     }
                     @media screen and (min-width:769px) and (max-width:1023px){
-                        width: 40%;
+                        width: 30%;
                     }
                     @media screen and (min-width:1024px){
                         width: 40%;

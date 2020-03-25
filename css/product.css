@@ -426,6 +426,7 @@
 }
 
 .fortube-ber .result-graph .graph .network figure {
+  margin: 0 auto;
   height: 84px;
   width: 84px;
 }
@@ -1598,21 +1599,8 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .ber-mean-page .box-search {
-    -ms-grid-columns: 60% 38%;
-        grid-template-columns: 60% 38%;
-  }
-}
-
-.ber-mean-page .box-search .head-for-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 480px) {
-  .ber-mean-page .box-search .head-for-mobile {
-    display: block;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
+    -ms-grid-columns: 65% 33%;
+        grid-template-columns: 65% 33%;
   }
 }
 
@@ -2031,19 +2019,7 @@
 
 .ber-mean-page .box-search .select-data h1 {
   color: #f3f3f3;
-  font-size: 24px;
-}
-
-@media screen and (max-width: 480px) {
-  .ber-mean-page .box-search .select-data h1 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .ber-mean-page .box-search .select-data h1 {
-    font-size: 18px;
-  }
+  font-size: 2rem;
 }
 
 .ber-mean-page .box-search .select-data select {
@@ -2082,7 +2058,7 @@
   padding: 0 3%;
   -moz-appearance: textfield;
   font-size: 16px;
-  width: 47%;
+  width: 40%;
   text-align: center;
 }
 
@@ -2093,7 +2069,7 @@
 .ber-mean-page .box-search .select-data .input-search .keed {
   background-color: #fff;
   height: 1px;
-  width: 3%;
+  width: 5%;
   margin: auto 0;
 }
 
@@ -2116,19 +2092,13 @@
 
 @media screen and (max-width: 480px) {
   .ber-mean-page .box-search .select-data .button-group button {
-    width: 40%;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .ber-mean-page .box-search .select-data .button-group button {
-    width: 39%;
+    width: 35%;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .ber-mean-page .box-search .select-data .button-group button {
-    width: 40%;
+    width: 30%;
   }
 }
 

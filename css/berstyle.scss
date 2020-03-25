@@ -248,6 +248,11 @@ nav{
                         border-radius: 50%;
                         padding: 3% 4%;
                         z-index: 7;
+
+                        @supports (-webkit-touch-callout: none) {
+                            top: 48%;
+                            left: 82%;
+                        }
                     }
                 }
             }
@@ -1231,6 +1236,7 @@ nav{
                     font-size: .8rem;
                     height: 40px;
                     width: 70px;
+                    background: lightgray;
 
                     @media screen and (max-width:480px) {
                         height: 30px;

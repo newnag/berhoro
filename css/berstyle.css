@@ -319,6 +319,13 @@ nav .topnav .nav-menu .cate-mobile .cateMobile .hide-button {
   z-index: 7;
 }
 
+@supports (-webkit-touch-callout: none) {
+  nav .topnav .nav-menu .cate-mobile .cateMobile .hide-button {
+    top: 48%;
+    left: 82%;
+  }
+}
+
 nav .topnav .nav-menu .menu-cart:hover .cart-hover {
   display: block;
 }
@@ -2084,6 +2091,7 @@ nav .topnav .group-mobile-menu .hamberger i {
   font-size: .8rem;
   height: 40px;
   width: 70px;
+  background: lightgray;
 }
 
 @media screen and (max-width: 480px) {
